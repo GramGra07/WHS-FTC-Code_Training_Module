@@ -23,6 +23,7 @@
 
 ## Getting started <a name="gs1"><a/>
 ### Forking <a name="Forking"><a/>
+Go to this [website](https://github.com/FIRST-Tech-Challenge) and find the latest repository from the company.
 ## Cloning in terminal <a name="clone"><a/>
 ## Github basics <a name="basics"><a/>
 ### Commits <a name="commit"><a/>
