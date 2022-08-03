@@ -104,10 +104,10 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
 
-[fork]: fork.png
-[gitcommit]: gitCommit.png
-[commit]: commit.png
-[push]: push.png
-[pull]: pull.png
-[run]: run.png
-[setting]: settings.png
+[fork]: /images/fork.png
+[gitcommit]: /images/gitCommit.png
+[commit]: /images/commit.png
+[push]: /images/push.png
+[pull]: /images/pull.png
+[run]: /images/run.png
+[setting]: /images/settings.png
