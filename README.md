@@ -1,7 +1,7 @@
 # WHS-FTC-GramGra07-Code_Training_Mod
 ### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc programming
 # Table of Contents
-
+- [Links](#link)
 - [Getting Started](#gs1)
   - [Forking](#Forking)
 - [Cloning in terminal](#clone)
@@ -20,10 +20,14 @@
 - [Running your code](#run)
 - [Updating your devices](#update)
 - - - - - - - - - 
-
+## Usefull Links <a name="link"><a/>
+- My [user page][user] (GramGra07)
+- FTC Official Github [user page][ftcpage]
+- Team Resources [folder][team]
+- - - - - 
 ## Getting started <a name="gs1"><a/>
 ### Forking <a name="Forking"><a/>
-Go to this [website][ftcpage] and find the latest repository from the company.
+Go to this [website][ftcpage] and find the latest repository from the company. Press the ![fork button](fork.png) button.
 ## Cloning in terminal <a name="clone"><a/>
 ## Github basics <a name="basics"><a/>
 ### Commits <a name="commit"><a/>
@@ -52,3 +56,5 @@ Commiting is an essential part in every part of coding while connected to github
 
 
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
+[user]: https://github.com/GramGra07
+[team]: https://github.com/WindsorHSRobotics/Team_Resources
