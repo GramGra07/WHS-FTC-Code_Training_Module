@@ -11,7 +11,8 @@ public class exampleTeleOpFull extends LinearOpMode {
     public String hallo="This is a test!"
     @Override
     public void runOpMode(){
-        run_time();
+        runtime.reset();
+        getRuntime();
         waitForStart();
         while (opModeIsActive()){
             if ( gamepad1.a){
@@ -20,9 +21,5 @@ public class exampleTeleOpFull extends LinearOpMode {
             getRuntime();
             telemetry.addData("Time:", String.valueOf(runtime));
         }
-    }
-    public void run_time(){
-        runtime.reset();
-        getRuntime();
     }
 }

@@ -8,17 +8,14 @@ public class exampleAutoFull extends exampleTeleOpFull {  //your doc name *exten
     // this means we can have all variables in one file.
     @Override
     public void runOpMode(){
-        runtime();
+        runtime.reset();
+        getRuntime();
         waitForStart();
         //actual code
         while (getRuntime()<=30) {
             getRuntime();
             telemetry.addData(String.valueOf(runtime), "Working");
         }
-    }
-    public void run_time(){
-        runtime.reset();
-        getRuntime();
     }
 }
 

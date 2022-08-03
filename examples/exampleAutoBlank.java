@@ -5,17 +5,14 @@ public class exampleAutoBlank extends exampleTeleOpBlank {  //your doc name *ext
     private ElapsedTime   runtime = new ElapsedTime();
     @Override
     public void runOpMode(){
-        runtime();
+        runtime.reset();
+        getRuntime();
         waitForStart();
         //actual code
         while (getRuntime()<=30) {
             getRuntime();
             telemetry.addData(String.valueOf(runtime), "Working");
         }
-    }
-    public void run_time(){
-        runtime.reset();
-        getRuntime();
     }
 }
 

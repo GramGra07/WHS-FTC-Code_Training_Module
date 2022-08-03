@@ -6,15 +6,12 @@ public class exampleTeleOpBlank extends LinearOpMode {
     private ElapsedTime   runtime = new ElapsedTime();
     @Override
     public void runOpMode(){
-        run_time();
+        runtime.reset();
+        getRuntime();
         waitForStart();
         while (opModeIsActive()){
             getRuntime();
             telemetry.addData("Time:", String.valueOf(runtime));
         }
-    }
-    public void run_time(){
-        runtime.reset();
-        getRuntime();
     }
 }
