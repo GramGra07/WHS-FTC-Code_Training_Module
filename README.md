@@ -28,6 +28,7 @@
 - [Rev Hardware Client][rhc]
 - - - - - 
 ## Getting started <a name="gs1"><a/>
+In order to setup your repository[^repo] correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository[^repo] to your github account and then put that repository[^repo] local on your computer.
   
 [Go to top](#top)
 ### Forking <a name="Forking"><a/>
@@ -54,6 +55,7 @@ Commiting is an essential part in every part of coding while connected to github
   
 [Go to top](#top)
 ### Managing your server <a name="manage"><a/>
+Managing a server is really not that hard if you do it correctly from the start. There is a settings button in your repository[^repo], in this tab you will find a bunch of options, it is better if you don't mess with anything that you don't know what it does. In the collaborator tab you will need to add @stcline (if you are a part of WHS). Other than that there are really no settings you need to mess with except maybe email notifications if you would like that.
   
 [Go to top](#top)
 ## Coding <a name="code"><a/>
@@ -83,12 +85,11 @@ Commiting is an essential part in every part of coding while connected to github
 ## Updating your devices <a name="update"><a/>
 
 [Go to top](#top)
-## Glossary <a name="rhc"><a/>
+## Glossary <a name="gloss"><a/>
 [^ftc]: First Tech Challenge
 [^repo]: A repository is a folder hosted on github that contains code and items.
 [^merge]: Push and pull at the same time using github  
   
-[Go to top](#top)
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
@@ -100,3 +101,6 @@ Commiting is an essential part in every part of coding while connected to github
 [commit]: commit.png
 [push]: push.png
 [pull]: pull.png
+[run]: run.png
+  
+[Go to top](#top)
