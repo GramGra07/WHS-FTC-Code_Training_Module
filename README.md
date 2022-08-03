@@ -72,12 +72,14 @@ Managing a server is really not that hard if you do it correctly from the start.
   
 [Go to top](#top)
 ### Personal Access Token <a name="atl"><a/>
-- ![step1a][step1]  
-- ![step2a][step2]  
-- ![step3a][step3]  
-- ![step4a][step4]  
-- ![step5a][step5]  
-- ![step6a][step6]  ( Select all, it will work better that way )
+In github, tap on your profile ( top right corner ), then:
+  
+1. ![step1a][step1]  
+2. ![step2a][step2]  
+3. ![step3a][step3]  
+4. ![step4a][step4]  
+5. ![step5a][step5]  
+6. ![step6a][step6]  ( Select all, it will work better that way )
   
 [Go to top](#top)
 ## Coding <a name="code"><a/>
