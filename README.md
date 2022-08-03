@@ -20,6 +20,7 @@
 - [Running your code](#run)
 - [Updating your devices](#update)
 - [Glossary](#gloss)
+- [Feedback](#fb)
 - - - - - - - - - 
 ## Useful Links <a name="link"><a/>
 - My [user page][user] (GramGra07)
@@ -70,10 +71,10 @@ Managing a server is really not that hard if you do it correctly from the start.
 ### Using variables <a name="var"><a/>
   
 [Go to top](#top)
-### TeleOp <a name="op"><a/>
+### TeleOp[^teleop] <a name="op"><a/>
   
 [Go to top](#top)
-### Autonomous <a name="auto"><a/>
+### Autonomous[^auto] <a name="auto"><a/>
   
 [Go to top](#top)
 ### Functions <a name="func"><a/>
@@ -89,8 +90,11 @@ Managing a server is really not that hard if you do it correctly from the start.
 [^ftc]: First Tech Challenge
 [^repo]: A repository is a folder hosted on github that contains code and items.
 [^merge]: Push and pull at the same time using github  
-  
+[^teleop]: A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is on the right side of the phone when selecting an opmode.
+[^auto]: A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
 
+## Feedback <a name="fb"><a/>
+I would love to have feedback on this repository. You can contact me at graymgray07@gmail.com. Thanks!
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
 [user]: https://github.com/GramGra07
@@ -103,5 +107,3 @@ Managing a server is really not that hard if you do it correctly from the start.
 [pull]: pull.png
 [run]: run.png
 [setting]: settings.png
-  
-[Go to top](#top)
