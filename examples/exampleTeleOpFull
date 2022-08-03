@@ -1,5 +1,5 @@
 //imports
-@TeleOp(name="exampleTeleOpBlank",group="Pushbot")
+@TeleOp(name="exampleTeleOpFull",group="Pushbot")
 //@Disabled
 public class exampleTeleOpFull extends LinearOpMode {
     HardwarePushbot robot = new HardwarePushbot();
