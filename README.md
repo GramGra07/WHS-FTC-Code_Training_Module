@@ -4,12 +4,13 @@
 - [Links](#link)
 - [Getting Started](#gs1)
   - [Forking](#Forking)
-- [Cloning in terminal](#clone)
+- [Cloning the repository](#clone)
 - [Github Basics](#basics)
   - [Commits](#commit)
   - [Push](#push)
   - [Pull/merge](#pull)
   - [Managing your server](#manage)
+  - [Personal Access Token](#atl)
 - [Coding](#code)
   - [Getting Started](#gs)
   - [Setting up your files](#su)
@@ -39,7 +40,14 @@ In order to setup your repository[^repo] correctly you will do 2 things. 1. [For
 Go to this [website][ftcpage] and find the latest repository[^repo] from the company. Press the ![fork button][fork] button. This will "copy" the repository onto your github account.
   
 [Go to top](#top)
-## Cloning in terminal <a name="clone"><a/>
+## Cloning the repository <a name="clone"><a/>
+To clone the repository, first find it on your github profile. You have 2 options on what to do you can do it through android studio or through github.
+
+Android Studio:
+Tap ![fila][file], then ![newa][new] , ![vcsa][vcs]. Go back to your repository[^repo] and copy the url, paste it into the box and make sure the destination is desktop. You might need to have an [access token](#atl) to do this.
+  
+Github:
+Navigate to the repository you want to clone. Tap ![codea][code] then select ![zipa][zip]. This will download it to your computer. Open the zip file and go back to Android Studio. 
   
 [Go to top](#top)
 ## Github basics <a name="basics"><a/>
@@ -61,6 +69,15 @@ Commiting is an essential part in every part of coding while connected to github
 [Go to top](#top)
 ### Managing your server <a name="manage"><a/>
 Managing a server is really not that hard if you do it correctly from the start. There is a settings ![settingsa][setting] button in your repository[^repo], in this tab you will find a bunch of options, it is better if you don't mess with anything that you don't know what it does. In the collaborator tab you will need to add @stcline (if you are a part of WHS). Other than that there are really no settings you need to mess with except maybe email notifications if you would like that.
+  
+[Go to top](#top)
+### Personal Access Token <a name="atl"><a/>
+- ![step1a][step1]  
+- ![step2a][step2]  
+- ![step3a][step3]  
+- ![step4a][step4]  
+- ![step5a][step5]  
+- ![step6a][step6]  ( Select all, it will work better that way )
   
 [Go to top](#top)
 ## Coding <a name="code"><a/>
@@ -283,3 +300,16 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [feTele]: /examples/exampleTeleOpFull
 [beAuto]: /examples/exampleAutoBlank.java
 [feAuto]: /examples/exampleAutoFull.java
+[code]: /images/code.png
+[zip]: /images/zip.png
+[vcs]: /images/vcs.png
+[at]: /images/at.png
+[step1]: /images/step1.png
+[step2]: /images/step2.png
+[step3]: /images/step3.png
+[step4]: /images/step4.png
+[step5]: /images/step5.png
+[step6]: /images/step6.png  
+[file]: /images/file.png
+[open]: /images/open.png
+[new]: /images/new.png  
