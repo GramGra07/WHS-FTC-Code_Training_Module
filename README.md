@@ -67,8 +67,6 @@ The java coding language that we use is not incredibly hard to learn once you fi
 
 [Go to top](#top)
 ### Getting started <a name="gs"><a/>
-  
-[Go to top](#top)
 ### Setting up your files <a name="su"><a/>
 Refer to the blank examples [TeleOp][beTele] and [Auto][beAuto]. These both have the proper setup and code to get started coding both of these modes. I will get into more detail into what everything means in [TeleOp](#op) and [auto](#auto).
 
@@ -82,16 +80,20 @@ double
 float
 String
 ```
-Boolean = True or False
-Int = Integer, a whole number
-Double = Floating point number
-Float = Decimal (up to 7 digits)
-String = Text value
+- Boolean = True or False
+- Int = Integer, a whole number
+- Double = Floating point number
+- Float = Decimal (up to 7 digits)
+- String = Text value
 
 Boolean is used to determine whether a value is true or not, an on/off switch
+  
 Int is used for a constant value like your team number, a certain value to multiple etc.
+  
 Double is used for your motors, this is the best method because it supports all numbers so you can use it for storing gamepad inputs.
+  
 Float is most commonly used to store color values
+  
 Strings are used to store common strings or text values like a status of initialization
 
 [Go to top](#top)
