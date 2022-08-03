@@ -1,5 +1,5 @@
 //imports
-@Autonomous(name="exampleAuto", group="Autonomous")
+@Autonomous(name="exampleAutoBlank", group="Autonomous")
 //@Disabled
 public class exampleAutoBlank extends exampleTeleOpBlank {  //your doc name *extends* your main code branch
     private ElapsedTime   runtime = new ElapsedTime();
