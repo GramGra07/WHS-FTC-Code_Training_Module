@@ -20,6 +20,7 @@
 - [Running your code](#run)
   - [Errors and solutions](#es)
 - [Updating your devices](#update)
+- [Overall game](#game)
 - [Feedback](#fb)
 - [Agknowledgements](#agk)
 - [Glossary](#gloss)
@@ -96,6 +97,9 @@ Float is most commonly used to store color values
   
 Strings are used to store common strings or text values like a status of initialization
 
+- When to use public vs. private variables?
+  -You generally want to always use public unless it is something that you don't want to share with other opmodes, like a runtime.
+  
 [Go to top](#top)
 ### TeleOp[^teleop] <a name="op"><a/>
 In the [blank TeleOp Example][beTele] you will find that there are 20 lines
@@ -108,16 +112,13 @@ public class exampleTeleOpBlank extends LinearOpMode {
     private ElapsedTime   runtime = new ElapsedTime();
     @Override
     public void runOpMode(){
-        run_time();
+        runtime.reset();
+        getRuntime();
         waitForStart();
         while (opModeIsActive()){
             getRuntime();
             telemetry.addData("Time:", String.valueOf(runtime));
         }
-    }
-    public void run_time(){
-        runtime.reset();
-        getRuntime();
     }
 }
   ```
@@ -125,7 +126,15 @@ First, comments are indicated by //
   
 Imports are how you get the references and all the different pieces to the code.
   
-Next we have ```@TeleOp(name="exampleTeleOpBlank",group="Pushbot")```, this 
+Next we have ```@TeleOp(name="exampleTeleOpBlank",group="Pushbot")```, this means that this opmode is being classified under the teleop section, with the name "exampleTeleOpBlank" and it is being placed in the Pushbot group
+  
+Now we have the ```public class exampleTeleOpBlank extends LinearOpMode{``` this means that this opmode can now be used as a base opmode, extending an opmode means that all variables and functions are shared between the opmodes. In this case the file is extending the Linear Op Mode file which you will be able to find in your forked repository.
+  
+Next we have our ``` HardwarePushbot robot = new HardwarePushbot(); ``` and ```private ElapsedTime   runtime = new ElapsedTime();``` the first part declares the robot as a robot, we will be using pushbot software for the season. Elapsed time is a very important thing to consider, it times the round as it is going. You can use this for a lot of things including having an endgame timer and restricting your [auto](#auto) time to 30 seconds.
+  
+Next we have the function ```public void runOpMode(){``` this runs when you press Init it will run that part. Remember, when you hit Init, it is not running the whole program yet, just the small part in between runOpMode and opModeIsActive.
+  
+
   
 [Go to top](#top)
 ### Autonomous[^auto] <a name="auto"><a/>
@@ -141,6 +150,9 @@ Next we have ```@TeleOp(name="exampleTeleOpBlank",group="Pushbot")```, this
   
 [Go to top](#top)
 ## Updating your devices <a name="update"><a/>
+
+[Go to top](#top)
+## Overall Game <a name="game"><a/>
 
 [Go to top](#top)
 ## Feedback <a name="fb"><a/>
