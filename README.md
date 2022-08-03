@@ -31,7 +31,7 @@
 - FTC[^ftc] Official Github [user page][ftcpage]
 - Team Resources [folder][team]
 - [Rev Hardware Client][rhc]
-- [FTC BasicOpModeLinear (2022)][lop]
+- [FTC BasicOpModeLinear (21-22)][lop]
 - - - - - 
 ## Getting started <a name="gs1"><a/>
 In order to setup your repository[^repo] correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository[^repo] to your github account and then put that repository[^repo] local on your computer.
@@ -125,7 +125,7 @@ Strings are used to store common strings or text values like a status of initial
   
 [Go to top](#top)
 ### TeleOp[^teleop] <a name="op"><a/>
-Here is the [FTC BasicOpMode (2022)][lop] it uses 2 motors.
+Here is the [FTC BasicOpMode (21-22)][lop] it uses 2 motors.
 In the [blank TeleOp Example][beTele] you will find that there are 20 lines
 ```
 //imports
