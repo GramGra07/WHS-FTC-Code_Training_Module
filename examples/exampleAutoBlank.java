@@ -1,7 +1,7 @@
 //imports
 @Autonomous(name="exampleAuto", group="Autonomous")
 //@Disabled
-public class exampleAuto extends SAMPLEptpov {  //your doc name *extends* your main code branch
+public class exampleAutoBlank extends exampleTeleOpBlank {  //your doc name *extends* your main code branch
     private ElapsedTime   runtime = new ElapsedTime();
     @Override
     public void runOpMode(){
