@@ -41,7 +41,7 @@ Go to this [website][ftcpage] and find the latest repository[^repo] from the com
 ## Github basics <a name="basics"><a/>
 ### Commits <a name="commit"><a/>
   
-Commiting is an essential part in every part of coding while connected to github, it makes sure you have the latest edited version of your code local    on your computer, we got the code local to the computer in [cloning](#clone). In a github file it is a green rectangular button at the bottom of the    file that says commit changes, ![gitCommita][gitcommit] when commiting directly from github it strictly gives the code to github, you will not have the code local yet. To make your code local you will need to [pull](#pull) in your code app, most likely android studio. In android studio, the commit button is a check mark in your top right corner.![commita][commit[ You are also allowed to commit and push, to be explained later in [push](#push).
+Commiting is an essential part in every part of coding while connected to github, it makes sure you have the latest edited version of your code local    on your computer, we got the code local to the computer in [cloning](#clone). In a github file it is a green rectangular button at the bottom of the    file that says commit changes, ![gitCommita][gitcommit] when commiting directly from github it strictly gives the code to github, you will not have the code local yet. To make your code local you will need to [pull](#pull) in your code app, most likely android studio. In android studio, the commit button is a check mark in your top right corner.![commita][commit] You are also allowed to commit and push, to be explained later in [push](#push).
   
 [Go to top](#top)
 ### Push <a name="push"><a/>
@@ -51,11 +51,11 @@ Commiting is an essential part in every part of coding while connected to github
 [Go to top](#top)
 ### Pull/merge <a name="pull"><a/>
  - What is a pull?
-    - A pull is the exact opposite of a [push](#push). It will take the currennt version of the code directly from github and sync it locally to your device/coding app. This is also essential as it allows you to get the teams latest version of code. This is helpful when multiple people are working on code all at once. If you are [pushing](#push) sometimes it will ask you to merge[^merge] your current code, this means you dont have the latest version, not to worry though as if you say yes github will automatically merge[^merge] and add your code to the latest code.
+    - A pull is the exact opposite of a [push](#push). It will take the currennt version of the code directly from github and sync it locally to your device/coding app. This is also essential as it allows you to get the teams latest version of code. This is helpful when multiple people are working on code all at once. If you are [pushing](#push) sometimes it will ask you to merge[^merge] your current code, this means you dont have the latest version, not to worry though as if you say yes github will automatically merge[^merge] and add your code to the latest code. The pull button is an arrow pointing in, or towards your computer. ![pulla][pull]
   
 [Go to top](#top)
 ### Managing your server <a name="manage"><a/>
-Managing a server is really not that hard if you do it correctly from the start. There is a settings button in your repository[^repo], in this tab you will find a bunch of options, it is better if you don't mess with anything that you don't know what it does. In the collaborator tab you will need to add @stcline (if you are a part of WHS). Other than that there are really no settings you need to mess with except maybe email notifications if you would like that.
+Managing a server is really not that hard if you do it correctly from the start. There is a settings ![settingsa][setting] button in your repository[^repo], in this tab you will find a bunch of options, it is better if you don't mess with anything that you don't know what it does. In the collaborator tab you will need to add @stcline (if you are a part of WHS). Other than that there are really no settings you need to mess with except maybe email notifications if you would like that.
   
 [Go to top](#top)
 ## Coding <a name="code"><a/>
@@ -102,5 +102,6 @@ Managing a server is really not that hard if you do it correctly from the start.
 [push]: push.png
 [pull]: pull.png
 [run]: run.png
+[setting]: settings.png
   
 [Go to top](#top)
