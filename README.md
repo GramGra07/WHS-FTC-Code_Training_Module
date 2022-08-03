@@ -267,7 +267,7 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [Go to top](#top)
 ## Agknowledgements <a name="agk"><a/>
 - Google
-- Mr Cline
+- [Mr Cline][clineuser]
 - [FTC][ftcpage]
 - [Rev Robotics][rev]
 - Android Studio
@@ -290,6 +290,7 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
 [rev]: https://www.revrobotics.com/
+[clineuser]: https://github.com/stcline
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
