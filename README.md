@@ -18,8 +18,10 @@
   - [Autonomous](#auto)
   - [Functions](#func)
 - [Running your code](#run)
+  - [Errors and solutions](#es)
 - [Updating your devices](#update)
 - [Feedback](#fb)
+- [Agknowledgements](#agk)
 - [Glossary](#gloss)
 - - - - - - - - - 
 ## Useful Links <a name="link"><a/>
@@ -83,11 +85,17 @@ Managing a server is really not that hard if you do it correctly from the start.
 ## Running your code <a name="run"><a/>
   
 [Go to top](#top)  
+### Common errors and solutions <a name="es"><a/>
+  
+[Go to top](#top)
 ## Updating your devices <a name="update"><a/>
 
 [Go to top](#top)
 ## Feedback <a name="fb"><a/>
 I would love to have feedback on this repository. You can contact me at graymgray07@gmail.com. Thanks!
+
+[Go to top](#top)
+## Agknowledgements <a name="agk"><a/>
 
 [Go to top](#top)
 ## Glossary <a name="gloss"><a/>
