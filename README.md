@@ -47,7 +47,7 @@ Android Studio:
 Tap ![fila][file], then ![newa][new] , ![vcsa][vcs]. Go back to your repository[^repo] and copy the url, paste it into the box and make sure the destination is desktop. You might need to have an [access token](#atl) to do this.
   
 Github:
-Navigate to the repository you want to clone. Tap ![codea][code] then select ![zipa][zip]. This will download it to your computer. Open the zip file and go back to Android Studio. 
+Navigate to the repository you want to clone. Tap ![codea][code] then select ![zipa][zip]. This will download it to your computer. Extract the zip file (double click) and move it to desktop. Then, go back to Android Studio. Tap ![filea][file] then ![opena][open] and select the path where the folder is (desktop).
   
 [Go to top](#top)
 ## Github basics <a name="basics"><a/>
