@@ -23,7 +23,7 @@
 
 ## Getting started <a name="gs1"><a/>
 ### Forking <a name="Forking"><a/>
-Go to this [website](https://github.com/FIRST-Tech-Challenge) and find the latest repository from the company.
+Go to this [website][ftcpage] and find the latest repository from the company.
 ## Cloning in terminal <a name="clone"><a/>
 ## Github basics <a name="basics"><a/>
 ### Commits <a name="commit"><a/>
@@ -46,3 +46,9 @@ Commiting is an essential part in every part of coding while connected to github
 ### Functions <a name="func"><a/>
 ## Running your code <a name="run"><a/>
 ## Updating your devices <a name="update"><a/>
+
+
+
+
+
+[ftcpage]: https://github.com/FIRST-Tech-Challenge
