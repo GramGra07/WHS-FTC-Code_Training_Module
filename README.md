@@ -86,6 +86,10 @@ Managing a server is really not that hard if you do it correctly from the start.
 ## Updating your devices <a name="update"><a/>
 
 [Go to top](#top)
+## Feedback <a name="fb"><a/>
+I would love to have feedback on this repository. You can contact me at graymgray07@gmail.com. Thanks!
+
+[Go to top](#top)
 ## Glossary <a name="gloss"><a/>
 [^ftc]: First Tech Challenge
 [^repo]: A repository is a folder hosted on github that contains code and items.
@@ -93,8 +97,8 @@ Managing a server is really not that hard if you do it correctly from the start.
 [^teleop]: A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is on the right side of the phone when selecting an opmode.
 [^auto]: A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
 
-## Feedback <a name="fb"><a/>
-I would love to have feedback on this repository. You can contact me at graymgray07@gmail.com. Thanks!
+  
+  
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
 [user]: https://github.com/GramGra07
