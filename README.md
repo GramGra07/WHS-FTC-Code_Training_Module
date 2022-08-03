@@ -227,16 +227,20 @@ Hint2: Int() puts the string into int form [^ape]
   
 [Go to top](#top)
 ## Running your code <a name="run"><a/>
+To put the code onto your robot, you will plug in the RC[^rc] phone or the control hub to your computer and press the ![runa][run] button. It will take a bit to load and once it finishes, you can disconnect and then go to your DS[^ds] phone and select your opmode, then select the run button once, tap it again and your code will run.
   
 [Go to top](#top)  
 ### Common errors and solutions <a name="es"><a/>
+To be filled in as problems occur.  
   
 [Go to top](#top)
 ## Updating your devices <a name="update"><a/>
-
+Go to this [website][rhc]. It will take you to rev hardware client. Once you download the app you will be able to connect the DS[^ds] phone[^ape2] or the Control Hub and it will show you your possible updates, take them all and you are good to go!
+  
 [Go to top](#top)
 ## Overall Game <a name="game"><a/>
-
+The game begins with a 30 second [autonomous](#auto) period, runtime helps us achieve this, and then a 2:30 minute [TeleOp](#op) period, the goal is to score as many points as possible.
+  
 [Go to top](#top)
 ## Feedback <a name="fb"><a/>
 I would love to have feedback on this repository. You can contact me at graymgray07@gmail.com. Thanks!
@@ -257,7 +261,9 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [^teleop]: A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is on the right side of the phone when selecting an opmode.
 [^auto]: A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
 [^ape]: My apoligies if this doesn't work, some code software allows this exact code, some doesn't.
-
+[^ape2]: Some devices accept this.
+[^ds]: Driver Station
+[^rc]: Robot Controller
   
   
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
