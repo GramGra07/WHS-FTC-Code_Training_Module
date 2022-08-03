@@ -68,6 +68,9 @@ The java coding language that we use is not incredibly hard to learn once you fi
 
 [Go to top](#top)
 ### Getting started <a name="gs"><a/>
+- Gemeral Knowledge
+  - ```;``` must be at the end of every line except if it ends in ```{``` or ```}```
+  - ```{``` is used to begin the code for the function, ```}``` ends the function
 ### Setting up your files <a name="su"><a/>
 Refer to the blank examples [TeleOp][beTele] and [Auto][beAuto]. These both have the proper setup and code to get started coding both of these modes. I will get into more detail into what everything means in [TeleOp](#op) and [auto](#auto).
 
@@ -98,7 +101,7 @@ Float is most commonly used to store color values
 Strings are used to store common strings or text values like a status of initialization
 
 - When to use public vs. private variables?
-  -You generally want to always use public unless it is something that you don't want to share with other opmodes, like a runtime.
+  - You generally want to always use public unless it is something that you don't want to share with other opmodes, like a runtime.
   
 [Go to top](#top)
 ### TeleOp[^teleop] <a name="op"><a/>
@@ -134,13 +137,92 @@ Next we have our ``` HardwarePushbot robot = new HardwarePushbot(); ``` and ```p
   
 Next we have the function ```public void runOpMode(){``` this runs when you press Init it will run that part. Remember, when you hit Init, it is not running the whole program yet, just the small part in between runOpMode and opModeIsActive.
   
-
+Now we will run ```runtime.reset();``` and ```getRuntime()```, these are required in order for your runtime to be correct.
+  
+```waitForStart();``` tells the opmode to wait until the user presses go, when this happens, everything inside this function runs.
+  
+```telemetry.addData("Time:", String.valueOf(runtime));```, telemetry is your equivalent of printing data in python and other languages, using this will print onto your phone, "Time: 60(or what the time is).
   
 [Go to top](#top)
 ### Autonomous[^auto] <a name="auto"><a/>
+In the [Blank Autonomous Example][beAuto] you will find 18 lines.
+```
+//imports
+@Autonomous(name="exampleAutoBlank", group="Autonomous")
+//@Disabled
+public class exampleAutoBlank extends exampleTeleOpBlank {  //your doc name *extends* your main code branch
+    private ElapsedTime   runtime = new ElapsedTime();
+    @Override
+    public void runOpMode(){
+        runtime.reset();
+        getRuntime();
+        waitForStart();
+        //actual code
+        while (getRuntime()<=30) {
+            getRuntime();
+            telemetry.addData(String.valueOf(runtime), "Working");
+        }
+    }
+}
+```
+Imports are how you get the references and all the different pieces to the code.
   
+Next we have ```@TeleOp(name="exampleAutoBlank",group="Autonomous")```, this means that this opmode is being classified under the autonomous section, with the name "exampleAutoBlank" and it is being placed in the autonomous group
+  
+Now we have the ```public class exampleAutoBlank extends exampleTeleOpBlank{``` this means that this opmode can now be used as a secondary opmode. In this case the file is extending the exampleTeleOpBlank file.
+  
+Now we don`t have to use ``` HardwarePushbot robot = new HardwarePushbot(); ``` because it has been shared through extension but we have to do ```private ElapsedTime   runtime = new ElapsedTime();``` because it is private.
+  
+Next we have the function ```public void runOpMode(){``` this runs when you press Init it will run that part. Remember, when you hit Init, it is not running the whole program yet, just the small part in between runOpMode and opModeIsActive.
+  
+Now we will run ```runtime.reset();``` and ```getRuntime()```, these are required in order for your runtime to be correct.
+  
+```waitForStart();``` tells the opmode to wait until the user presses go, when this happens, everything inside this function runs.
+  
+```while (getRuntime()<=30) {
+       getRuntime();
+       telemetry.addData(String.valueOf(runtime), "Working");
+  }
+  ```
+  
+This gets the runtime, checks it and if it is less than or equal to 30 seconds, it keeps running. If it is over or equal to 30, it stops.
+
 [Go to top](#top)
-### Functions <a name="func"><a/>
+### Functions <a name="func"><a/> [^ape]
+- What is the format?
+ ``` 
+  public void imaginaryFunction(){
+    //code
+  }
+  ```
+- What about parameters?  
+ ```
+  public void imaginaryFunction2(int hi, boolean hello){
+    if (hello == true){
+      //do something
+      int hi+=1;
+    }
+  }
+  ```
+- What about calling a function?
+```
+  imaginaryFunction(6,false);
+```
+- Returning values?
+```
+    public int imaginaryFunction3(int hi, boolean hello){
+    if (hello == true){
+      //do something
+      int hi+=1;
+      return hi;
+    }
+  }
+```
+You will see that this is saying public int, you use void if you are returning nothing, and the [proper variable type](#var) if you are returning something. This would be called as, ```telemetry.addData("Number",String(imaginaryFunction3(9,true)))``` [^ape]
+
+Hint: String puts the value into string form [^ape]
+Hint2: Int() puts the string into int form [^ape]
+
   
 [Go to top](#top)
 ## Running your code <a name="run"><a/>
@@ -160,7 +242,12 @@ I would love to have feedback on this repository. You can contact me at graymgra
 
 [Go to top](#top)
 ## Agknowledgements <a name="agk"><a/>
-
+- Google
+- Mr Cline
+- [FTC][ftcpage]
+- [Rev Robotics][rev]
+- Android Studio
+  
 [Go to top](#top)
 ## Glossary <a name="gloss"><a/>
 [^ftc]: First Tech Challenge
@@ -168,6 +255,7 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [^merge]: Push and pull at the same time using github  
 [^teleop]: A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is on the right side of the phone when selecting an opmode.
 [^auto]: A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
+[^ape]: My apoligies if this doesn't work, some code software allows this exact code, some doesn't.
 
   
   
@@ -175,7 +263,8 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
-
+[rev]: https://www.revrobotics.com/
+  
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
 [commit]: /images/commit.png
