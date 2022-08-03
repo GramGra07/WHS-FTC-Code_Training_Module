@@ -98,6 +98,34 @@ Strings are used to store common strings or text values like a status of initial
 
 [Go to top](#top)
 ### TeleOp[^teleop] <a name="op"><a/>
+In the [blank TeleOp Example][beTele] you will find that there are 20 lines
+```
+//imports
+@TeleOp(name="exampleTeleOpBlank",group="Pushbot")
+//@Disabled
+public class exampleTeleOpBlank extends LinearOpMode {
+    HardwarePushbot robot = new HardwarePushbot();
+    private ElapsedTime   runtime = new ElapsedTime();
+    @Override
+    public void runOpMode(){
+        run_time();
+        waitForStart();
+        while (opModeIsActive()){
+            getRuntime();
+            telemetry.addData("Time:", String.valueOf(runtime));
+        }
+    }
+    public void run_time(){
+        runtime.reset();
+        getRuntime();
+    }
+}
+  ```
+First, comments are indicated by //
+  
+Imports are how you get the references and all the different pieces to the code.
+  
+Next we have ```@TeleOp(name="exampleTeleOpBlank",group="Pushbot")```, this 
   
 [Go to top](#top)
 ### Autonomous[^auto] <a name="auto"><a/>
