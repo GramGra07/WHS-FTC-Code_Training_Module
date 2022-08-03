@@ -221,6 +221,7 @@ This gets the runtime, checks it and if it is less than or equal to 30 seconds, 
 You will see that this is saying public int, you use void if you are returning nothing, and the [proper variable type](#var) if you are returning something. This would be called as, ```telemetry.addData("Number",String(imaginaryFunction3(9,true)))``` [^ape]
 
 Hint: String puts the value into string form [^ape]
+  
 Hint2: Int() puts the string into int form [^ape]
 
   
