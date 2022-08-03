@@ -31,6 +31,7 @@
 - FTC[^ftc] Official Github [user page][ftcpage]
 - Team Resources [folder][team]
 - [Rev Hardware Client][rhc]
+- [FTC BasicOpModeLinear (2022)][lop]
 - - - - - 
 ## Getting started <a name="gs1"><a/>
 In order to setup your repository[^repo] correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository[^repo] to your github account and then put that repository[^repo] local on your computer.
@@ -124,6 +125,7 @@ Strings are used to store common strings or text values like a status of initial
   
 [Go to top](#top)
 ### TeleOp[^teleop] <a name="op"><a/>
+Here is the [FTC BasicOpMode (2022)][lop] it uses 2 motors.
 In the [blank TeleOp Example][beTele] you will find that there are 20 lines
 ```
 //imports
@@ -268,7 +270,7 @@ I would love to have feedback on this repository. You can contact me at graymgra
 ## Agknowledgements <a name="agk"><a/>
 - [Google][ggl]
 - [Mr Cline][clineuser]
-- [FTC][ftcpage]
+- [FTC User Page][ftcpage]
 - [Rev Robotics][rev]
 - [Android Studio][aslink]
   
@@ -293,6 +295,7 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [clineuser]: https://github.com/stcline
 [aslink]: https://developer.android.com/studio
 [ggl]: https://www.google.com/
+[lop]: https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.java
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
