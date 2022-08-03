@@ -19,8 +19,8 @@
   - [Functions](#func)
 - [Running your code](#run)
 - [Updating your devices](#update)
-- [Glossary](#gloss)
 - [Feedback](#fb)
+- [Glossary](#gloss)
 - - - - - - - - - 
 ## Useful Links <a name="link"><a/>
 - My [user page][user] (GramGra07)
