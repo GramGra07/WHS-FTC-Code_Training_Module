@@ -266,11 +266,11 @@ I would love to have feedback on this repository. You can contact me at graymgra
 
 [Go to top](#top)
 ## Agknowledgements <a name="agk"><a/>
-- Google
+- [Google][ggl]
 - [Mr Cline][clineuser]
 - [FTC][ftcpage]
 - [Rev Robotics][rev]
-- Android Studio
+- [Android Studio][aslink]
   
 [Go to top](#top)
 ## Glossary <a name="gloss"><a/>
@@ -291,6 +291,8 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
 [rev]: https://www.revrobotics.com/
 [clineuser]: https://github.com/stcline
+[aslink]: https://developer.android.com/studio
+[ggl]: https://www.google.com/
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
