@@ -35,13 +35,14 @@ In order to setup your repository[^repo] correctly you will do 2 things. 1. [For
   
 [Go to top](#top)
 ### Forking <a name="Forking"><a/>
-Go to this [website][ftcpage] and find the latest repository[^repo] from the company. Press the ![fork button][fork] button.
+Go to this [website][ftcpage] and find the latest repository[^repo] from the company. Press the ![fork button][fork] button. This will "copy" the repository onto your github account.
   
 [Go to top](#top)
 ## Cloning in terminal <a name="clone"><a/>
   
 [Go to top](#top)
 ## Github basics <a name="basics"><a/>
+Github is organized in a few sections. One,the code section, this is where your code and files are stored. Your repositories, where all of your code is stored and your profile, where all of your repositories are stored.
 ### Commits <a name="commit"><a/>
   
 Commiting is an essential part in every part of coding while connected to github, it makes sure you have the latest edited version of your code local    on your computer, we got the code local to the computer in [cloning](#clone). In a github file it is a green rectangular button at the bottom of the    file that says commit changes, ![gitCommita][gitcommit] when commiting directly from github it strictly gives the code to github, you will not have the code local yet. To make your code local you will need to [pull](#pull) in your code app, most likely android studio. In android studio, the commit button is a check mark in your top right corner.![commita][commit] You are also allowed to commit and push, to be explained later in [push](#push).
@@ -62,16 +63,37 @@ Managing a server is really not that hard if you do it correctly from the start.
   
 [Go to top](#top)
 ## Coding <a name="code"><a/>
-  
+The java coding language that we use is not incredibly hard to learn once you figure it all out.
+
 [Go to top](#top)
 ### Getting started <a name="gs"><a/>
   
 [Go to top](#top)
 ### Setting up your files <a name="su"><a/>
-  
+Refer to the blank examples [TeleOp][beTele] and [Auto][beAuto]. These both have the proper setup and code to get started coding both of these modes. I will get into more detail into what everything means in [TeleOp](#op) and [auto](#auto).
+
 [Go to top](#top)
 ### Using variables <a name="var"><a/>
-  
+Variables in java consist of:
+```
+boolean
+int
+double
+float
+String
+```
+Boolean = True or False
+Int = Integer, a whole number
+Double = Floating point number
+Float = Decimal (up to 7 digits)
+String = Text value
+
+Boolean is used to determine whether a value is true or not, an on/off switch
+Int is used for a constant value like your team number, a certain value to multiple etc.
+Double is used for your motors, this is the best method because it supports all numbers so you can use it for storing gamepad inputs.
+Float is most commonly used to store color values
+Strings are used to store common strings or text values like a status of initialization
+
 [Go to top](#top)
 ### TeleOp[^teleop] <a name="op"><a/>
   
@@ -119,3 +141,7 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [pull]: /images/pull.png
 [run]: /images/run.png
 [setting]: /images/settings.png
+[beTele]: /examples/exampleTeleOpBlank
+[feTele]: /examples/exampleTeleOpFull
+[beAuto]: /examples/exampleAutoBlank.java
+[feAuto]: /examples/exampleAutoFull.java
