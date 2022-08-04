@@ -32,6 +32,9 @@
 - Team Resources [folder][team]
 - [Rev Hardware Client][rhc]
 - [FTC BasicOpModeLinear (21-22)][lop]
+- [Game Format](#game)
+- [Game Manual 0][gm0]
+- [FTC Resource Library][lib]
 - - - - - 
 ## Getting started <a name="gs1"><a/>
 In order to setup your repository[^repo] correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository[^repo] to your github account and then put that repository[^repo] local on your computer.
@@ -218,7 +221,7 @@ This gets the runtime, checks it and if it is less than or equal to 30 seconds, 
   ```
 - What about parameters?  
  ```
-  public void imaginaryFunction2(int hi, boolean hello){
+ public void imaginaryFunction2(int hi, boolean hello){
     if (hello == true){
       //do something
       int hi+=1;
@@ -231,7 +234,7 @@ This gets the runtime, checks it and if it is less than or equal to 30 seconds, 
 ```
 - Returning values?
 ```
-    public int imaginaryFunction3(int hi, boolean hello){
+ public int imaginaryFunction3(int hi, boolean hello){
     if (hello == true){
       //do something
       int hi+=1;
@@ -303,6 +306,8 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [cuser]: https://github.com/ctimmons25
 [juser]: https://github.com/JohnMayfield
 [buser]: https://github.com/sangerb19
+[gm0]: https://gm0.org/en/latest/
+[lib]: https://www.firstinspires.org/resource-library/ftc/game-and-season-info
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
