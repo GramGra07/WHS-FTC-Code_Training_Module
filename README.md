@@ -270,10 +270,13 @@ I would love to have feedback on this repository. You can contact me at graymgra
 ## Agknowledgements <a name="agk"><a/>
 - [Google][ggl]
 - [Mr Cline][clineuser]
+- [Mr Mayfield][juser]
 - [FTC User Page][ftcpage]
 - [Rev Robotics][rev]
 - [Android Studio][aslink]
-- Camden Timmons (Made sure it looked good)
+#### Proofreaders
+- [Sir C Timmons][cuser]
+- [Sir B Sanger][buser]
   
 [Go to top](#top)
 ## Glossary <a name="gloss"><a/>
@@ -297,6 +300,9 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [aslink]: https://developer.android.com/studio
 [ggl]: https://www.google.com/
 [lop]: https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.java
+[cuser]: https://github.com/ctimmons25
+[juser]: https://github.com/JohnMayfield
+[buser]: https://github.com/sangerb19
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
