@@ -37,11 +37,11 @@
 - [FTC Resource Library][lib]
 - - - - - 
 ## Getting started <a name="gs1"><a/>
-In order to setup your repository[^repo] correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository[^repo] to your github account and then put that repository[^repo] local on your computer.
+In order to setup your repository[^repo] correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository[^repo] to your github account and then put that repository[^repo] local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
   
 [Go to top](#top)
 ### Forking <a name="Forking"><a/>
-Go to this [website][ftcpage] and find the latest repository[^repo] from the company. Press the ![fork button][fork] button. This will "copy" the repository onto your github account.
+Go to this [website][ftcpage] and find the latest repository[^repo] from the company. Press the ![fork button][fork] button. This will "copy" the repository onto your github account. Remember **only one person will need to fork the repo**!
   
 [Go to top](#top)
 ## Cloning the repository <a name="clone"><a/>
