@@ -46,6 +46,7 @@ Go to this [website][ftcpage] and find the latest repository[^repo] from the com
 [Go to top](#top)
 ## Cloning the repository <a name="clone"><a/>
 To clone the repository, first find it on your github profile. You have 2 options on what to do you can do it through android studio or through github.
+**Everyone will need to do this!!**
 
 Android Studio:
 Tap ![fila][file], then ![newa][new] , ![vcsa][vcs]. Go back to your repository[^repo] and copy the url, paste it into the box and make sure the destination is desktop. You might need to have an [access token](#atl) to do this.
