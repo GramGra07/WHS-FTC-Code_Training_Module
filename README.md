@@ -4,7 +4,7 @@
 - [Links](#link)
 - [Getting Started](#gs1)
   - [Forking](#Forking)
-- [Cloning the repository](#clone)
+  - [Cloning the repository](#clone)
 - [Github Basics](#basics)
   - [Commits](#commit)
   - [Push](#push)
@@ -44,7 +44,7 @@ In order to setup your repository[^repo] correctly you will do 2 things. 1. [For
 Go to this [website][ftcpage] and find the latest repository[^repo] from the company. Press the ![fork button][fork] button. This will "copy" the repository onto your github account. Remember **only one person will need to fork the repo**!
   
 [Go to top](#top)
-## Cloning the repository <a name="clone"><a/>
+### Cloning the repository <a name="clone"><a/>
 To clone the repository, first find it on your github profile. You have 2 options on what to do you can do it through android studio or through github.
 **Everyone will need to do this!!**
 
