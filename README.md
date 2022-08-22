@@ -49,7 +49,7 @@
 - All of the example opModes have very helpful comments to show you exactly what each part does, also if you read this whole thing you should be good to go
 ### 5. Collaborate
 - A lot of problems can be solved by collaboration with friends and peers
-### 5. Use prior knowledge
+### 6. Use prior knowledge
 - Even if your prior knowledge is in a different language, it **will** help you understand this code.
 - - - - - - - -
 ## Getting started <a name="gs1"><a/>
