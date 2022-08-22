@@ -2,6 +2,7 @@
 ### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc[^ftc] programming
 # Table of Contents
 - [Links](#link)
+- [Tips and Hints](#hint)
 - [Getting Started](#gs1)
   - [Forking](#Forking)
   - [Cloning the repository](#clone)
@@ -17,6 +18,7 @@
   - [Using Variables](#var)
   - [TeleOp](#op)
   - [Autonomous](#auto)
+  - [Editing your code](#edit)
   - [Functions](#func)
 - [Running your code](#run)
   - [Errors and solutions](#es)
@@ -36,6 +38,20 @@
 - [Game Manual 0][gm0]
 - [FTC Resource Library][lib]
 - - - - - 
+## Tips and Hints <a name="hint"><a/>
+### 1. PRACTICE!!
+- It is known that if you practice somthing, you will get better at it over time, this is the same for coding and robotics
+### 2. Ask Questions
+- The WHS team has a lot of intellegent people who would love to help you if you simply ask
+### 3. If you don't know a concept, look it up
+- There are a lot of helpful solutions and people on the internet, someone **WILL** usually know the answer to your problem
+### 4. READ
+- All of the example opModes have very helpful comments to show you exactly what each part does, also if you read this whole thing you should be good to go
+### 5. Collaborate
+- A lot of problems can be solved by collaboration with friends and peers
+### 5. Use prior knowledge
+- Even if your prior knowledge is in a different language, it **will** help you understand this code.
+- - - - - - - -
 ## Getting started <a name="gs1"><a/>
 In order to setup your repository[^repo] correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository[^repo] to your github account and then put that repository[^repo] local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
   
@@ -88,9 +104,10 @@ In github, tap on your profile ( top right corner ), then:
   
 [Go to top](#top)
 ## Coding <a name="code"><a/>
-The java coding language that we use is not incredibly hard to learn once you figure it all out.
+The java coding language that we use is not incredibly hard to learn once you figure it all out. It follows all of the coding fundamentals you may already know.
 
 [Go to top](#top)
+# **IMPORTANT** when editing your code, only edit it in the **teamcode** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
 ### Getting started <a name="gs"><a/>
 - Gemeral Knowledge
   - ```;``` must be at the end of every line except if it ends in ```{``` or ```}```
@@ -213,6 +230,9 @@ Now we will run ```runtime.reset();``` and ```getRuntime()```, these are require
 This gets the runtime, checks it and if it is less than or equal to 30 seconds, it keeps running. If it is over or equal to 30, it stops.
 
 [Go to top](#top)
+### Editing your code <a name="edit"><a/>
+One major part is editing your code, to do this you will open your project in android studio, then tap FTC Robot Controller/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples to get to the samples, you will need to find the teamcode part to edit your code correctly.
+
 ### Functions <a name="func"><a/> [^ape]
 - What is the format?
  ``` 
