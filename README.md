@@ -115,10 +115,13 @@ The java coding language that we use is not incredibly hard to learn once you fi
 Go through this section if you have no expirence coding, if you are expirenced, [skip](#gs).
 ### What is a... <a name="whatis"><a/>
 - Variable
+  A variable is a holder of a value, these values can be anything, as explained in [Using Variables](#Using Variables). You can use these to store values such as an on off switch, or a progress update, you can also use this as a place to store the power for motors. You will also declare your motors and servos as variables.
 - Function
+  Functions are statements to make the code run one part when you "call" the function. It is like calling a whole new section of the code. This is useful to have the code execute specific instructions. This is useful to tell the code to update something or to set a value to a variable. You can also set parameters that are localized variables. A local variable can only be used in that function.
 - If statement
 - Syntax
-- 
+- Print/telemetry statement
+- Loops
 
 ### Getting started <a name="gs"><a/>
 - General Knowledge
