@@ -117,6 +117,8 @@ Go through this section if you have no expirence coding, if you are expirenced, 
 - Variable
 - Function
 - If statement
+- Syntax
+- 
 
 ### Getting started <a name="gs"><a/>
 - General Knowledge
