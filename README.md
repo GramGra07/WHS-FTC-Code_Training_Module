@@ -16,12 +16,12 @@
 - [Coding](#code)
   - [Code Basics](#cbasics)
     - [What is a...](#whatis)
-      - Variables
-      - Functions
-      - If Statements
-      - Syntax
-      - Print/Telemetry Systems
-      - Loops
+      - Variable
+      - Function
+      - If Statement
+      - Print/Telemetry System
+      - Loop
+      - Import
   - [Getting Started](#gs)
   - [Setting up your files](#su)
   - [Using Variables](#var)
@@ -121,13 +121,19 @@ The java coding language that we use is not incredibly hard to learn once you fi
 Go through this section if you have no expirence coding, if you are expirenced, [skip](#gs).
 ### What is a... <a name="whatis"><a/>
 - Variable
-  A variable is a holder of a value, these values can be anything, as explained in [Using Variables](#Using Variables). You can use these to store values such as an on off switch, or a progress update, you can also use this as a place to store the power for motors. You will also declare your motors and servos as variables.
+  
+  A variable is a holder of a value, these values can be anything, as explained in [Using Variables](#Using Variables). You can use these to store values such as an on off switch, or a progress update, you can also use this as a place to store the power for motors. You will also declare your motors and servos as variables. A local variable can only be used where it was defined or set. A global variable can be used wherever. FTC doccumentation also lets us use some of their universal variables such as DcMotors and Servos, these are all imported by import statements at the begining of your code.
 - Function
-  Functions are statements to make the code run one part when you "call" the function. It is like calling a whole new section of the code. This is useful to have the code execute specific instructions. This is useful to tell the code to update something or to set a value to a variable. You can also set parameters that are localized variables. A local variable can only be used in that function.
+  
+  Functions are statements to make the code run one part when you "call" the function. It is like calling a whole new section of the code. This is useful to have the code execute specific instructions. This is useful to tell the code to update something or to set a value to a variable. You can also set parameters that are localized variables. A local variable can only be used in that function. Parameters are very useful to help us define and change local variables inside of of the function.
 - If statement
-- Syntax
+  
 - Print/telemetry statement
+  
 - Loops
+  
+- Imports
+  
 
 ### Getting started <a name="gs"><a/>
 - General Knowledge
