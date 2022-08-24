@@ -127,10 +127,13 @@ Go through this section if you have no expirence coding, if you are expirenced, 
   
   Functions are statements to make the code run one part when you "call" the function. It is like calling a whole new section of the code. This is useful to have the code execute specific instructions. This is useful to tell the code to update something or to set a value to a variable. You can also set parameters that are localized variables. A local variable can only be used in that function. Parameters are very useful to help us define and change local variables inside of of the function.
 - If statement
+  An if statement is simply ```if (condition) { (do something) }```. Your condition can be if a variable is equal to (==), not equal to (!=) another variable or value or to check if a boolean is True or False.
   
 - Print/telemetry statement
   
+  
 - Loops
+  
   
 - Imports
   
