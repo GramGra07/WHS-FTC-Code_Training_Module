@@ -14,6 +14,8 @@
   - [Managing your server](#manage)
   - [Personal Access Token](#atl)
 - [Coding](#code)
+  - [Code Basics](#cbasics)
+    - [What is a...](#whatis)
   - [Getting Started](#gs)
   - [Setting up your files](#su)
   - [Using Variables](#var)
@@ -109,8 +111,15 @@ The java coding language that we use is not incredibly hard to learn once you fi
 
 [Go to top](#top)
 # **IMPORTANT** when editing your code, only edit it in the **teamcode** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
+### Coding Basics <a name="cbasics"><a/>
+Go through this section if you have no expirence coding, if you are expirenced, [skip](#gs).
+### What is a... <a name="whatis"><a/>
+- Variable
+- Function
+- If statement
+
 ### Getting started <a name="gs"><a/>
-- Gemeral Knowledge
+- General Knowledge
   - ```;``` must be at the end of every line except if it ends in ```{``` or ```}```
   - ```{``` is used to begin the code for the function, ```}``` ends the function
 ### Setting up your files <a name="su"><a/>
