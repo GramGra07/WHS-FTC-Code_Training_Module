@@ -16,6 +16,12 @@
 - [Coding](#code)
   - [Code Basics](#cbasics)
     - [What is a...](#whatis)
+      - Variables
+      - Functions
+      - If Statements
+      - Syntax
+      - Print/Telemetry Systems
+      - Loops
   - [Getting Started](#gs)
   - [Setting up your files](#su)
   - [Using Variables](#var)
