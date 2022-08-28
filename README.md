@@ -387,4 +387,4 @@ I would love to have feedback on this repository. You can contact me at graymgra
 [file]: /images/file.png
 [open]: /images/open.png
 [new]: /images/new.png  
-[import]: /examples/import.java
+[import]: /examples/import
