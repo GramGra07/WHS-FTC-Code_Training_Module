@@ -1,6 +1,6 @@
 # WHS-FTC-GramGra07-Code_Training_Mod <a name="top"><a/>
 ### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc[^ftc] programming
-### If you have questions, email me at graymgray07@gmail.com or start a new discussion in this repository
+### If you have questions, email me at graymgray07@gmail.com
 # Table of Contents
 - [Links](#link)
 - [Tips and Hints](#hint)
