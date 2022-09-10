@@ -1,5 +1,5 @@
 # WHS-FTC-GramGra07-Code_Training_Mod <a name="top"><a/>
-### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc[^ftc] programming
+### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc programming
 ### If you have questions, email me at graymgray07@gmail.com
 # Table of Contents
 - [Links](#link)
@@ -39,7 +39,7 @@
 - - - - - - - - - 
 ## Useful Links <a name="link"><a/>
 - My [user page][user] (GramGra07)
-- FTC[^ftc] Official Github [user page][ftcpage]
+- FTC Official Github [user page][ftcpage]
 - Team Resources [folder][team]
 - [Rev Hardware Client][rhc]
 - [FTC BasicOpModeLinear (21-22)][lop]
@@ -62,11 +62,11 @@
 - Even if your prior knowledge is in a different language, it **will** help you understand this code.
 - - - - - - - -
 ## Getting started <a name="gs1"><a/>
-In order to setup your repository[^repo] correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository[^repo] to your github account and then put that repository[^repo] local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
+In order to setup your repository correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
   
 [Go to top](#top)
 ### Forking <a name="Forking"><a/>
-Go to this [website][ftcpage] and find the latest repository[^repo] from the company. Press the ![fork button][fork] button. This will "copy" the repository onto your github account. Remember **only one person will need to fork the repo**!
+Go to this [website][ftcpage] and find the latest repository from the company. Press the ![fork button][fork] button. This will "copy" the repository onto your github account. Remember **only one person will need to fork the repo**!
   
 [Go to top](#top)
 ### Cloning the repository <a name="clone"><a/>
@@ -74,7 +74,7 @@ To clone the repository, first find it on your github profile. You have 2 option
 **Everyone will need to do this!!**
 
 Android Studio:
-Tap ![fila][file], then ![newa][new] , ![vcsa][vcs]. Go back to your repository[^repo] and copy the url, paste it into the box and make sure the destination is desktop. You might need to have an [access token](#atl) to do this.
+Tap ![fila][file], then ![newa][new] , ![vcsa][vcs]. Go back to your repository and copy the url, paste it into the box and make sure the destination is desktop. You might need to have an [access token](#atl) to do this.
   
 Github:
 Navigate to the repository you want to clone. Tap ![codea][code] then select ![zipa][zip]. This will download it to your computer. Extract the zip file (double click) and move it to desktop. Then, go back to Android Studio. Tap ![filea][file] then ![opena][open] and select the path where the folder is (desktop).
@@ -94,11 +94,11 @@ Commiting is an essential part in every part of coding while connected to github
 [Go to top](#top)
 ### Pull/merge <a name="pull"><a/>
  - What is a pull?
-    - A pull is the exact opposite of a [push](#push). It will take the currennt version of the code directly from github and sync it locally to your device/coding app. This is also essential as it allows you to get the teams latest version of code. This is helpful when multiple people are working on code all at once. If you are [pushing](#push) sometimes it will ask you to merge[^merge] your current code, this means you dont have the latest version, not to worry though as if you say yes github will automatically merge[^merge] and add your code to the latest code. The pull button is an arrow pointing in, or towards your computer. ![pulla][pull]
+    - A pull is the exact opposite of a [push](#push). It will take the currennt version of the code directly from github and sync it locally to your device/coding app. This is also essential as it allows you to get the teams latest version of code. This is helpful when multiple people are working on code all at once. If you are [pushing](#push) sometimes it will ask you to merge your current code, this means you dont have the latest version, not to worry though as if you say yes github will automatically merge and add your code to the latest code. The pull button is an arrow pointing in, or towards your computer. ![pulla][pull]
   
 [Go to top](#top)
 ### Managing your server <a name="manage"><a/>
-Managing a server is really not that hard if you do it correctly from the start. There is a settings ![settingsa][setting] button in your repository[^repo], in this tab you will find a bunch of options, it is better if you don't mess with anything that you don't know what it does. In the collaborator tab you will need to add @stcline (if you are a part of WHS). Other than that there are really no settings you need to mess with except maybe email notifications if you would like that.
+Managing a server is really not that hard if you do it correctly from the start. There is a settings ![settingsa][setting] button in your repository, in this tab you will find a bunch of options, it is better if you don't mess with anything that you don't know what it does. In the collaborator tab you will need to add @stcline (if you are a part of WHS). Other than that there are really no settings you need to mess with except maybe email notifications if you would like that.
   
 [Go to top](#top)
 ### Personal Access Token <a name="atl"><a/>
@@ -178,7 +178,7 @@ Strings are used to store common strings or text values like a status of initial
   - You generally want to always use public unless it is something that you don't want to share with other opmodes, like a runtime.
   
 [Go to top](#top)
-### TeleOp[^teleop] <a name="op"><a/>
+### TeleOp <a name="op"><a/>
 Here is the [FTC BasicOpMode (21-22)][lop] it uses 2 motors.
 In the [blank TeleOp Example][beTele] you will find that there are 20 lines
 ```
@@ -219,7 +219,7 @@ Now we will run ```runtime.reset();``` and ```getRuntime()```, these are require
 ```telemetry.addData("Time:", String.valueOf(runtime));```, telemetry is your equivalent of printing data in python and other languages, using this will print onto your phone, "Time: 60(or what the time is).
   
 [Go to top](#top)
-### Autonomous[^auto] <a name="auto"><a/>
+### Autonomous <a name="auto"><a/>
 In the [Blank Autonomous Example][beAuto] you will find 18 lines.
 ```
 //imports
@@ -266,7 +266,7 @@ This gets the runtime, checks it and if it is less than or equal to 30 seconds, 
 ### Editing your code <a name="edit"><a/>
 One major part is editing your code, to do this you will open your project in android studio, then tap FTC Robot Controller/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples to get to the samples, you will need to find the teamcode part to edit your code correctly.
 
-### Functions <a name="func"><a/> [^ape]
+### Functions <a name="func"><a/> 
 - What is the format?
  ``` 
   public void imaginaryFunction(){
@@ -296,16 +296,16 @@ One major part is editing your code, to do this you will open your project in an
     }
   }
 ```
-You will see that this is saying public int, you use void if you are returning nothing, and the [proper variable type](#var) if you are returning something. This would be called as, ```telemetry.addData("Number",String(imaginaryFunction3(9,true)))``` [^ape]
+You will see that this is saying public int, you use void if you are returning nothing, and the [proper variable type](#var) if you are returning something. This would be called as, ```telemetry.addData("Number",String(imaginaryFunction3(9,true)))``` 
 
-Hint: String puts the value into string form [^ape]
+Hint: String puts the value into string form 
   
-Hint2: Int() puts the string into int form [^ape]
+Hint2: Int() puts the string into int form 
 
   
 [Go to top](#top)
 ## Running your code <a name="run"><a/>
-To put the code onto your robot, you will plug in the RC[^rc] phone or the control hub to your computer and press the ![runa][run] button. It will take a bit to load and once it finishes, you can disconnect and then go to your DS[^ds] phone and select your opmode, then select the run button once, tap it again and your code will run.
+To put the code onto your robot, you will plug in the RC phone or the control hub to your computer and press the ![runa][run] button. It will take a bit to load and once it finishes, you can disconnect and then go to your DS phone and select your opmode, then select the run button once, tap it again and your code will run.
   
 [Go to top](#top)  
 ### Common errors and solutions <a name="es"><a/>
@@ -313,7 +313,7 @@ To be filled in as problems occur.
   
 [Go to top](#top)
 ## Updating your devices <a name="update"><a/>
-Go to this [website][rhc]. It will take you to rev hardware client. Once you download the app you will be able to connect the DS[^ds] phone[^ape2] or the Control Hub and it will show you your possible updates, take them all and you are good to go!
+Go to this [website][rhc]. It will take you to rev hardware client. Once you download the app you will be able to connect the DS phone or the Control Hub and it will show you your possible updates, take them all and you are good to go!
   
 [Go to top](#top)
 ## Overall Game <a name="game"><a/>
@@ -337,15 +337,15 @@ I would love to have feedback on this repository. You can contact me at graymgra
   
 [Go to top](#top)
 ## Glossary <a name="gloss"><a/>
-[^ftc]: First Tech Challenge
-[^repo]: A repository is a folder hosted on github that contains code and items.
-[^merge]: Push and pull at the same time using github  
-[^teleop]: A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is on the right side of the phone when selecting an opmode.
-[^auto]: A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
-[^ape]: My apoligies if this doesn't work, some code software allows this exact code, some doesn't.
-[^ape2]: Some devices accept this.
-[^ds]: Driver Station
-[^rc]: Robot Controller
+First Tech Challenge
+A repository is a folder hosted on github that contains code and items.
+Push and pull at the same time using github  
+A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is on the right side of the phone when selecting an opmode.
+A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
+My apoligies if this doesn't work, some code software allows this exact code, some doesn't.
+Some devices accept this.
+Driver Station
+Robot Controller
   
   
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
