@@ -1,43 +1,42 @@
-# WHS-FTC-GramGra07-Code_Training_Mod <a name="top"><a/>
+# WHS-FTC-GramGra07-Code_Training_Mod
 ### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc programming
 ### If you have questions, email me at graymgray07@gmail.com
 # Table of Contents
-- [Links]
-- [Tips and Hints](#hint)
-- [Getting Started](#gs1)
-  - [Forking](#Forking)
-  - [Cloning the repository](#clone)
-- [Github Basics](#basics)
-  - [Commits](#commit)
-  - [Push](#push)
-  - [Pull/merge](#pull)
-  - [Managing your server](#manage)
-  - [Personal Access Token](#atl)
-- [Coding](#code)
-  - [Code Basics](#cbasics)
-    - [What is a...](#whatis)
+- Links
+- Tips and Hints
+- Getting Started
+  - Forking
+  - Cloning the repository
+- Github Basics
+  - Commits
+  - Push
+  - Pull/merge
+  - Managing your server
+  - Personal Access Token
+- Coding
+  - Code Basics
+    - What is a...
       - Variable
       - Function
       - If Statement
       - Print/Telemetry System
       - Loop
       - Import
-  - [Getting Started](#gs)
-  - [Setting up your files](#su)
-  - [Using Variables](#var)
-  - [TeleOp](#op)
-  - [Autonomous](#auto)
-  - [Editing your code](#edit)
-  - [Functions](#func)
-- [Running your code](#run)
-  - [Errors and solutions](#es)
-- [Updating your devices](#update)
-- [Overall game](#game)
-- [Feedback](#fb)
-- [Agknowledgements](#agk)
-- [Glossary](#gloss)
+  - Getting Started
+  - Setting up your files
+  - Using Variables
+  - TeleOp
+  - Autonomous
+  - Editing your code
+  - Functions
+- Running your code
+- Updating your devices
+- Overall game
+- Feedback
+- Agknowledgements
+- Glossary
 - - - - - - - - - 
-## Useful Links <a name="link"><a/>
+## Useful Links
 - My [user page][user] (GramGra07)
 - FTC Official Github [user page][ftcpage]
 - Team Resources [folder][team]
@@ -47,7 +46,7 @@
 - [Game Manual 0][gm0]
 - [FTC Resource Library][lib]
 - - - - - 
-## Tips and Hints <a name="hint"><a/>
+## Tips and Hints
 ### 1. PRACTICE!!
 - It is known that if you practice somthing, you will get better at it over time, this is the same for coding and robotics
 ### 2. Ask Questions
@@ -61,47 +60,41 @@
 ### 6. Use prior knowledge
 - Even if your prior knowledge is in a different language, it **will** help you understand this code.
 - - - - - - - -
-## Getting started <a name="gs1"><a/>
-In order to setup your repository correctly you will do 2 things. 1. [Fork](#Forking) and 2. [Clone](#clone) this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
+## Getting started
+In order to setup your repository correctly you will do 2 things. 1. Fork and 2. Clone this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
   
-[Go to top](#top)
-### Forking <a name="Forking"><a/>
+### Forking
 Go to this [website][ftcpage] and find the latest repository from the company. Press the ![fork button][fork] button. This will "copy" the repository onto your github account. Remember **only one person will need to fork the repo**!
   
-[Go to top](#top)
-### Cloning the repository <a name="clone"><a/>
+### Cloning the repository
 To clone the repository, first find it on your github profile. You have 2 options on what to do you can do it through android studio or through github.
 **Everyone will need to do this!!**
 
 Android Studio:
-Tap ![fila][file], then ![newa][new] , ![vcsa][vcs]. Go back to your repository and copy the url, paste it into the box and make sure the destination is desktop. You might need to have an [access token](#atl) to do this.
+Tap ![fila][file], then ![newa][new] , ![vcsa][vcs]. Go back to your repository and copy the url, paste it into the box and make sure the destination is desktop. You might need to have an access token to do this.
   
 Github:
 Navigate to the repository you want to clone. Tap ![codea][code] then select ![zipa][zip]. This will download it to your computer. Extract the zip file (double click) and move it to desktop. Then, go back to Android Studio. Tap ![filea][file] then ![opena][open] and select the path where the folder is (desktop).
   
-[Go to top](#top)
-## Github basics <a name="basics"><a/>
+## Github basics
 Github is organized in a few sections. One, the code section, this is where your code and files are stored. Your repositories, where all of your code is stored and your profile, where all of your repositories are stored.
-### Commits <a name="commit"><a/>
+### Commits 
   
-Commiting is an essential part in every part of coding while connected to github, it makes sure you have the latest edited version of your code local    on your computer, we got the code local to the computer in [cloning](#clone). In a github file it is a green rectangular button at the bottom of the    file that says commit changes, ![gitCommita][gitcommit] when commiting directly from github it strictly gives the code to github, you will not have the code local yet. To make your code local you will need to [pull](#pull) in your code app, most likely android studio. In android studio, the commit button is a check mark in your top right corner.![commita][commit] You are also allowed to commit and push, to be explained later in [push](#push). You will also need a commit message to be able to [push](#push) the commit.
+Commiting is an essential part in every part of coding while connected to github, it makes sure you have the latest edited version of your code local    on your computer, we got the code local to the computer in cloning. In a github file it is a green rectangular button at the bottom of the    file that says commit changes, ![gitCommita][gitcommit] when commiting directly from github it strictly gives the code to github, you will not have the code local yet. To make your code local you will need to pull in your code app, most likely android studio. In android studio, the commit button is a check mark in your top right corner.![commita][commit] You are also allowed to commit and push, to be explained later in push. You will also need a commit message to be able to push the commit.
   
-[Go to top](#top)
-### Push <a name="push"><a/>
+### Push 
   - What is a push?
-    - A push will essentially do exactly as it says, push the code to github. This makes sure that you not only have the latest version of code locally, but also sent to github through the cloud. This is essential for working on code together as a team and collaborating. The push button is the arrow next to the commit button, it will be pointing out, where you want the code to go.![pusha][push] Commit and push does both at the same time to simplify the process. Also see [pull/merge](#pull)
+    - A push will essentially do exactly as it says, push the code to github. This makes sure that you not only have the latest version of code locally, but also sent to github through the cloud. This is essential for working on code together as a team and collaborating. The push button is the arrow next to the commit button, it will be pointing out, where you want the code to go.![pusha][push] Commit and push does both at the same time to simplify the process. Also see pull/merge
   
-[Go to top](#top)
-### Pull/merge <a name="pull"><a/>
+### Pull/merge 
  - What is a pull?
-    - A pull is the exact opposite of a [push](#push). It will take the currennt version of the code directly from github and sync it locally to your device/coding app. This is also essential as it allows you to get the teams latest version of code. This is helpful when multiple people are working on code all at once. If you are [pushing](#push) sometimes it will ask you to merge your current code, this means you dont have the latest version, not to worry though as if you say yes github will automatically merge and add your code to the latest code. The pull button is an arrow pointing in, or towards your computer. ![pulla][pull]
+    - A pull is the exact opposite of a push. It will take the currennt version of the code directly from github and sync it locally to your device/coding app. This is also essential as it allows you to get the teams latest version of code. This is helpful when multiple people are working on code all at once. If you are pushing sometimes it will ask you to merge your current code, this means you dont have the latest version, not to worry though as if you say yes github will automatically merge and add your code to the latest code. The pull button is an arrow pointing in, or towards your computer. ![pulla][pull]
   
-[Go to top](#top)
-### Managing your server <a name="manage"><a/>
+### Managing your server 
 Managing a server is really not that hard if you do it correctly from the start. There is a settings ![settingsa][setting] button in your repository, in this tab you will find a bunch of options, it is better if you don't mess with anything that you don't know what it does. In the collaborator tab you will need to add @stcline (if you are a part of WHS). Other than that there are really no settings you need to mess with except maybe email notifications if you would like that.
   
-[Go to top](#top)
-### Personal Access Token <a name="atl"><a/>
+
+### Personal Access Token 
 In github, tap on your profile ( top right corner ), then:
   
 1. ![step1a][step1]  
@@ -110,19 +103,17 @@ In github, tap on your profile ( top right corner ), then:
 4. ![step4a][step4]  
 5. ![step5a][step5]  
 6. ![step6a][step6]  ( Select all, it will work better that way )
-  
-[Go to top](#top)
-## Coding <a name="code"><a/>
+
+## Coding 
 The java coding language that we use is not incredibly hard to learn once you figure it all out. It follows all of the coding fundamentals you may already know.
 
-[Go to top](#top)
 # **IMPORTANT** when editing your code, only edit it in the **teamcode** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
-### Coding Basics <a name="cbasics"><a/>
-Go through this section if you have no expirence coding, if you are expirenced, [skip](#gs).
-### What is a... <a name="whatis"><a/>
+### Coding Basics 
+Go through this section if you have no expirence coding, if you are expirenced, skip this.
+### What is a... 
 - Variable
   
-  A variable is a holder of a value, these values can be anything, as explained in [Using Variables](#Using Variables). You can use these to store values such as an on off switch, or a progress update, you can also use this as a place to store the power for motors. You will also declare your motors and servos as variables. A local variable can only be used where it was defined or set. A global variable can be used wherever. FTC doccumentation also lets us use some of their universal variables such as DcMotors and Servos, these are all imported by import statements at the begining of your code.
+  A variable is a holder of a value, these values can be anything, as explained in Using Variables. You can use these to store values such as an on off switch, or a progress update, you can also use this as a place to store the power for motors. You will also declare your motors and servos as variables. A local variable can only be used where it was defined or set. A global variable can be used wherever. FTC doccumentation also lets us use some of their universal variables such as DcMotors and Servos, these are all imported by import statements at the begining of your code.
   
 - Function
   
@@ -141,15 +132,14 @@ Go through this section if you have no expirence coding, if you are expirenced, 
 - Imports
   
   Imports in robot code are required. These import the libraries from First Tech and increase your capabilities for the code. Here is a [list][import] of all the imports I know of.
-### Getting started <a name="gs"><a/>
+### Getting started 
 - General Knowledge
   - ```;``` must be at the end of every line except if it ends in ```{``` or ```}```
   - ```{``` is used to begin the code for the function, ```}``` ends the function
-### Setting up your files <a name="su"><a/>
-Refer to the blank examples [TeleOp][beTele] and [Auto][beAuto]. These both have the proper setup and code to get started coding both of these modes. I will get into more detail into what everything means in [TeleOp](#op) and [auto](#auto).
+### Setting up your files 
+Refer to the blank examples [TeleOp][beTele] and [Auto][beAuto]. These both have the proper setup and code to get started coding both of these modes. I will get into more detail into what everything means in TeleOp and auto.
 
-[Go to top](#top)
-### Using variables <a name="var"><a/>
+### Using variables 
 Variables in java consist of:
 ```
 boolean
@@ -177,8 +167,7 @@ Strings are used to store common strings or text values like a status of initial
 - When to use public vs. private variables?
   - You generally want to always use public unless it is something that you don't want to share with other opmodes, like a runtime.
   
-[Go to top](#top)
-### TeleOp <a name="op"><a/>
+### TeleOp 
 Here is the [FTC BasicOpMode (21-22)][lop] it uses 2 motors.
 In the [blank TeleOp Example][beTele] you will find that there are 20 lines
 ```
@@ -208,7 +197,7 @@ Next we have ```@TeleOp(name="exampleTeleOpBlank",group="Pushbot")```, this mean
   
 Now we have the ```public class exampleTeleOpBlank extends LinearOpMode{``` this means that this opmode can now be used as a base opmode, extending an opmode means that all variables and functions are shared between the opmodes. In this case the file is extending the Linear Op Mode file which you will be able to find in your forked repository.
   
-Next we have our ``` HardwarePushbot robot = new HardwarePushbot(); ``` and ```private ElapsedTime   runtime = new ElapsedTime();``` the first part declares the robot as a robot, we will be using pushbot software for the season. Elapsed time is a very important thing to consider, it times the round as it is going. You can use this for a lot of things including having an endgame timer and restricting your [auto](#auto) time to 30 seconds.
+Next we have our ``` HardwarePushbot robot = new HardwarePushbot(); ``` and ```private ElapsedTime   runtime = new ElapsedTime();``` the first part declares the robot as a robot, we will be using pushbot software for the season. Elapsed time is a very important thing to consider, it times the round as it is going. You can use this for a lot of things including having an endgame timer and restricting your auto time to 30 seconds.
   
 Next we have the function ```public void runOpMode(){``` this runs when you press Init it will run that part. Remember, when you hit Init, it is not running the whole program yet, just the small part in between runOpMode and opModeIsActive.
   
@@ -218,8 +207,8 @@ Now we will run ```runtime.reset();``` and ```getRuntime()```, these are require
   
 ```telemetry.addData("Time:", String.valueOf(runtime));```, telemetry is your equivalent of printing data in python and other languages, using this will print onto your phone, "Time: 60(or what the time is).
   
-[Go to top](#top)
-### Autonomous <a name="auto"><a/>
+
+### Autonomous
 In the [Blank Autonomous Example][beAuto] you will find 18 lines.
 ```
 //imports
@@ -262,11 +251,11 @@ Now we will run ```runtime.reset();``` and ```getRuntime()```, these are require
   
 This gets the runtime, checks it and if it is less than or equal to 30 seconds, it keeps running. If it is over or equal to 30, it stops.
 
-[Go to top](#top)
-### Editing your code <a name="edit"><a/>
+
+### Editing your code 
 One major part is editing your code, to do this you will open your project in android studio, then tap FTC Robot Controller/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples to get to the samples, you will need to find the teamcode part to edit your code correctly.
 
-### Functions <a name="func"><a/> 
+### Functions 
 - What is the format?
  ``` 
   public void imaginaryFunction(){
@@ -296,35 +285,25 @@ One major part is editing your code, to do this you will open your project in an
     }
   }
 ```
-You will see that this is saying public int, you use void if you are returning nothing, and the [proper variable type](#var) if you are returning something. This would be called as, ```telemetry.addData("Number",String(imaginaryFunction3(9,true)))``` 
+You will see that this is saying public int, you use void if you are returning nothing, and the proper variable type if you are returning something. This would be called as, ```telemetry.addData("Number",String(imaginaryFunction3(9,true)))``` 
 
 Hint: String puts the value into string form 
   
 Hint2: Int() puts the string into int form 
 
-  
-[Go to top](#top)
-## Running your code <a name="run"><a/>
+## Running your code
 To put the code onto your robot, you will plug in the RC phone or the control hub to your computer and press the ![runa][run] button. It will take a bit to load and once it finishes, you can disconnect and then go to your DS phone and select your opmode, then select the run button once, tap it again and your code will run.
-  
-[Go to top](#top)  
-### Common errors and solutions <a name="es"><a/>
-To be filled in as problems occur.  
-  
-[Go to top](#top)
-## Updating your devices <a name="update"><a/>
+
+## Updating your devices
 Go to this [website][rhc]. It will take you to rev hardware client. Once you download the app you will be able to connect the DS phone or the Control Hub and it will show you your possible updates, take them all and you are good to go!
   
-[Go to top](#top)
-## Overall Game <a name="game"><a/>
-The game begins with a 30 second [autonomous](#auto) period, runtime helps us achieve this, and then a 2:30 minute [TeleOp](#op) period, the goal is to score as many points as possible.
+## Overall Game 
+The game begins with a 30 second autonomous period, runtime helps us achieve this, and then a 2:30 minute TeleOp period, the goal is to score as many points as possible.
   
-[Go to top](#top)
-## Feedback <a name="fb"><a/>
+## Feedback 
 I would love to have feedback on this repository. You can contact me at graymgray07@gmail.com. Thanks!
 
-[Go to top](#top)
-## Agknowledgements <a name="agk"><a/>
+## Agknowledgements 
 - [Google][ggl]
 - [Mr Cline][clineuser]
 - [Mr Mayfield][juser]
@@ -334,9 +313,8 @@ I would love to have feedback on this repository. You can contact me at graymgra
 #### Proofreaders
 - [Sir C Timmons][cuser]
 - [Sir B Sanger][buser]
-  
-[Go to top](#top)
-## Glossary <a name="gloss"><a/>
+
+## Glossary 
 First Tech Challenge
 A repository is a folder hosted on github that contains code and items.
 Push and pull at the same time using github  
