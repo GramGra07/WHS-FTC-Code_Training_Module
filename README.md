@@ -2,7 +2,7 @@
 ### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc programming
 ### If you have questions, email me at graymgray07@gmail.com
 # Table of Contents
-- [Links](#link)
+- [Links]
 - [Tips and Hints](#hint)
 - [Getting Started](#gs1)
   - [Forking](#Forking)
