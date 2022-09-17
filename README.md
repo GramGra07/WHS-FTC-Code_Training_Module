@@ -45,6 +45,7 @@
 - [Game Format](#game)
 - [Game Manual 0][gm0]
 - [FTC Resource Library][lib]
+- [Github -> Discord Web Hooks][web]
 - - - - - 
 ## Tips and Hints
 ### 1. PRACTICE!!
@@ -340,6 +341,7 @@ Robot Controller
 [buser]: https://github.com/sangerb19
 [gm0]: https://gm0.org/en/latest/
 [lib]: https://www.firstinspires.org/resource-library/ftc/game-and-season-info
+[web]: https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
