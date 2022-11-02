@@ -2,52 +2,53 @@
 ### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc programming
 ### If you have questions, email me at graymgray07@gmail.com
 # Table of Contents
-- Links
-- Tips and Hints
-- Getting Started
-  - Forking
-  - Cloning the repository
-- Github Basics
-  - Commits
-  - Push
-  - Pull/merge
-  - Managing your server
-  - Personal Access Token
-- Coding
-  - Code Basics
-    - What is a...
-      - Variable
-      - Function
-      - If Statement
-      - Print/Telemetry System
-      - Loop
-      - Import
-  - Getting Started
-  - Setting up your files
-  - Using Variables
-  - TeleOp
-  - Autonomous
-  - Editing your code
-  - Functions
-- Running your code
-- Updating your devices
-- Overall game
-- Feedback
-- Agknowledgements
-- Glossary
+- [Links](#link)
+- [Tips and Hints](#tip)
+- [Getting Started](#start)
+  - [Forking](#fork)
+  - [Cloning the repository](#clone)
+- [Github Basics](#gbasics)
+  - [Commits](#commit)
+  - [Push](#push)
+  - [Pull/merge](#pull)
+  - [Managing your server](#manage)
+  - [Personal Access Token](#pat)
+- [Coding](#code)
+  - [Code Basics](#cbasics)
+    - [What is a...](#wia)
+      - [Variable](#var)
+      - [Function](#func)
+      - [If Statement](#if)
+      - [Print/Telemetry System](#print)
+      - [Loop](#loop)
+      - [Import](#import)
+  - [Getting Started](#start2)
+  - [Setting up your files](#files)
+  - [Using Variables](#usevar)
+  - [TeleOp](#tele)
+  - [Autonomous](#auto)
+  - [Editing your code](#edit)
+  - [Functions](#functions)
+- [Running your code](#run)
+- [Machine Learning and TFOD](#ml)
+- [Updating your devices](#update)
+- [Overall game](#ovr)
+- [Feedback](#feed)
+- [Agknowledgements](#agk)
+- [Glossary](#gloss)
 - - - - - - - - - 
-## Useful Links
+## Useful Links <a name="link"></a>
 - My [user page][user] (GramGra07)
 - FTC Official Github [user page][ftcpage]
 - Team Resources [folder][team]
 - [Rev Hardware Client][rhc]
 - [FTC BasicOpModeLinear (21-22)][lop]
-- [Game Format](#game)
+- [Game Format](#ovr)
 - [Game Manual 0][gm0]
 - [FTC Resource Library][lib]
 - [Github -> Discord Web Hooks][web]
 - - - - - 
-## Tips and Hints
+## Tips and Hints <a name="tip"></a>
 ### 1. PRACTICE!!
 - It is known that if you practice somthing, you will get better at it over time, this is the same for coding and robotics
 ### 2. Ask Questions
@@ -61,13 +62,13 @@
 ### 6. Use prior knowledge
 - Even if your prior knowledge is in a different language, it **will** help you understand this code.
 - - - - - - - -
-## Getting started
+## Getting started <a name="start"></a>
 In order to setup your repository correctly you will do 2 things. 1. Fork and 2. Clone this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
   
-### Forking
+### Forking <a name="fork"></a>
 Go to this [website][ftcpage] and find the latest repository from the company. Press the ![fork button][fork] button. This will "copy" the repository onto your github account. Remember **only one person will need to fork the repo**!
   
-### Cloning the repository
+### Cloning the repository <a name="clone"></a>
 To clone the repository, first find it on your github profile. You have 2 options on what to do you can do it through android studio or through github.
 **Everyone will need to do this!!**
 
@@ -77,25 +78,26 @@ Tap ![fila][file], then ![newa][new] , ![vcsa][vcs]. Go back to your repository 
 Github:
 Navigate to the repository you want to clone. Tap ![codea][code] then select ![zipa][zip]. This will download it to your computer. Extract the zip file (double click) and move it to desktop. Then, go back to Android Studio. Tap ![filea][file] then ![opena][open] and select the path where the folder is (desktop).
   
-## Github basics
+## Github basics <a name="gbasics"></a>
 Github is organized in a few sections. One, the code section, this is where your code and files are stored. Your repositories, where all of your code is stored and your profile, where all of your repositories are stored.
-### Commits 
+
+### Commits  <a name="commit"></a>
   
 Commiting is an essential part in every part of coding while connected to github, it makes sure you have the latest edited version of your code local    on your computer, we got the code local to the computer in cloning. In a github file it is a green rectangular button at the bottom of the    file that says commit changes, ![gitCommita][gitcommit] when commiting directly from github it strictly gives the code to github, you will not have the code local yet. To make your code local you will need to pull in your code app, most likely android studio. In android studio, the commit button is a check mark in your top right corner.![commita][commit] You are also allowed to commit and push, to be explained later in push. You will also need a commit message to be able to push the commit.
   
-### Push 
+### Push <a name="push"></a>
   - What is a push?
     - A push will essentially do exactly as it says, push the code to github. This makes sure that you not only have the latest version of code locally, but also sent to github through the cloud. This is essential for working on code together as a team and collaborating. The push button is the arrow next to the commit button, it will be pointing out, where you want the code to go.![pusha][push] Commit and push does both at the same time to simplify the process. Also see pull/merge
   
-### Pull/merge 
+### Pull/merge <a name="pull"></a>
  - What is a pull?
     - A pull is the exact opposite of a push. It will take the currennt version of the code directly from github and sync it locally to your device/coding app. This is also essential as it allows you to get the teams latest version of code. This is helpful when multiple people are working on code all at once. If you are pushing sometimes it will ask you to merge your current code, this means you dont have the latest version, not to worry though as if you say yes github will automatically merge and add your code to the latest code. The pull button is an arrow pointing in, or towards your computer. ![pulla][pull]
   
-### Managing your server 
+### Managing your server <a name="manage"></a>
 Managing a server is really not that hard if you do it correctly from the start. There is a settings ![settingsa][setting] button in your repository, in this tab you will find a bunch of options, it is better if you don't mess with anything that you don't know what it does. In the collaborator tab you will need to add @stcline (if you are a part of WHS). Other than that there are really no settings you need to mess with except maybe email notifications if you would like that.
   
 
-### Personal Access Token 
+### Personal Access Token <a name="pat"></a>
 In github, tap on your profile ( top right corner ), then:
   
 1. ![step1a][step1]  
@@ -105,42 +107,43 @@ In github, tap on your profile ( top right corner ), then:
 5. ![step5a][step5]  
 6. ![step6a][step6]  ( Select all, it will work better that way )
 
-## Coding 
+## Coding <a name="code"></a>
 The java coding language that we use is not incredibly hard to learn once you figure it all out. It follows all of the coding fundamentals you may already know.
 
 # **IMPORTANT** when editing your code, only edit it in the **teamcode** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
-### Coding Basics 
+### Coding Basics <a name="cbasics"></a>
 Go through this section if you have no expirence coding, if you are expirenced, skip this.
-### What is a... 
-- Variable
+### What is a... <a name="wia"></a>
+- Variable <a name="var"></a>
   
   A variable is a holder of a value, these values can be anything, as explained in Using Variables. You can use these to store values such as an on off switch, or a progress update, you can also use this as a place to store the power for motors. You will also declare your motors and servos as variables. A local variable can only be used where it was defined or set. A global variable can be used wherever. FTC doccumentation also lets us use some of their universal variables such as DcMotors and Servos, these are all imported by import statements at the begining of your code.
   
-- Function
+- Function <a name="func"></a>
   
   Functions are statements to make the code run one part when you "call" the function. It is like calling a whole new section of the code. This is useful to have the code execute specific instructions. This is useful to tell the code to update something or to set a value to a variable. You can also set parameters that are localized variables. A local variable can only be used in that function. Parameters are very useful to help us define and change local variables inside of of the function.
   
-- If statement
+- If statement <a name="if"></a>
   An if statement is simply ```if (condition) { (do something) }```. Your condition can be if a variable is equal to (==), not equal to (!=) another variable or value or to check if a boolean is True or False.
   
-- Print/telemetry statement
+- Print/telemetry statement <a name="print"></a>
 
   Print statements are very useful in debugging your code, essentially what they do is show you a value that you tell it to. ```telemetry.addData("caption"," info")``` This will give you values on the Driver Station phone and you can use this to see values like if a certain variable is on or off. In other languages you would use ```print('',value)``` to get the same information.
 
-- Loops
+- Loops <a name="loop"></a>
   
   While loops are very helpful in robot code. They can help you to make the robot do something until a condition is met. These are used by the ftc company in their own opmodes to have the robot be on when you tell it to. These are very useful for distance or color sensors. For loops run the event a certain amount of times. ```for x in range(10){```, this would have the stuff in the loop run 10 times.
-- Imports
+  
+- Imports <a name="import"></a>
   
   Imports in robot code are required. These import the libraries from First Tech and increase your capabilities for the code. Here is a [list][import] of all the imports I know of.
-### Getting started 
+### Getting started <a name="start2"></a>
 - General Knowledge
   - ```;``` must be at the end of every line except if it ends in ```{``` or ```}```
   - ```{``` is used to begin the code for the function, ```}``` ends the function
-### Setting up your files 
+### Setting up your files <a name="files"></a>
 Refer to the blank examples [TeleOp][beTele] and [Auto][beAuto]. These both have the proper setup and code to get started coding both of these modes. I will get into more detail into what everything means in TeleOp and auto.
 
-### Using variables 
+### Using variables <a name="usevar"></a>
 Variables in java consist of:
 ```
 boolean
@@ -168,7 +171,7 @@ Strings are used to store common strings or text values like a status of initial
 - When to use public vs. private variables?
   - You generally want to always use public unless it is something that you don't want to share with other opmodes, like a runtime.
   
-### TeleOp 
+### TeleOp <a name="tele"></a>
 Here is the [FTC BasicOpMode (21-22)][lop] it uses 2 motors.
 In the [blank TeleOp Example][beTele] you will find that there are 20 lines
 ```
@@ -209,7 +212,7 @@ Now we will run ```runtime.reset();``` and ```getRuntime()```, these are require
 ```telemetry.addData("Time:", String.valueOf(runtime));```, telemetry is your equivalent of printing data in python and other languages, using this will print onto your phone, "Time: 60(or what the time is).
   
 
-### Autonomous
+### Autonomous <a name="auto"></a>
 In the [Blank Autonomous Example][beAuto] you will find 18 lines.
 ```
 //imports
@@ -253,10 +256,10 @@ Now we will run ```runtime.reset();``` and ```getRuntime()```, these are require
 This gets the runtime, checks it and if it is less than or equal to 30 seconds, it keeps running. If it is over or equal to 30, it stops.
 
 
-### Editing your code 
+### Editing your code <a name="edit"></a>
 One major part is editing your code, to do this you will open your project in android studio, then tap FTC Robot Controller/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples to get to the samples, you will need to find the teamcode part to edit your code correctly.
 
-### Functions 
+### Functions <a name="functions"></a>
 - What is the format?
  ``` 
   public void imaginaryFunction(){
@@ -287,24 +290,33 @@ One major part is editing your code, to do this you will open your project in an
   }
 ```
 You will see that this is saying public int, you use void if you are returning nothing, and the proper variable type if you are returning something. This would be called as, ```telemetry.addData("Number",String(imaginaryFunction3(9,true)))``` 
-
-Hint: String puts the value into string form 
   
 Hint2: Int() puts the string into int form 
 
-## Running your code
+## Running your code <a name="run"></a>
 To put the code onto your robot, you will plug in the RC phone or the control hub to your computer and press the ![runa][run] button. It will take a bit to load and once it finishes, you can disconnect and then go to your DS phone and select your opmode, then select the run button once, tap it again and your code will run.
 
-## Updating your devices
+## Machine learning <a name="ml"></a>
+In FTC we typically use machine learning an AI's to detect images. In the FTC sample code in concept tensor flow object detection or TFOD, this is exactly what this does, it uses a tensorflow lite model in order for the robot to detect certain images, FTC has already trained some of it for us, but if you want to create your own AI it will take a little bit more work. To start, make sure your team is registered and you have roles set up correctly, this [website][mlset] will show you exxactly how that is possible. Note that only coaches can put video into the recognition so either arrange for a time or have your coach sign in for you *wink*. Then you will take your videos, I would recommend (for Power Play season) to have 6 videos, all 3 sides on both color cones, this will allow for the most accurate design. I just used wevideo to combine these videos into one. Once your coach or you have uploaded the video to the [Machine learning site][ml], you will have to wait for it to "extract" the frames. Then you will click on the description and get to work, you will get a picture of your video, make your object detection by dragging your box over the part you want it to detect and name it. Then click start tracking. This might take a while and you will have to watch it like a hawk. It might think some of your images are the same label in which case go to the first frame it messes up and simply change the label and hit start tracking. Once you have labeled all of your frames, you will select your video and click produce dataset, all of the default settings should be good and this is the shortest part of the process. Next you will have to select the dataset and click start training. This part will take as long as you want it to take, I would recommend 3000 steps as this will give you the highest accuracy. Once you download your model, place it into your assets folder and change ```private static final String TFOD_MODEL_ASSET = "PowerPlay.tflite";``` in your code to ```private static final String TFOD_MODEL_ASSET = "your file name.tflite";```. Now you will have to go back to the datasets and look at your labels, put these labels into the FTC sample code and you are good to go. 
+
+- Getting a VuForia key
+Go to [this website][https://developer.vuforia.com/license-manager] and log in, and create a new key.
+
+Video showing entire process:
+
+https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7-b74c-d8ae17b0868a.mp4
+
+
+## Updating your devices <a name="update"></a>
 Go to this [website][rhc]. It will take you to rev hardware client. Once you download the app you will be able to connect the DS phone or the Control Hub and it will show you your possible updates, take them all and you are good to go!
   
-## Overall Game 
-The game begins with a 30 second autonomous period, runtime helps us achieve this, and then a 2:30 minute TeleOp period, the goal is to score as many points as possible.
+## Overall Game <a name="ovr"></a>
+The game begins with a 30 second autonomous period, runtime helps us achieve this, and then a 2 minute TeleOp period, the goal is to score as many points as possible.
   
-## Feedback 
+## Feedback <a name="feed"></a>
 I would love to have feedback on this repository. You can contact me at graymgray07@gmail.com. Thanks!
 
-## Agknowledgements 
+## Agknowledgements <a name="agk"></a>
 - [Google][ggl]
 - [Mr Cline][clineuser]
 - [Mr Mayfield][juser]
@@ -315,7 +327,7 @@ I would love to have feedback on this repository. You can contact me at graymgra
 - [Sir C Timmons][cuser]
 - [Sir B Sanger][buser]
 
-## Glossary 
+## Glossary <a name="gloss"></a>
 First Tech Challenge
 A repository is a folder hosted on github that contains code and items.
 Push and pull at the same time using github  
@@ -342,6 +354,9 @@ Robot Controller
 [gm0]: https://gm0.org/en/latest/
 [lib]: https://www.firstinspires.org/resource-library/ftc/game-and-season-info
 [web]: https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22
+[mlguide]: https://ftc-docs.firstinspires.org/ftc_ml/
+[ml]: https://ftc-ml.firstinspires.org/
+[mlset]: https://ftc-docs.firstinspires.org/ftc_ml/logging_on/logging-on.html#adding-students-to-your-teams-ftc-ml-workspace
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
