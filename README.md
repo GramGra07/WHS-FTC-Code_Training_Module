@@ -193,7 +193,7 @@ public class exampleTeleOpBlank extends LinearOpMode {
     }
 }
   ```
-First, comments are indicated by //
+First, comments are indicated by ```//```
   
 Imports are how you get the references and all the different pieces to the code.
   
@@ -291,7 +291,7 @@ One major part is editing your code, to do this you will open your project in an
 ```
 You will see that this is saying public int, you use void if you are returning nothing, and the proper variable type if you are returning something. This would be called as, ```telemetry.addData("Number",String(imaginaryFunction3(9,true)))``` 
   
-Hint2: Int() puts the string into int form 
+Hint: Int() puts the string into int form 
 
 ## Running your code <a name="run"></a>
 To put the code onto your robot, you will plug in the RC phone or the control hub to your computer and press the ![runa][run] button. It will take a bit to load and once it finishes, you can disconnect and then go to your DS phone and select your opmode, then select the run button once, tap it again and your code will run.
