@@ -1,6 +1,5 @@
 # WHS-FTC-GramGra07-Code_Training_Mod 
 ### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc programming
-### If you have questions, email me at graymgray07@gmail.com
 # Table of Contents
 - [Links](#link)
 - [Tips and Hints](#tip)
@@ -315,7 +314,7 @@ Go to this [website][rhc]. It will take you to rev hardware client. Once you dow
 The game begins with a 30 second autonomous period, runtime helps us achieve this, and then a 2 minute TeleOp period, the goal is to score as many points as possible.
   
 ## Feedback <a name="feed"></a>
-I would love to have feedback on this repository. You can contact me at graymgray07@gmail.com. Thanks!
+I would love to have feedback on this repository. You can contact me through the discussions! Thanks!
 
 ## Agknowledgements <a name="agk"></a>
 - [Google][ggl]
