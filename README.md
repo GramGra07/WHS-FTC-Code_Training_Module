@@ -21,6 +21,7 @@
       - [Print/Telemetry System](#print)
       - [Loop](#loop)
       - [Import](#import)
+      - [Configuration](#config)
   - [Getting Started](#start2)
   - [Setting up your files](#files)
   - [Using Variables](#usevar)
@@ -139,6 +140,13 @@ Go through this section if you have no expirence coding, if you are expirenced, 
 - General Knowledge
   - ```;``` must be at the end of every line except if it ends in ```{``` or ```}```
   - ```{``` is used to begin the code for the function, ```}``` ends the function
+
+- Configuration <a name = "config"></a>
+
+```DcMotor name = hardwareMap.get(DistanceSensor.class, "name");```
+ 
+The second name is the one you will use in the configuration guide in your driver station. The first name is the one you will use to set powers and other functions.
+
 ### Setting up your files <a name="files"></a>
 Refer to the blank examples [TeleOp][beTele] and [Auto][beAuto]. These both have the proper setup and code to get started coding both of these modes. I will get into more detail into what everything means in TeleOp and auto.
 
