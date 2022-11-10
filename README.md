@@ -1,4 +1,4 @@
-# WHS-FTC-GramGra07-Code_Training_Mod 
+# WHS-FTC-GramGra07-Code_Training_Mod       
 ## Created by FTC team 10448 Mach 5
 ### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc programming
 # Table of Contents
