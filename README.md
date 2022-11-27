@@ -317,10 +317,10 @@ Most of them work by having a light on one side of the encoder disk. On the othe
 
 ### How do you use them? <a name="eUse"></a>
 ```
-    static final double COUNTS_PER_MOTOR_REV = your specific encoder counts per revolution;
-    static final double WHEEL_DIAMETER_MM = your wheel diameter in mm;
-    static final double WHEEL_DIAMETER_INCHES = WHEEL_DIAMETER_MM * 0.0393701;     // For figuring circumference
-    static final double COUNTS_PER_INCH = (COUNTS_PER_MOTOR_REV * your gear ratio) /
+static final double COUNTS_PER_MOTOR_REV = your specific encoder counts per revolution;
+static final double WHEEL_DIAMETER_MM = your wheel diameter in mm;
+static final double WHEEL_DIAMETER_INCHES = WHEEL_DIAMETER_MM * 0.0393701;     // For figuring circumference
+static final double COUNTS_PER_INCH = (COUNTS_PER_MOTOR_REV * your gear ratio) /
             (WHEEL_DIAMETER_INCHES * 3.1415);//gets the overall counts per inch to help with encoders
 ```
 These calculations are the exact calculations that you shoud use to calculate the counts per inch of the encoder. 
@@ -335,14 +335,14 @@ This sets the target positon of the motor to the target we just got above. It wi
 After that use the method ```.setPower(1);``` to set the power of the motor.
 ```
 while (opModeIsActive() &&
-                    (runtime.seconds() < timeout) &&  //timeout is used to make sure it doesn't run for too long 
-                    (motor.isBusy())) {
+   (runtime.seconds() < timeout) &&  //timeout is used to make sure it doesn't run for too long 
+   (motor.isBusy())) {
 
-                // Display it for the driver.
-                telemetry.addData("Running to", -newLeftTarget);
-                telemetry.addData("Currently at", motor.getCurrentPosition());
-                telemetry.update();
-            }
+   // Display it for the driver.
+   telemetry.addData("Running to", -newLeftTarget);
+   telemetry.addData("Currently at", motor.getCurrentPosition());
+   telemetry.update();
+}
 ```
 This will make sure it doesn't stop before going the distance it needs to. After this ```.setPower(0);``` will make the robot and wheels stop.
 You need to do ```.setMode(DcMotor.RunMode.RUN_USING_ENCODER);``` again to make turn off run to position.
