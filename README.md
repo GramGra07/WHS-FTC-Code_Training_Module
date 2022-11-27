@@ -330,7 +330,8 @@ This run mode will stop and reset the encoder to 0 ticks.
 This run mode will make it start to track the encoder position.
 ```newLeftTarget = motorBackLeft.getCurrentPosition() + (int) (leftInches * COUNTS_PER_INCH);```
 This sets a new target by setting a target position based on the current position.
-```.setTargetPosition(newLeftTarget);``````.setMode(DcMotor.RunMode.RUN_TO_POSITION);```
+```.setTargetPosition(newLeftTarget);```
+```.setMode(DcMotor.RunMode.RUN_TO_POSITION);```
 This sets the target positon of the motor to the target we just got above. It will also run the motor to the position.
 After that use the method ```.setPower(1);``` to set the power of the motor.
 ```
