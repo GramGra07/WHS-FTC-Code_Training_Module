@@ -7,6 +7,7 @@ If something loads weird or looks like it doesn't belong, this link should work 
 # Table of Contents
 - [Links](#link)
 - [Tips and Hints](#tip)
+- [Fatal Erorrs](#fatal)
 - [Getting Started](#start)
   - [Forking](#fork)
   - [Cloning the repository](#clone)
@@ -70,6 +71,9 @@ If something loads weird or looks like it doesn't belong, this link should work 
 ### 6. Use prior knowledge
 - Even if your prior knowledge is in a different language, it **will** help you understand this code.
 - - - - - - - -
+## Fatal Errors <a name="fatal"></a>
+When updating or upgrading your control hub, you may get an error saying something like, could not find a file, in some random folder that you can't find. This is caused by an error in your gradle code. If you can't find another way to fix it I would recommend this method, it is a little complicated but will solve it. First, create a new repository **DO NOT ADD ANYTHING AUTOMATICALLY** not even a read me we will call this repository our bridge. Then scroll down to the bottom and tap import from repository, grab the URL of your old repository and make sure it finished importing. Then go into the old repositories settings and delete the repository. Then go to the FTC Robot Controller and fork it. You will want to clone both the bridge repository and the new one we just forked. Now you will copy over all of your working files from the bridge repo and put them in your new repository. As soon as that is finished and commited you should be good to go, you can then delete the bridge repository.
+
 ## Getting started <a name="start"></a>
 In order to setup your repository correctly you will do 2 things. 1. Fork and 2. Clone this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
   
