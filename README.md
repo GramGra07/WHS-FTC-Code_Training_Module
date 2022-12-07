@@ -146,9 +146,6 @@ Go through this section if you have no expirence coding, if you are expirenced, 
   
   While loops are very helpful in robot code. They can help you to make the robot do something until a condition is met. These are used by the ftc company in their own opmodes to have the robot be on when you tell it to. These are very useful for distance or color sensors. For loops run the event a certain amount of times. ```for x in range(10){```, this would have the stuff in the loop run 10 times.
   
-- Imports <a name="import"></a>
-  
-  Imports in robot code are required. These import the libraries from First Tech and increase your capabilities for the code. Here is a [list][import] of all the imports I know of.
 ### Getting started <a name="start2"></a>
 - General Knowledge
   - ```;``` must be at the end of every line except if it ends in ```{``` or ```}```
