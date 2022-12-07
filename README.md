@@ -56,6 +56,7 @@ If something loads weird or looks like it doesn't belong, this link should work 
 - [Game Manual 0][gm0]
 - [FTC Resource Library][lib]
 - [Github -> Discord Web Hooks][web]
+- [3D Printing Basics by my Dad][3D]
 - - - - - 
 ## Tips and Hints <a name="tip"></a>
 ### 1. PRACTICE!!
@@ -425,6 +426,7 @@ Robot Controller
 [mlset]: https://ftc-docs.firstinspires.org/ftc_ml/logging_on/logging-on.html#adding-students-to-your-teams-ftc-ml-workspace
 [tfodweb]: https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.java
 [vu]: https://developer.vuforia.com/license-manager
+[3D]: https://docs.google.com/presentation/d/1MeLkA9mCI4vZMiejlqMZpAhZvbV2ThvSf6oZBzhQGdo/edit?usp=sharing
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
