@@ -20,7 +20,7 @@ If something loads weird or looks like it doesn't belong, this link should work 
 - [Coding](#code)
   - [Code Basics](#cbasics)
     - [What is a...](#wia)
-      - [Operations](#oper)
+      - [Operation](#oper)
       - [Variable](#var)
       - [Function](#func)
       - [If Statement](#if)
@@ -128,7 +128,33 @@ The java coding language that we use is not incredibly hard to learn once you fi
 ### Coding Basics <a name="cbasics"></a>
 Go through this section if you have no expirence coding, if you are expirenced, skip this.
 ### What is a... <a name="wia"></a>
-- Operations <a name = "oper"></a>
+- Operation <a name = "oper"></a>
+
+```==``` is equals
+
+```!=``` is not equals
+
+```<=``` less than or equal to
+
+```>=``` greater than or equal to
+
+```>``` greater than
+
+```<``` less than
+
+Math:
+
+```++``` increments by one
+
+```--``` decreases by one
+
+```variable += 1``` equivelent of variable + 1 = variable
+
+```variable /= 1``` equivelent of variable / 1 = variable
+
+```variable -= 1``` equivelent of variable - 1 = variable
+
+```variable *= 1``` equivelent of variable * 1 = variable
 
 
 - Variable <a name="var"></a>
