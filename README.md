@@ -35,6 +35,11 @@ If something loads weird or looks like it doesn't belong, this link should work 
   - [Autonomous](#auto)
   - [Editing your code](#edit)
   - [Functions](#functions)
+  - [Hardware](#ware)
+    - [Motors and Servos](#motor)
+    - [Sensors](#sense)
+    - [Indicators](#indicator)
+    - [Built in Functions](#built)
 - [Encoders](#encode)
   - [How do they work?](#eWork)
   - [How do I use them?](#eUse)
@@ -339,6 +344,18 @@ One major part is editing your code, to do this you will open your project in an
 You will see that this is saying public int, you use void if you are returning nothing, and the proper variable type if you are returning something. This would be called as, ```telemetry.addData("Number",String(imaginaryFunction3(9,true)))``` 
   
 Hint: Int() puts the string into int form 
+
+## Hardware <a name="ware"></a>
+
+Hardware is what FTC gives us, we call all of these things in order to use some usefull built in functions.
+
+### Motors and Servos <a name="motor"></a>
+
+### Sensors <a name="sense"></a>
+
+### Indicators <a name="indicator"></a>
+
+## Built in Functions <a name="built"></a>
 
 ## Encoders <a name="encode"></a>
 Encoders are very accurate measurement systems that rely on the wheel movements to measure distances.
