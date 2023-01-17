@@ -347,11 +347,84 @@ Hint: Int() puts the string into int form
 
 ## Hardware <a name="ware"></a>
 
-Hardware is what FTC gives us, we call all of these things in order to use some usefull built in functions.
+Hardware is what FTC gives us, we call all of these things in order to use some useful built in functions. It also allows us to call all of the devices possible in order to make sure we can use all of these devices to their full ability.
 
 ### Motors and Servos <a name="motor"></a>
 
+```import com.qualcomm.robotcore.hardware.DcMotor;  import com.qualcomm.robotcore.hardware.Servo;```
+
+You will use these to import the class files needed to use DcMotors and Servos.
+
+```public DcMotor name = null; public Servo name = null;```
+
+Place this after the declaration of the class ```public class name extends name { ``` You will use these to declare the name as a DcMotor or as a Servo whichever it may be. Make sure you change the name as this will be how you call the motor or servo further in your code.
+
+Then use ```name = hardwareMap.get(DcMotor.class, "name2");```. Place this after ```void runOpMode(){```This will allow the robot to find the device. You will need to put name2 in the configuration of the Driver Station. Name will be the same as in the first part.
+
 ### Sensors <a name="sense"></a>
+
+Touch Sensors - Same as motors, just different syntax.
+
+```import com.qualcomm.robotcore.hardware.TouchSensor;```
+
+```public TouchSensor touchSensor;```
+
+```touchSensor = hardwareMap.get(TouchSensor.class, ("touchSensor"));```
+
+Distance Sensors
+
+```import com.qualcomm.robotcore.hardware.DistanceSensor;```
+
+```public DistanceSensor distance;```
+
+```distance = hardwareMap.get(DistanceSensor.class, "name");```
+
+Color Sensors
+
+```
+import com.qualcomm.robotcore.hardware.NormalizedColorSensor;
+import com.qualcomm.robotcore.hardware.NormalizedRGBA;
+```
+
+```NormalizedColorSensor colorSensor;```
+
+```colorSensor = hardwareMap.get(NormalizedColorSensor.class, "name");```
+
+[Color] Example opMode to use color sensors
+
+IMU
+
+The IMU or Internal Measurement Unit, is a very useful tool to find the robot orientation
+
+```
+import com.qualcomm.hardware.bosch.BNO055IMU;
+import com.qualcomm.hardware.bosch.JustLoggingAccelerationIntegrator;
+```
+
+```
+public BNO055IMU imu;    //imu module inside expansion hub
+public Orientation angles;     //imu uses these to find angles and classify them
+public Acceleration gravity;    //Imu uses to get acceleration
+```
+
+```
+BNO055IMU.Parameters parameters = new BNO055IMU.Parameters();
+parameters.angleUnit = BNO055IMU.AngleUnit.DEGREES;
+parameters.accelUnit = BNO055IMU.AccelUnit.METERS_PERSEC_PERSEC;
+parameters.calibrationDataFile = "BNO055IMUCalibration.json"; // see the calibration sample opmode
+parameters.loggingEnabled = true;
+parameters.loggingTag = "IMU";
+parameters.accelerationIntegrationAlgorithm = new JustLoggingAccelerationIntegrator();
+imu = hardwareMap.get(BNO055IMU.class, "imu");
+imu.initialize(parameters);
+angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
+gravity = imu.getGravity();
+imu.startAccelerationIntegration(new Position(), new Velocity(), 1000);
+```
+
+To get the heading, use angles.firstAngle for most control hub configurations. You might have to change this based on how your control hub is mounted.
+
+[IMU] Example opMode.
 
 ### Indicators <a name="indicator"></a>
 
@@ -498,3 +571,5 @@ Robot Controller
 [new]: /images/new.png  
 [import]: /examples/import
 [eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
+[color]: /examples/SensorColor.java
+[IMU]: /examples/SensorBNO055IMU.java
