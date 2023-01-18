@@ -428,7 +428,53 @@ To get the heading, use angles.firstAngle for most control hub configurations. Y
 
 ### Indicators <a name="indicator"></a>
 
+Digital LED Indicators are a very good way to get feedback from your robot. It is helpful because it can show you what is happening inside the robot and code.
+
+```import com.qualcomm.robotcore.hardware.DigitalChannel;```
+
+``` 
+public DigitalChannel red1;
+public DigitalChannel green1;
+```
+
+This will follow the same pattern of all of the sensors
+
+```
+red1 = hardwareMap.get(DigitalChannel.class, "red1");
+green1 = hardwareMap.get(DigitalChannel.class, "green1");
+```
+
+```
+red1.setMode(DigitalChannel.Mode.OUTPUT);//required to use indicators
+green1.setMode(DigitalChannel.Mode.OUTPUT);
+```
+
+Call it in your code with ```green1.setState(false); red1.setState(true);``` or the inverse, setting green to true and red to false.
+
 ## Built in Functions <a name="built"></a>
+
+A lot of devices in FTC have some very useful built in functions. This list will only include a few as I haven't actually looked into the depth of these but these should be most of the skim level ones everyone will use.
+
+```
+motor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);//sets the motor to reset encoder
+motor.setDirection(DcMotor.Direction.REVERSE);//sets the direction as reverse, it assumes it will be FORWARD if you don't put this in
+motor.setMode(DcMotor.RunMode.RUN_USING_ENCODER);//sets the motor to give encoder output back to the user
+motor.setZeroPowerBehavior(BRAKE);//sets the motor to brake when no power is sent, other option is FLOAT, the motor will allow for outside influence
+red1.setMode(DigitalChannel.Mode.OUTPUT);//required to use indicators
+green1.setMode(DigitalChannel.Mode.OUTPUT);
+servo.setPosition(0-1);//will set the position of the servo, 0-1
+green1.setState(false);
+red.setState(true);
+motor.getCurrentPosition()//gets current encoder position
+motor.setPower(0-1)
+motor.setTargetPosition(target);//this will set the target to run to in run to position
+motor.setMode(DcMotor.RunMode.RUN_TO_POSITION);//will make the robot go to the position and get to the position no matter the direction
+motor.isBusy()//checks to see if the motor is still running to a position
+distance.getDistance(DistanceUnit.CM)//this is how you would call to get a distance, other options are MM, M, and INCHES
+NormalizedRGBA color = colorSensor.getNormalizedColors();//this and the one below are how you get colors from the color sensors
+Color.colorToHSV(color.toColor(), hsvValues);
+touchSensor.isPressed()//will return true if it is pressed
+```
 
 ## Encoders <a name="encode"></a>
 Encoders are very accurate measurement systems that rely on the wheel movements to measure distances.
