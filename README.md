@@ -40,6 +40,7 @@ If something loads weird or looks like it doesn't belong, this link should work 
     - [Sensors](#sense)
     - [Indicators](#indicator)
     - [Built in Functions](#built)
+  - [GamePad Input](#gp)
 - [Encoders](#encode)
   - [How do they work?](#eWork)
   - [How do I use them?](#eUse)
@@ -476,6 +477,30 @@ Color.colorToHSV(color.toColor(), hsvValues);
 touchSensor.isPressed()//will return true if it is pressed
 ```
 
+## Gamepad Input <a name="gp"></a>
+
+Gamepad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){``` to check if it has been pressed. Other gamepad buttons give different inputs. Some will give floats back while some are boolean. You can also use gamepad2 to use a second one. Below is a list of every input and what type it will give back to the robot.
+
+```
+.a boolean
+.b boolean
+.y boolean
+.x boolean
+.left_stick_y or x or right float
+.right_stick_x or y or left float
+.dpad_down boolean
+.dpad_up boolean
+.dpad_right boolean
+.dpad_left boolean
+.back boolean
+.start boolean
+.left_bumper boolean
+.right_bumper boolean
+.left_stick_button or right boolean
+.right_trigger or left float
+.touchpad_finger_1_x or y float
+```
+
 ## Encoders <a name="encode"></a>
 Encoders are very accurate measurement systems that rely on the wheel movements to measure distances.
 
@@ -558,16 +583,14 @@ I would love to have feedback on this repository. You can contact me through the
 - [Sir B Sanger][buser]
 
 ## Glossary <a name="gloss"></a>
-First Tech Challenge
+
 A repository is a folder hosted on github that contains code and items.
-Push and pull at the same time using github  
+
 A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is on the right side of the phone when selecting an opmode.
+
 A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
-My apoligies if this doesn't work, some code software allows this exact code, some doesn't.
-Some devices accept this.
-Driver Station
-Robot Controller
-  
+
+My apoligies if this doesn't work, some code software allows this exact code, some doesn't.  
   
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
