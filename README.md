@@ -64,6 +64,8 @@ If something loads weird or looks like it doesn't belong, this link should work 
 - [FTC Resource Library][lib]
 - [Github -> Discord Web Hooks][web]
 - [3D Printing Basics by my Dad][3D]
+- [Mecanum Drivetrain QuickStart][qm]
+- [TankDrive Drivetrain Quickstart][qt]
 - - - - - 
 ## Tips and Hints <a name="tip"></a>
 ### 1. PRACTICE!!
@@ -613,6 +615,8 @@ My apoligies if this doesn't work, some code software allows this exact code, so
 [tfodweb]: https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.java
 [vu]: https://developer.vuforia.com/license-manager
 [3D]: https://docs.google.com/presentation/d/1MeLkA9mCI4vZMiejlqMZpAhZvbV2ThvSf6oZBzhQGdo/edit?usp=sharing
+[qm]: https://gm0.org/en/latest/docs/software/tutorials/mecanum-drive.html
+[qt]: https://docs.revrobotics.com/kickoff-concepts/freight-frenzy-2021-2022/programming-teleoperated
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
