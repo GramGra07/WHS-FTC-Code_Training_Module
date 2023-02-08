@@ -1,6 +1,6 @@
 # WHS-FTC-GramGra07-Code_Training_Mod       
-## Created by FTC team 10448 Mach 5
-### To help incoming freshman and everyone that needs it understand the coding process and language involved in ftc programming
+## Created by Graden FTC Team 10448 Mach 5 
+### To help everyone that wants to understand the coding process and language involved in FTC programming in Java
 
 If something loads weird or looks like it doesn't belong, this link should work better. https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
 
