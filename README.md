@@ -66,6 +66,7 @@ If something loads weird or looks like it doesn't belong, this link should work 
 - [3D Printing Basics by my Dad][3D]
 - [Mecanum Drivetrain QuickStart][qm]
 - [TankDrive Drivetrain Quickstart][qt]
+- [Very good overall tutorial on the basics][bb]
 - - - - - 
 ## Tips and Hints <a name="tip"></a>
 ### 1. PRACTICE!!
@@ -620,6 +621,7 @@ My apoligies if this doesn't work, some code software allows this exact code, so
 [3D]: https://docs.google.com/presentation/d/1MeLkA9mCI4vZMiejlqMZpAhZvbV2ThvSf6oZBzhQGdo/edit?usp=sharing
 [qm]: https://gm0.org/en/latest/docs/software/tutorials/mecanum-drive.html
 [qt]: https://docs.revrobotics.com/kickoff-concepts/freight-frenzy-2021-2022/programming-teleoperated
+[bb]: https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/blocks-programming-guide.pdf
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
