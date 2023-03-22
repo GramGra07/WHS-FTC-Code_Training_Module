@@ -4,7 +4,7 @@
 
 If something loads weird or looks like it doesn't belong, this link should work better. https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
 
-# Table of Contents
+# Table of Contents <a name="top"></a>
 - [Links](#link)
 - [Tips and Hints](#tip)
 - [Fatal Erorrs](#fatal)
@@ -133,6 +133,8 @@ In github, tap on your profile ( top right corner ), then:
 5. ![step5a][step5]  
 6. ![step6a][step6]  ( Select all, it will work better that way )
 
+[Go to top](#top)
+
 ## Coding <a name="code"></a>
 The java coding language that we use is not incredibly hard to learn once you figure it all out. It follows all of the coding fundamentals you may already know.
 
@@ -188,6 +190,12 @@ Math:
   
   While loops are very helpful in robot code. They can help you to make the robot do something until a condition is met. These are used by the ftc company in their own opmodes to have the robot be on when you tell it to. These are very useful for distance or color sensors. For loops run the event a certain amount of times. ```for x in range(10){```, this would have the stuff in the loop run 10 times.
   
+- Imports <a name="import"></a>
+
+  Imports are very useful and can give you many more abilities in your code, one of the biggest known things to import is time. Other than that, every different sensor and motor you use will need to be imported.
+  
+[Go to top](#top)
+
 ### Getting started <a name="start2"></a>
 - General Knowledge
   - ```;``` must be at the end of every line except if it ends in ```{``` or ```}```
@@ -314,6 +322,7 @@ Now we will run ```runtime.reset();``` and ```getRuntime()```, these are require
   
 This gets the runtime, checks it and if it is less than or equal to 30 seconds, it keeps running. If it is over or equal to 30, it stops.
 
+[Go to top](#top)
 
 ### Editing your code <a name="edit"></a>
 One major part is editing your code, to do this you will open your project in android studio, then tap FTC Robot Controller/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples to get to the samples, you will need to find the teamcode part to edit your code correctly.
@@ -483,6 +492,8 @@ Color.colorToHSV(color.toColor(), hsvValues);
 touchSensor.isPressed()//will return true if it is pressed
 ```
 
+[Go to top](#top)
+
 ## Gamepad Input <a name="gp"></a>
 
 Gamepad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){``` to check if it has been pressed. Other gamepad buttons give different inputs. Some will give floats back while some are boolean. You can also use gamepad2 to use a second one. Below is a list of every input and what type it will give back to the robot.
@@ -588,6 +599,8 @@ I would love to have feedback on this repository. You can contact me through the
 - [Sir C Timmons][cuser]
 - [Sir B Sanger][buser]
 
+[Go to top](#top)
+
 ## Glossary <a name="gloss"></a>
 
 A repository is a folder hosted on github that contains code and items.
@@ -596,8 +609,10 @@ A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is
 
 A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
 
-My apoligies if this doesn't work, some code software allows this exact code, some doesn't.  
+My apologies if this doesn't work, some code software allows this exact code, some doesn't.  
   
+[Go to top](#top)
+
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
 [user]: https://github.com/GramGra07
