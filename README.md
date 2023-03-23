@@ -68,7 +68,7 @@ Github Pages located [here][page]
 - [3D Printing Basics by my Dad][3D]
 - [Mecanum Drivetrain QuickStart][qm]
 - [TankDrive Drivetrain Quickstart][qt]
-- [Very good overall tutorial on the basics][bb]
+- [Very good overall tutorial on the basics of blocks][bb]
 - - - - - 
 ## Tips and Hints <a name="tip"></a>
 ### 1. PRACTICE!!
