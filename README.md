@@ -2,9 +2,9 @@
 ## Created by Graden FTC Team 10448 Mach 5 
 ### To help everyone that wants to understand the coding process and language involved in FTC programming and Java
 
-Github Repo located here: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
+Github Repo located [here][repo]
 
-Github Pages located here: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
+Github Pages located [here][page]
 
 # Table of Contents <a name="top"></a>
 - [Links](#link)
@@ -639,6 +639,8 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [qm]: https://gm0.org/en/latest/docs/software/tutorials/mecanum-drive.html
 [qt]: https://docs.revrobotics.com/kickoff-concepts/freight-frenzy-2021-2022/programming-teleoperated
 [bb]: https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/blocks-programming-guide.pdf
+[page]: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
+[repo]: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
@@ -664,10 +666,10 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [file]: /images/file.png
 [open]: /images/open.png
 [new]: /images/new.png  
-[import]: /examples/import
+[import]: /examples/import.txt
 [eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
 [color]: /examples/SensorColor.java
 [IMU]: /examples/SensorBNO055IMU.java
 
-[gitVid]:
-[asVid]:
+[gitVid]: /videos/
+[asVid]: /videos/
