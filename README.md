@@ -1,8 +1,10 @@
 # WHS-FTC-GramGra07-Code_Training_Mod       
 ## Created by Graden FTC Team 10448 Mach 5 
-### To help everyone that wants to understand the coding process and language involved in FTC programming in Java
+### To help everyone that wants to understand the coding process and language involved in FTC programming and Java
 
-If something loads weird or looks like it doesn't belong, this link should work better. https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
+Github Repo located here: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
+
+Github Pages located here: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
 
 # Table of Contents <a name="top"></a>
 - [Links](#link)
@@ -188,7 +190,7 @@ Math:
 
 - Loops <a name="loop"></a>
   
-  While loops are very helpful in robot code. They can help you to make the robot do something until a condition is met. These are used by the ftc company in their own opmodes to have the robot be on when you tell it to. These are very useful for distance or color sensors. For loops run the event a certain amount of times. ```for x in range(10){```, this would have the stuff in the loop run 10 times.
+  While loops are very helpful in robot code. They can help you to make the robot do something until a condition is met. These are used by the ftc company in their own opmodes to have the robot be on when you tell it to. These are very useful for distance or color sensors. For loops run the event a certain amount of times. In Java: ```for (int i = 0; i < 100; i++){``` this is the same as you would use in python: ```for i in range(100){```, this would have the stuff in the loop run 10 times.
   
 - Imports <a name="import"></a>
 
