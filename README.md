@@ -670,6 +670,3 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
 [color]: /examples/SensorColor.java
 [IMU]: /examples/SensorBNO055IMU.java
-
-[gitVid]: /videos/
-[asVid]: /videos/
