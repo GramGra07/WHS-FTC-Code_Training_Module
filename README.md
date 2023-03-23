@@ -9,7 +9,7 @@ Github Pages located [here][page]
 # Table of Contents <a name="top"></a>
 - [Links](#link)
 - [Tips and Hints](#tip)
-- [Fatal Erorrs](#fatal)
+- [Fatal Errors](#fatal)
 - [Getting Started](#start)
   - [Forking](#fork)
   - [Cloning the repository](#clone)
@@ -52,7 +52,7 @@ Github Pages located [here][page]
 - [Updating your devices](#update)
 - [Overall game](#ovr)
 - [Feedback](#feed)
-- [Agknowledgements](#agk)
+- [Acknowledgements](#agk)
 - [Glossary](#gloss)
 - - - - - - - - - 
 ## Useful Links <a name="link"></a>
@@ -72,9 +72,9 @@ Github Pages located [here][page]
 - - - - - 
 ## Tips and Hints <a name="tip"></a>
 ### 1. PRACTICE!!
-- It is known that if you practice somthing, you will get better at it over time, this is the same for coding and robotics
+- It is known that if you practice something, you will get better at it over time, this is the same for coding and robotics
 ### 2. Ask Questions
-- The WHS team has a lot of intellegent people who would love to help you if you simply ask
+- A lot of people know what they are doing and are willing to help if you just ask
 ### 3. If you don't know a concept, look it up
 - There are a lot of helpful solutions and people on the internet, someone **WILL** usually know the answer to your problem
 ### 4. READ
@@ -88,7 +88,7 @@ Github Pages located [here][page]
 
 **Null Pointer Exception** - Can't find whatever you are calling such as a motor. You can get this if the motor or object is not initialized or setup correctly.
 
-When updating or upgrading your control hub, you may get an error saying something like, could not find a file, in some random folder that you can't find. This is caused by an error in your gradle code. If you can't find another way to fix it I would recommend this method, it is a little complicated but will solve it. First, create a new repository **DO NOT ADD ANYTHING AUTOMATICALLY** not even a read me we will call this repository our bridge. Then scroll down to the bottom and tap import from repository, grab the URL of your old repository and make sure it finished importing. Then go into the old repositories settings and delete the repository. Then go to the FTC Robot Controller and fork it. You will want to clone both the bridge repository and the new one we just forked. Now you will copy over all of your working files from the bridge repo and put them in your new repository. As soon as that is finished and commited you should be good to go, you can then delete the bridge repository.
+When updating or upgrading your control hub, you may get an error saying something like, could not find a file, in some random folder that you can't find. This is caused by an error in your gradle code. If you can't find another way to fix it I would recommend this method, it is a little complicated but will solve it. First, create a new repository **DO NOT ADD ANYTHING AUTOMATICALLY** not even a read me we will call this repository our bridge. Then scroll down to the bottom and tap import from repository, grab the URL of your old repository and make sure it finished importing. Then go into the old repositories settings and delete the repository. Then go to the FTC Robot Controller and fork it. You will want to clone both the bridge repository and the new one we just forked. Now you will copy over all of your working files from the bridge repo and put them in your new repository. As soon as that is finished and committed you should be good to go, you can then delete the bridge repository.
 
 ## Getting started <a name="start"></a>
 In order to setup your repository correctly you will do 2 things. 1. Fork and 2. Clone this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
@@ -111,7 +111,7 @@ Github is organized in a few sections. One, the code section, this is where your
 
 ### Commits  <a name="commit"></a>
   
-Commiting is an essential part in every part of coding while connected to github, it makes sure you have the latest edited version of your code local    on your computer, we got the code local to the computer in cloning. In a github file it is a green rectangular button at the bottom of the    file that says commit changes, ![gitCommita][gitcommit] when commiting directly from github it strictly gives the code to github, you will not have the code local yet. To make your code local you will need to pull in your code app, most likely android studio. In android studio, the commit button is a check mark in your top right corner.![commita][commit] You are also allowed to commit and push, to be explained later in push. You will also need a commit message to be able to push the commit.
+Committing is an essential part in every part of coding while connected to github, it makes sure you have the latest edited version of your code local    on your computer, we got the code local to the computer in cloning. In a github file it is a green rectangular button at the bottom of the    file that says commit changes, ![gitCommita][gitcommit] when committing directly from github it strictly gives the code to github, you will not have the code local yet. To make your code local you will need to pull in your code app, most likely android studio. In android studio, the commit button is a check mark in your top right corner.![commita][commit] You are also allowed to commit and push, to be explained later in push. You will also need a commit message to be able to push the commit.
   
 ### Push <a name="push"></a>
   - What is a push?
@@ -119,7 +119,7 @@ Commiting is an essential part in every part of coding while connected to github
   
 ### Pull/merge <a name="pull"></a>
  - What is a pull?
-    - A pull is the exact opposite of a push. It will take the currennt version of the code directly from github and sync it locally to your device/coding app. This is also essential as it allows you to get the teams latest version of code. This is helpful when multiple people are working on code all at once. If you are pushing sometimes it will ask you to merge your current code, this means you dont have the latest version, not to worry though as if you say yes github will automatically merge and add your code to the latest code. The pull button is an arrow pointing in, or towards your computer. ![pulla][pull]
+    - A pull is the exact opposite of a push. It will take the current version of the code directly from github and sync it locally to your device/coding app. This is also essential as it allows you to get the teams latest version of code. This is helpful when multiple people are working on code all at once. If you are pushing sometimes it will ask you to merge your current code, this means you don't have the latest version, not to worry though as if you say yes github will automatically merge and add your code to the latest code. The pull button is an arrow pointing in, or towards your computer. ![pulla][pull]
   
 ### Managing your server <a name="manage"></a>
 Managing a server is really not that hard if you do it correctly from the start. There is a settings ![settingsa][setting] button in your repository, in this tab you will find a bunch of options, it is better if you don't mess with anything that you don't know what it does. In the collaborator tab you will need to add @stcline (if you are a part of WHS). Other than that there are really no settings you need to mess with except maybe email notifications if you would like that.
@@ -142,7 +142,7 @@ The java coding language that we use is not incredibly hard to learn once you fi
 
 # **IMPORTANT** when editing your code, only edit it in the **teamcode** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
 ### Coding Basics <a name="cbasics"></a>
-Go through this section if you have no expirence coding, if you are expirenced, skip this.
+Go through this section if you have no experience coding, if you are experienced, skip this.
 ### What is a... <a name="wia"></a>
 - Operation <a name = "oper"></a>
 
@@ -164,13 +164,13 @@ Math:
 
 ```--``` decreases by one
 
-```variable += 1``` equivelent of variable + 1 = variable
+```variable += 1``` equivalent of variable + 1 = variable
 
-```variable /= 1``` equivelent of variable / 1 = variable
+```variable /= 1``` equivalent of variable / 1 = variable
 
-```variable -= 1``` equivelent of variable - 1 = variable
+```variable -= 1``` equivalent of variable - 1 = variable
 
-```variable *= 1``` equivelent of variable * 1 = variable
+```variable *= 1``` equivalent of variable * 1 = variable
 
 
 - Variable <a name="var"></a>
@@ -526,7 +526,7 @@ Encoders are very accurate measurement systems that rely on the wheel movements 
 ### How do they work? <a name="eWork"></a>
 ![encoder demo](https://user-images.githubusercontent.com/101433010/204153129-1034463b-cef9-4044-8814-035f8cbce675.png)
 
-Most of them work by having a light on one side of the encoder disk. On the other side of the disk there is usually a reciever. On the encoder disk there are a bunch of holes, this is the encoder ticks per revolution and you should be able to find this where you ordered the motor you are using. Most of the motors available for FTC have encoders built into them.
+Most of them work by having a light on one side of the encoder disk. On the other side of the disk there is usually a receiver. On the encoder disk there are a bunch of holes, this is the encoder ticks per revolution and you should be able to find this where you ordered the motor you are using. Most of the motors available for FTC have encoders built into them.
 
 ![encoder](https://user-images.githubusercontent.com/101433010/204154390-d6a49351-b7ba-4319-a151-6f3f3db761b1.gif)
 
@@ -538,7 +538,7 @@ static final double WHEEL_DIAMETER_INCHES = WHEEL_DIAMETER_MM * 0.0393701;     /
 static final double COUNTS_PER_INCH = (COUNTS_PER_MOTOR_REV * your gear ratio) /
             (WHEEL_DIAMETER_INCHES * 3.1415);//gets the overall counts per inch to help with encoders
 ```
-These calculations are the exact calculations that you shoud use to calculate the counts per inch of the encoder. 
+These calculations are the exact calculations that you should use to calculate the counts per inch of the encoder. 
 ```.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);```
 This run mode will stop and reset the encoder to 0 ticks.
 ```.setMode(DcMotor.RunMode.RUN_USING_ENCODER);```
@@ -547,7 +547,7 @@ This run mode will make it start to track the encoder position.
 This sets a new target by setting a target position based on the current position.
 ```.setTargetPosition(newLeftTarget);```
 ```.setMode(DcMotor.RunMode.RUN_TO_POSITION);```
-This sets the target positon of the motor to the target we just got above. It will also run the motor to the position.
+This sets the target position of the motor to the target we just got above. It will also run the motor to the position.
 After that use the method ```.setPower(1);``` to set the power of the motor.
 ```
 while (opModeIsActive() &&
@@ -570,7 +570,7 @@ You should use them because they are very helpful to go to an exact distance. Us
 To put the code onto your robot, you will plug in the RC phone or the control hub to your computer and press the ![runa][run] button. It will take a bit to load and once it finishes, you can disconnect and then go to your DS phone and select your opmode, then select the run button once, tap it again and your code will run.
 
 ## Machine learning <a name="ml"></a>
-In FTC we typically use machine learning an AI's to detect images. In the FTC sample code in concept tensor flow object detection or TFOD, this is exactly what this does, it uses a tensorflow lite model in order for the robot to detect certain images, FTC has already trained some of it for us, but if you want to create your own AI it will take a little bit more work. [Here is the FTC object detection software][tfodweb] To start, make sure your team is registered and you have roles set up correctly, this [website][mlset] will show you exxactly how that is possible. Note that only coaches can put video into the recognition so either arrange for a time or have your coach sign in for you *wink*. Then you will take your videos, I would recommend (for Power Play season) to have 6 videos, all 3 sides on both color cones, this will allow for the most accurate design. I just used wevideo to combine these videos into one. Once your coach or you have uploaded the video to the [Machine learning site][ml], you will have to wait for it to "extract" the frames. Then you will click on the description and get to work, you will get a picture of your video, make your object detection by dragging your box over the part you want it to detect and name it. Then click start tracking. This might take a while and you will have to watch it like a hawk. It might think some of your images are the same label in which case go to the first frame it messes up and simply change the label and hit start tracking. Once you have labeled all of your frames, you will select your video and click produce dataset, all of the default settings should be good and this is the shortest part of the process. Next you will have to select the dataset and click start training. This part will take as long as you want it to take, I would recommend 3000 steps as this will give you the highest accuracy. Once you download your model, place it into your assets folder and change ```private static final String TFOD_MODEL_ASSET = "PowerPlay.tflite";``` in your code to ```private static final String TFOD_MODEL_ASSET = "your file name.tflite";```. Now you will have to go back to the datasets and look at your labels, put these labels into the FTC sample code and you are good to go. 
+In FTC we typically use machine learning an AI's to detect images. In the FTC sample code in concept tensor flow object detection or TFOD, this is exactly what this does, it uses a tensorflow lite model in order for the robot to detect certain images, FTC has already trained some of it for us, but if you want to create your own AI it will take a little bit more work. [Here is the FTC object detection software][tfodweb] To start, make sure your team is registered and you have roles set up correctly, this [website][mlset] will show you exactly how that is possible. Note that only coaches can put video into the recognition so either arrange for a time or have your coach sign in for you *wink*. Then you will take your videos, I would recommend (for Power Play season) to have 6 videos, all 3 sides on both color cones, this will allow for the most accurate design. I just used wevideo to combine these videos into one. Once your coach or you have uploaded the video to the [Machine learning site][ml], you will have to wait for it to "extract" the frames. Then you will click on the description and get to work, you will get a picture of your video, make your object detection by dragging your box over the part you want it to detect and name it. Then click start tracking. This might take a while and you will have to watch it like a hawk. It might think some of your images are the same label in which case go to the first frame it messes up and simply change the label and hit start tracking. Once you have labeled all of your frames, you will select your video and click produce dataset, all of the default settings should be good and this is the shortest part of the process. Next you will have to select the dataset and click start training. This part will take as long as you want it to take, I would recommend 3000 steps as this will give you the highest accuracy. Once you download your model, place it into your assets folder and change ```private static final String TFOD_MODEL_ASSET = "PowerPlay.tflite";``` in your code to ```private static final String TFOD_MODEL_ASSET = "your file name.tflite";```. Now you will have to go back to the datasets and look at your labels, put these labels into the FTC sample code and you are good to go. 
 
 - Getting a VuForia key
 
@@ -590,7 +590,7 @@ The game begins with a 30 second autonomous period, runtime helps us achieve thi
 ## Feedback <a name="feed"></a>
 I would love to have feedback on this repository. You can contact me through the discussions! Thanks!
 
-## Agknowledgements <a name="agk"></a>
+## Acknowledgements <a name="agk"></a>
 - [Google][ggl]
 - [Mr Cline][clineuser]
 - [Mr Mayfield][juser]
