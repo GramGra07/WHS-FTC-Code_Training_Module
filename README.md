@@ -19,6 +19,7 @@ Github Pages located [here][page]
   - [Pull/merge](#pull)
   - [Managing your server](#manage)
   - [Personal Access Token](#pat)
+  - [Video Explanation of GitHub](#gitvid)
 - [Coding](#code)
   - [Code Basics](#cbasics)
     - [What is a...](#wia)
@@ -135,9 +136,13 @@ In github, tap on your profile ( top right corner ), then:
 5. ![step5a][step5]  
 6. ![step6a][step6]  ( Select all, it will work better that way )
 
+### Video Explanation of GitHub <a name="gitvid"></a>
+https://user-images.githubusercontent.com/101433010/227430075-0f257d68-aff1-4b53-9fdb-045a19c1fb97.mov
+
 [Go to top](#top)
 
 ## Coding <a name="code"></a>
+
 The java coding language that we use is not incredibly hard to learn once you figure it all out. It follows all of the coding fundamentals you may already know.
 
 # **IMPORTANT** when editing your code, only edit it in the **teamcode** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
