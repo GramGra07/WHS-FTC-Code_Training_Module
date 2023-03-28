@@ -6,6 +6,8 @@ Github Repo located [here][repo]
 
 Github Pages located [here][page]
 
+Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded website )
+
 # Table of Contents <a name="top"></a>
 - [Links](#link)
 - [Tips and Hints](#tip)
@@ -646,6 +648,7 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [bb]: https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/blocks-programming-guide.pdf
 [page]: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
 [repo]: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
+[feed]: https://gramgra07.github.io/CTMWeb/
   
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
