@@ -1,8 +1,9 @@
 ## Useful Links <a name="link"></a>
 - My [user page][user] (GramGra07)
-- FTC Official Github [user page][ftcpage]
+- FTC Official Github [user page](https://github.com/FIRST-Tech-Challenge)
 - Team Resources [folder][team]
 - [Rev Hardware Client][rhc]
+- [FTC Sample OpModes][ftcpage]
 - [FTC BasicOpModeLinear (21-22)][lop]
 - [Game Format](#ovr)
 - [Game Manual 0][gm0]
@@ -27,7 +28,7 @@
 [Go back home][hP]
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
-[ftcpage]: https://github.com/FIRST-Tech-Challenge
+[ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
 [rev]: https://www.revrobotics.com/

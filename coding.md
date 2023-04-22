@@ -10,6 +10,8 @@ The java coding language that we use is not incredibly hard to learn once you fi
 
 # **IMPORTANT** when editing your code, only edit it in the **teamcode** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
 
+## There are a lot of really good info and sample opModes [here][ftcpage]
+
 ### Getting started <a name="start2"></a>
 - General Knowledge
     - ```;``` must be at the end of every line except if it ends in ```{``` or ```}```
@@ -332,7 +334,7 @@ Gamepad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){`
 [Go back home][hP]
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
-[ftcpage]: https://github.com/FIRST-Tech-Challenge
+[ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
 [rev]: https://www.revrobotics.com/

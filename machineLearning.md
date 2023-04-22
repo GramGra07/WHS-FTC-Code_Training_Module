@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7
 [Go back home][hP]
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
-[ftcpage]: https://github.com/FIRST-Tech-Challenge
+[ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
 [rev]: https://www.revrobotics.com/

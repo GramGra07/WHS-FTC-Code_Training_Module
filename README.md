@@ -95,7 +95,7 @@ A  Automonous opmode is an opmode that continuously loops for 30 seconds at the 
 My apologies if this doesn't work, some code software allows this exact code, some doesn't.  
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
-[ftcpage]: https://github.com/FIRST-Tech-Challenge
+[ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
 [rev]: https://www.revrobotics.com/
