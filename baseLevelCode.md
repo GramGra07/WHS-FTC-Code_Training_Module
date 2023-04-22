@@ -53,7 +53,7 @@ Math:
 
   Imports are very useful and can give you many more abilities in your code, one of the biggest known things to import is time. Other than that, every different sensor and motor you use will need to be imported.
 
-
+[Next up: Coding][cP]
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
@@ -111,3 +111,11 @@ Math:
 [eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
 [color]: /examples/SensorColor.java
 [IMU]: /examples/SensorBNO055IMU.java
+
+[blcP]: /baseLevelCode.md
+[cP]: /coding.md
+[mlP]: /machineLearning.md
+[gbP]: /githubBasics.md
+[laP]: /linksAndAcknowledgements.md
+[eP]: /encoders.md
+[hP]: /README.md

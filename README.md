@@ -9,13 +9,13 @@ Github Pages located [here][page]
 Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded website )
 
 # Table of Contents <a name="top"></a>
-- [Links](#link)
+- [Links](/linksAndAcknowledgements.md#link)
 - [Tips and Hints](#tip)
 - [Fatal Errors](/coding.md#fatal)
 - [Getting Started](/githubBasics.md)
   - [Set-up Android Studio](/githubBasics.md#setup)
   - [Forking](/githubBasics.md#fork)
-  - [Cloning the repository](#clone)
+  - [Cloning the repository](/githubBasics.md#clone)
 - [Github Basics](/githubBasics.md#gbasics)
   - [Commits](/githubBasics.md#commit)
   - [Push](/githubBasics.md#push)
@@ -33,7 +33,6 @@ Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded w
       - [Print/Telemetry System](/baseLevelCode.md#print)
       - [Loop](/baseLevelCode.md#loop)
       - [Import](/baseLevelCode.md#import)
-      - [Configuration](/baseLevelCode.md#config)
   - [Getting Started](/coding.md#start2)
   - [Setting up your files](/coding.md#files)
   - [Using Variables](/coding.md#usevar)
@@ -56,24 +55,9 @@ Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded w
 - [Updating your devices](#update)
 - [Overall game](#ovr)
 - [Feedback](#feed)
-- [Acknowledgements](#agk)
+- [Acknowledgements](/linksAndAcknowledgements.md#agk)
 - [Glossary](#gloss)
-- - - - - - - - - 
-## Useful Links <a name="link"></a>
-- My [user page][user] (GramGra07)
-- FTC Official Github [user page][ftcpage]
-- Team Resources [folder][team]
-- [Rev Hardware Client][rhc]
-- [FTC BasicOpModeLinear (21-22)][lop]
-- [Game Format](#ovr)
-- [Game Manual 0][gm0]
-- [FTC Resource Library][lib]
-- [Github -> Discord Web Hooks][web]
-- [3D Printing Basics by my Dad][3D]
-- [Mecanum Drivetrain QuickStart][qm]
-- [TankDrive Drivetrain Quickstart][qt]
-- [Very good overall tutorial on the basics of blocks][bb]
-- - - - - 
+- 
 ## Tips and Hints <a name="tip"></a>
 ### 1. PRACTICE!!
 - It is known that if you practice something, you will get better at it over time, this is the same for coding and robotics
@@ -101,17 +85,6 @@ The game begins with a 30 second autonomous period, runtime helps us achieve thi
 ## Feedback <a name="feed"></a>
 I would love to have feedback on this repository. You can contact me through the discussions! Thanks!
 
-## Acknowledgements <a name="agk"></a>
-- [Google][ggl]
-- [Mr Cline][clineuser]
-- [Mr Mayfield][juser]
-- [FTC User Page][ftcpage]
-- [Rev Robotics][rev]
-- [Android Studio][aslink]
-#### Proofreaders
-- [Sir C Timmons][cuser]
-- [Sir B Sanger][buser]
-
 ## Glossary <a name="gloss"></a>
 
 A repository is a folder hosted on github that contains code and items.
@@ -121,7 +94,6 @@ A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is
 A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
 
 My apologies if this doesn't work, some code software allows this exact code, some doesn't.  
-
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
@@ -179,3 +151,11 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
 [color]: /examples/SensorColor.java
 [IMU]: /examples/SensorBNO055IMU.java
+
+[blcP]: /baseLevelCode.md
+[cP]: /coding.md
+[mlP]: /machineLearning.md
+[gbP]: /githubBasics.md
+[laP]: /linksAndAcknowledgements.md
+[eP]: /encoders.md
+[hP]: /README.md

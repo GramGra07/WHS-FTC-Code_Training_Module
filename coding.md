@@ -323,6 +323,9 @@ Gamepad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){`
 .touchpad_finger_1_x or y float
 ```
 
+[Next up: encoders][eP]
+
+[Next up: machine learning][mlP]
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
@@ -380,3 +383,11 @@ Gamepad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){`
 [eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
 [color]: /examples/SensorColor.java
 [IMU]: /examples/SensorBNO055IMU.java
+
+[blcP]: /baseLevelCode.md
+[cP]: /coding.md
+[mlP]: /machineLearning.md
+[gbP]: /githubBasics.md
+[laP]: /linksAndAcknowledgements.md
+[eP]: /encoders.md
+[hP]: /README.md

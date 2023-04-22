@@ -1,5 +1,6 @@
 ## Getting started <a name="start"></a>
-In order to setup your repository correctly you will do 2 things. 1. Fork and 2. Clone this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
+In order to setup your repository correctly you will do 2 things. 
+1.Fork and 2. Clone this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
 
 ### Android Studio Setup <a name="setup"></a>
 
@@ -52,6 +53,8 @@ In github, tap on your profile ( top right corner ), then:
 ### Video Explanation of GitHub <a name="gitvid"></a>
 https://user-images.githubusercontent.com/101433010/227430075-0f257d68-aff1-4b53-9fdb-045a19c1fb97.mov
 
+[Up next: baseLevelCode if you are not proficient in coding][blcP]
+[Or: coding if you are proficient in coding][cP]
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
@@ -109,3 +112,11 @@ https://user-images.githubusercontent.com/101433010/227430075-0f257d68-aff1-4b53
 [eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
 [color]: /examples/SensorColor.java
 [IMU]: /examples/SensorBNO055IMU.java
+
+[blcP]: /baseLevelCode.md
+[cP]: /coding.md
+[mlP]: /machineLearning.md
+[gbP]: /githubBasics.md
+[laP]: /linksAndAcknowledgements.md
+[eP]: /encoders.md
+[hP]: /README.md

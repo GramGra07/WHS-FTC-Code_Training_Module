@@ -9,6 +9,7 @@ Video showing entire process:
 
 https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7-b74c-d8ae17b0868a.mp4
 
+[Back to coding:][cP]
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
@@ -66,3 +67,11 @@ https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7
 [eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
 [color]: /examples/SensorColor.java
 [IMU]: /examples/SensorBNO055IMU.java
+
+[blcP]: /baseLevelCode.md
+[cP]: /coding.md
+[mlP]: /machineLearning.md
+[gbP]: /githubBasics.md
+[laP]: /linksAndAcknowledgements.md
+[eP]: /encoders.md
+[hP]: /README.md
