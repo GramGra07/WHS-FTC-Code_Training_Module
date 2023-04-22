@@ -71,7 +71,6 @@ Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded w
 - A lot of problems can be solved by collaboration with friends and peers
 ### 6. Use prior knowledge
 - Even if your prior knowledge is in a different language, it **will** help you understand this code.
-- - - - - - - -
 
 ## Running your code <a name="run"></a>
 To put the code onto your robot, you will plug in the RC phone or the control hub to your computer and press the ![runa][run] button. It will take a bit to load and once it finishes, you can disconnect and then go to your DS phone and select your opmode, then select the run button once, tap it again and your code will run.

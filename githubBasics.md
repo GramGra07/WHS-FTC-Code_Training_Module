@@ -54,7 +54,10 @@ In github, tap on your profile ( top right corner ), then:
 https://user-images.githubusercontent.com/101433010/227430075-0f257d68-aff1-4b53-9fdb-045a19c1fb97.mov
 
 [Up next: baseLevelCode if you are not proficient in coding][blcP]
+
 [Or: coding if you are proficient in coding][cP]
+
+[Go back home][hP]
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge

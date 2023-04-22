@@ -11,6 +11,8 @@ https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7
 
 [Back to coding:][cP]
 
+[Go back home][hP]
+
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
 [user]: https://github.com/GramGra07

@@ -46,6 +46,8 @@ You should use them because they are very helpful to go to an exact distance. Us
 
 [Back to coding:][cP]
 
+[Go back home][hP]
+
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge

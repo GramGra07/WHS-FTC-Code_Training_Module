@@ -325,7 +325,11 @@ Gamepad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){`
 
 [Next up: encoders][eP]
 
+
 [Next up: machine learning][mlP]
+
+
+[Go back home][hP]
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge
