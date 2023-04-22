@@ -117,7 +117,7 @@ Next we have ```@TeleOp(name="exampleAutoBlank",group="Autonomous")```, this mea
 
 Now we have the ```public class exampleAutoBlank extends exampleTeleOpBlank{``` this means that this opmode can now be used as a secondary opmode. In this case the file is extending the exampleTeleOpBlank file.
 
-Now we don`t have to use ``` HardwarePushbot robot = new HardwarePushbot(); ``` because it has been shared through extension but we have to do ```private ElapsedTime   runtime = new ElapsedTime();``` because it is private.
+Now we don't have to use ``` HardwarePushbot robot = new HardwarePushbot(); ``` because it has been shared through extension but we have to do ```private ElapsedTime   runtime = new ElapsedTime();``` because it is private.
 
 Next we have the function ```public void runOpMode(){``` this runs when you press Init it will run that part. Remember, when you hit Init, it is not running the whole program yet, just the small part in between runOpMode and opModeIsActive.
 
