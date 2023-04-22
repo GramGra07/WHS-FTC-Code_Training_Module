@@ -125,11 +125,12 @@ Now we will run ```runtime.reset();``` and ```getRuntime()```, these are require
 
 ```waitForStart();``` tells the opmode to wait until the user presses go, when this happens, everything inside this function runs.
 
-```while (getRuntime()<=30) {
+```
+while (getRuntime()<=30) {
        getRuntime();
        telemetry.addData(String.valueOf(runtime), "Working");
-  }
-  ```
+  } 
+```
 
 This gets the runtime, checks it and if it is less than or equal to 30 seconds, it keeps running. If it is over or equal to 30, it stops.
 
