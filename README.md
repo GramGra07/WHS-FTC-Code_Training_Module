@@ -57,7 +57,7 @@ Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded w
 - [Feedback](#feed)
 - [Acknowledgements](/linksAndAcknowledgements.md#agk)
 - [Glossary](#gloss)
-- 
+
 ## Tips and Hints <a name="tip"></a>
 ### 1. PRACTICE!!
 - It is known that if you practice something, you will get better at it over time, this is the same for coding and robotics

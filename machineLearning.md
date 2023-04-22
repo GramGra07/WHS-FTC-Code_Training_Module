@@ -9,7 +9,7 @@ Video showing entire process:
 
 https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7-b74c-d8ae17b0868a.mp4
 
-[Back to coding:][cP]
+[Back to coding][cP]
 
 [Go back home][hP]
 

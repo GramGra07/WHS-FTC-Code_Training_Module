@@ -44,7 +44,7 @@ You need to do ```.setMode(DcMotor.RunMode.RUN_USING_ENCODER);``` again to make 
 ### Why should you use them? <a name="eyUse"></a>
 You should use them because they are very helpful to go to an exact distance. Using the opMode found [here][eDemo].
 
-[Back to coding:][cP]
+[Back to coding][cP]
 
 [Go back home][hP]
 
