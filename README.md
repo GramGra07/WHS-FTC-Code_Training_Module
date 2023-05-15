@@ -1,6 +1,7 @@
 # WHS-FTC-GramGra07-Code_Training_Mod       
 ## Created by Graden FTC Team 10448 Mach 5 
 ### To help everyone that wants to understand the coding process and language involved in FTC programming and Java
+## Note: I will continue improving this repository for as long as I can
 
 Github Repo located [here][repo]
 
