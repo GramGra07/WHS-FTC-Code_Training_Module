@@ -9,6 +9,8 @@ Github Pages located [here][page]
 
 Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded website )
 
+Start [here](/gettingStarted.md)
+
 # Table of Contents <a name="top"></a>
 - [Links](/linksAndAcknowledgements.md#link)
 - [Tips and Hints](#tip)
