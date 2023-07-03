@@ -6,7 +6,7 @@ In FTC we typically use machine learning an AI's to detect images. In the FTC sa
 Go to [this website][vu] and log in, and create a new key.
 
 Video showing entire process:
-
+ 
 https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7-b74c-d8ae17b0868a.mp4
 
 [Next up: OpenCV][cv]

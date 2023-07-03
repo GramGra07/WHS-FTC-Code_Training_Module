@@ -1,7 +1,7 @@
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
-[team]: https://github.com/WindsorHSRobotics/Team_Resources
+[team]: https://github.com/WindsorHSRobotics/Team_Resources 
 [rev]: https://www.revrobotics.com/
 [clineuser]: https://github.com/stcline
 [aslink]: https://developer.android.com/studio

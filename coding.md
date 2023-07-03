@@ -1,4 +1,4 @@
-## Fatal Errors <a name="fatal"></a>
+## Fatal Errors <a name="fatal"></a> 
 
 **Null Pointer Exception** - Can't find whatever you are calling such as a motor. You can get this if the motor or object is not initialized or setup correctly.
 

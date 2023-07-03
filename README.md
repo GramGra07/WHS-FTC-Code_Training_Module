@@ -3,7 +3,7 @@
 ### To help everyone that wants to understand the coding process and language involved in FTC programming and Java
 ## Note: I will try to keep updating for as long as possible but please request features and give feedback [here][feed]
 
-Github Repo located [here][repo]
+Github Repo located [here][repo] 
 
 Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded website )
 

@@ -1,4 +1,4 @@
-## Getting started <a name="start"></a>
+## Getting started <a name="start"></a> 
 In order to setup your repository correctly you will do 2 things. 
 1.Fork and 2. Clone this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa][step1] and to **collaborators** then add your team members using the add people button.
 

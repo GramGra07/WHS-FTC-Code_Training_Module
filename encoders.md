@@ -1,4 +1,4 @@
-## Encoders <a name="encode"></a>
+## Encoders <a name="encode"></a> 
 Encoders are very accurate measurement systems that rely on the wheel movements to measure distances.
 
 ### How do they work? <a name="eWork"></a>

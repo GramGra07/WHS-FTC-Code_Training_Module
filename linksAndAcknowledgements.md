@@ -68,7 +68,7 @@
 [setting]: /images/settings.png
 [beTele]: /examples/exampleTeleOpBlank
 [feTele]: /examples/exampleTeleOpFull
-[beAuto]: /examples/exampleAutoBlank.java
+[beAuto]: /examples/exampleAutoBlank.java 
 [feAuto]: /examples/exampleAutoFull.java
 [code]: /images/code.png
 [zip]: /images/zip.png

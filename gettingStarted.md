@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started 
 
 To get started with Github, Android Studio, and Java Programming, you will need to follow these steps:
 1. Create a Github account if you haven't already

@@ -1,4 +1,4 @@
-### Coding Basics <a name="cbasics"></a>
+### Coding Basics <a name="cbasics"></a> 
 Go through this section if you have no experience coding, if you are experienced, skip this.
 ### What is a... <a name="wia"></a>
 - Operation <a name = "oper"></a>

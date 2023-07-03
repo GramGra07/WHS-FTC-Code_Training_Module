@@ -1,4 +1,4 @@
-### Open CV (Computer Vision)
+### Open CV (Computer Vision) 
 
 OpenCV is a very good method for color and edge detection. It can be used for a lot of things if used correctly.
 It is personally my choice for vision recognition and detection because of the thorough documentation and ease of use.
