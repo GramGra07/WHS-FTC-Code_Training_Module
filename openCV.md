@@ -11,7 +11,9 @@ I would recommend following the instructions on the website, but I will also inc
 
 #### Android Studio
 
-Open ```build.gradle``` in the TeamCode Module and at the bottom add this: ```dependencies { implementation 'org.openftc:easyopencv:1.7.0' }```
+Open ```build.gradle``` in the TeamCode Module and at the bottom add this:
+
+```dependencies { implementation 'org.openftc:easyopencv:1.7.0' }```
 
 Then sync the gradle and you should be good to go. It should have a pop-up asking if you want to sync it.
 
@@ -100,8 +102,13 @@ Placing text is a very useful tool for debugging and displaying information. It 
 
 [EasyOpenCV][eocv] WebcamExample is the perfect way to run OpenCV through an opMode. 
 First, they create the webcam instance ```OpenCvWebcam webcam;```
-And set up the camera ```int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
-webcam = OpenCvCameraFactory.getInstance().createWebcam(hardwareMap.get(WebcamName.class, "Webcam 1"), cameraMonitorViewId);```
+
+And set up the camera 
+
+```
+int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
+webcam = OpenCvCameraFactory.getInstance().createWebcam(hardwareMap.get(WebcamName.class, "Webcam 1"), cameraMonitorViewId);
+```
 
 Then they set the pipeline ```webcam.setPipeline(new SamplePipeline());```
 You can also change the name of the pipeline to your own pipeline.
