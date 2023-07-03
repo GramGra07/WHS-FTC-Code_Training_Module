@@ -9,7 +9,7 @@ Video showing entire process:
 
 https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7-b74c-d8ae17b0868a.mp4
 
-[Back to coding][cP]
+[Next up: OpenCV][cv]
 
 [Go back home][hP]
 
@@ -40,6 +40,10 @@ https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7
 [page]: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
 [repo]: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
 [feed]: https://gramgra07.github.io/CTMWeb/
+[eocv]: https://github.com/OpenFTC/EasyOpenCV
+[hsv]: https://i.stack.imgur.com/gyuw4.png
+[lrr]: https://learnroadrunner.com/#frequently-asked-questions
+[dash]: http://192.168.43.1:8080/dash
 
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
@@ -77,3 +81,5 @@ https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7
 [laP]: /linksAndAcknowledgements.md
 [eP]: /encoders.md
 [hP]: /README.md
+[rr]: /roadRunner.md
+[cv]: /openCV.md

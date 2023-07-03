@@ -5,11 +5,9 @@
 
 Github Repo located [here][repo]
 
-Github Pages located [here][page]
-
 Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded website )
 
-Start [here](/gettingStarted.md)
+## Start [here](/gettingStarted.md)
 
 # Table of Contents <a name="top"></a>
 - [Links](/linksAndAcknowledgements.md#link)
@@ -56,6 +54,8 @@ Start [here](/gettingStarted.md)
   - [Why should I use them?](/encoders.md#eyUse)
 - [Running your code](#run)
 - [Machine Learning and TFOD](/machineLearning.md#ml)
+- [OpenCV](/openCV.md)
+- [Road Runner](/roadRunner.md)
 - [Updating your devices](#update)
 - [Overall game](#ovr)
 - [Feedback](#feed)
@@ -162,3 +162,5 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [laP]: /linksAndAcknowledgements.md
 [eP]: /encoders.md
 [hP]: /README.md
+[rr]: /roadRunner.md
+[cv]: /openCV.md

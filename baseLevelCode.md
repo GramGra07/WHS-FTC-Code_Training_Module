@@ -84,6 +84,10 @@ Math:
 [page]: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
 [repo]: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
 [feed]: https://gramgra07.github.io/CTMWeb/
+[eocv]: https://github.com/OpenFTC/EasyOpenCV
+[hsv]: https://i.stack.imgur.com/gyuw4.png
+[lrr]: https://learnroadrunner.com/#frequently-asked-questions
+[dash]: http://192.168.43.1:8080/dash
 
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
@@ -121,3 +125,5 @@ Math:
 [laP]: /linksAndAcknowledgements.md
 [eP]: /encoders.md
 [hP]: /README.md
+[rr]: /roadRunner.md
+[cv]: /openCV.md

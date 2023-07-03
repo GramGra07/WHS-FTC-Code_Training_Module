@@ -6,8 +6,8 @@ To get started with Github, Android Studio, and Java Programming, you will need 
 3. Download Android Studio, instructions [here](/githubBasics.md#setup)
 4. Clone your forked repository if you haven't already, instructions [here](/githubBasics.md#clone)
 5. Open the project in Android Studio
-6. Continue to [githubBasics.md](/githubBasics.md) for more info on how to use Github and other setup instructions
-7. Continue on to [baseLevelCode.md](/baseLevelCode.md) if you are new to coding or [coding.md](/coding.md) if you have some experience
+
+[Next up: Github Basics](/githubBasics.md)
 
 [Go back home][hP]
 
@@ -38,6 +38,10 @@ To get started with Github, Android Studio, and Java Programming, you will need 
 [page]: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
 [repo]: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
 [feed]: https://gramgra07.github.io/CTMWeb/
+[eocv]: https://github.com/OpenFTC/EasyOpenCV
+[hsv]: https://i.stack.imgur.com/gyuw4.png
+[lrr]: https://learnroadrunner.com/#frequently-asked-questions
+[dash]: http://192.168.43.1:8080/dash
 
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
@@ -75,3 +79,5 @@ To get started with Github, Android Studio, and Java Programming, you will need 
 [laP]: /linksAndAcknowledgements.md
 [eP]: /encoders.md
 [hP]: /README.md
+[rr]: /roadRunner.md
+[cv]: /openCV.md
