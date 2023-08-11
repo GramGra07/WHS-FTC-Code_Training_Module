@@ -5,7 +5,7 @@
 - [Rev Hardware Client][rhc]
 - [FTC Sample OpModes][ftcpage]
 - [FTC BasicOpModeLinear (21-22)][lop]
-- [Game Format](#ovr)
+- [Game Format](README.md#ovr)
 - [Game Manual 0][gm0]
 - [FTC Resource Library][lib]
 - [Github -> Discord Web Hooks][web]
@@ -22,8 +22,8 @@
 - [Rev Robotics][rev]
 - [Android Studio][aslink]
 #### Proofreaders
-- [Sir C Timmons][cuser]
-- [Sir B Sanger][buser]
+- [C Timmons][cuser]
+- [B Sanger][buser]
 
 [Go back home][hP]
 
@@ -68,12 +68,11 @@
 [setting]: /images/settings.png
 [beTele]: /examples/exampleTeleOpBlank
 [feTele]: /examples/exampleTeleOpFull
-[beAuto]: /examples/exampleAutoBlank.java 
+[beAuto]: /examples/exampleAutoBlank.java
 [feAuto]: /examples/exampleAutoFull.java
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
-[at]: /images/at.png
 [step1]: /images/step1.png
 [step2]: /images/step2.png
 [step3]: /images/step3.png

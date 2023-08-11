@@ -3,13 +3,13 @@
 ### To help everyone that wants to understand the coding process and language involved in FTC programming and Java
 ## Note: I will try to keep updating for as long as possible but please request features and give feedback [here][feed]
 
-Github Repo located [here][repo] 
+Github Repo located [here][repo]
 
 Github Pages located [here][page]
 
-Code Training Module Info/Feedback located [here][feed] ( this is a HTML coded website )
+Code Training Module Info/Feedback located [here][feed]
 
-## Start [here](/gettingStarted.md)
+## Start [here](gettingStarted.md)
 
 # Table of Contents <a name="top"></a>
 - [Links](/linksAndAcknowledgements.md#link)
@@ -94,9 +94,9 @@ I would love to have feedback on this repository. You can contact me through the
 
 A repository is a folder hosted on github that contains code and items.
 
-A TeleOp is an opmode that uses your gamepad inputs to control your robot, it is on the right side of the phone when selecting an opmode.
+A TeleOp is an opmode that uses your game-pad inputs to control your robot, it is on the right side of the phone when selecting an opmode.
 
-A  Automonous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
+A  Autonomous opmode is an opmode that continuously loops for 30 seconds at the beginning of the each match, it is on the left side of the phone when selecting an opmode.
 
 My apologies if this doesn't work, some code software allows this exact code, some doesn't.  
 
@@ -127,6 +127,10 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [page]: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
 [repo]: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
 [feed]: https://gramgra07.github.io/CTMWeb/
+[eocv]: https://github.com/OpenFTC/EasyOpenCV
+[hsv]: https://i.stack.imgur.com/gyuw4.png
+[lrr]: https://learnroadrunner.com/#frequently-asked-questions
+[dash]: http://192.168.43.1:8080/dash
 
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
@@ -142,7 +146,6 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
-[at]: /images/at.png
 [step1]: /images/step1.png
 [step2]: /images/step2.png
 [step3]: /images/step3.png

@@ -51,7 +51,7 @@ class SamplePipeline extends OpenCvPipeline{
 The first line is a class declaration which can have any name but must extend OpenCvPipeline for it to work.
 
 The second and third line are required for any class instance of OpenCvPipeline. 
-This means that the processFrame method will be always called through OpenCvPipeline. 
+This means that the processFrame method will always be called through OpenCvPipeline. 
 The processFrame method is where you will put all of your code for the pipeline.
 
 Next, we see Imgproc.rectangle. This is the method that actually draws the rectangle.
@@ -234,7 +234,6 @@ There is so much you can do with OpenCV and practice but I would recommend readi
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
-[at]: /images/at.png
 [step1]: /images/step1.png
 [step2]: /images/step2.png
 [step3]: /images/step3.png

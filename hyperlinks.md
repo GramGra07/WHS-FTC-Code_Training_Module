@@ -1,7 +1,7 @@
-[rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
+[rhc]:https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
-[team]: https://github.com/WindsorHSRobotics/Team_Resources 
+[team]: https://github.com/WindsorHSRobotics/Team_Resources
 [rev]: https://www.revrobotics.com/
 [clineuser]: https://github.com/stcline
 [aslink]: https://developer.android.com/studio
@@ -29,7 +29,7 @@
 [hsv]: https://i.stack.imgur.com/gyuw4.png
 [lrr]: https://learnroadrunner.com/#frequently-asked-questions
 [dash]: http://192.168.43.1:8080/dash
-  
+
 [fork]: /images/fork.png
 [gitcommit]: /images/gitCommit.png
 [commit]: /images/commit.png
@@ -44,16 +44,15 @@
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
-[at]: /images/at.png
 [step1]: /images/step1.png
 [step2]: /images/step2.png
 [step3]: /images/step3.png
 [step4]: /images/step4.png
 [step5]: /images/step5.png
-[step6]: /images/step6.png  
+[step6]: /images/step6.png
 [file]: /images/file.png
 [open]: /images/open.png
-[new]: /images/new.png  
+[new]: /images/new.png
 [import]: /examples/import.txt
 [eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
 [color]: /examples/SensorColor.java

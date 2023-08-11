@@ -46,7 +46,7 @@ kP is fine tuning to make sure it is closer to the path we want it to be at
 
 ### Troubleshooting
 
-If the robot is supposed to be going straight and it isn't, make sure your motor directions are set correctly in SampleMecanumDrive or your tracking localizer
+If the robot is supposed to be going straight, and it isn't, make sure your motor directions are set correctly in SampleMecanumDrive or your tracking localizer
 
 
 [rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
@@ -95,7 +95,6 @@ If the robot is supposed to be going straight and it isn't, make sure your motor
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
-[at]: /images/at.png
 [step1]: /images/step1.png
 [step2]: /images/step2.png
 [step3]: /images/step3.png

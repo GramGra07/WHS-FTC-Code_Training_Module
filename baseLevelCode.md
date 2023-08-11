@@ -32,7 +32,7 @@ Math:
 
 - Variable <a name="var"></a>
 
-  A variable is a holder of a value, these values can be anything, as explained in Using Variables. You can use these to store values such as an on off switch, or a progress update, you can also use this as a place to store the power for motors. You will also declare your motors and servos as variables. A local variable can only be used where it was defined or set. A global variable can be used wherever. FTC doccumentation also lets us use some of their universal variables such as DcMotors and Servos, these are all imported by import statements at the begining of your code.
+  A variable is a holder of a value, these values can be anything, as explained in Using Variables. You can use these to store values such as an on off switch, or a progress update, you can also use this as a place to store the power for motors. You will also declare your motors and servos as variables. A local variable can only be used where it was defined or set. A global variable can be used wherever. FTC documentation also lets us use some of their universal variables such as DcMotors and Servos, these are all imported by import statements at the beginning of your code.
 
 - Function <a name="func"></a>
 
@@ -47,7 +47,7 @@ Math:
 
 - Loops <a name="loop"></a>
 
-  While loops are very helpful in robot code. They can help you to make the robot do something until a condition is met. These are used by the ftc company in their own opmodes to have the robot be on when you tell it to. These are very useful for distance or color sensors. For loops run the event a certain amount of times. In Java: ```for (int i = 0; i < 100; i++){``` this is the same as you would use in python: ```for i in range(100){```, this would have the stuff in the loop run 10 times.
+  While loops are very helpful in robot code. They can help you to make the robot do something until a condition is met. These are used by the ftc company in their own opModes to have the robot be on when you tell it to. These are very useful for distance or color sensors. For loops run the event a certain amount of times. In Java: ```for (int i = 0; i < 100; i++){``` this is the same as you would use in python: ```for i in range(100){```, this would have the stuff in the loop run 10 times.
 
 - Imports <a name="import"></a>
 
@@ -103,7 +103,6 @@ Math:
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
-[at]: /images/at.png
 [step1]: /images/step1.png
 [step2]: /images/step2.png
 [step3]: /images/step3.png

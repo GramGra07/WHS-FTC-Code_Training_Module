@@ -8,7 +8,7 @@ When updating or upgrading your control hub, you may get an error saying somethi
 
 The java coding language that we use is not incredibly hard to learn once you figure it all out. It follows all of the coding fundamentals you may already know.
 
-# **IMPORTANT** when editing your code, only edit it in the **teamcode** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
+# **IMPORTANT** when editing your code, only edit it in the **team code** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
 
 ## There are a lot of really good info and sample opModes [here][ftcpage]
 
@@ -40,14 +40,14 @@ Boolean is used to determine whether a value is true or not, an on/off switch
 
 Int is used for a constant value like your team number, a certain value to multiple etc.
 
-Double is used for your motors, this is the best method because it supports all numbers so you can use it for storing gamepad inputs.
+Double is used for your motors, this is the best method because it supports all numbers so you can use it for storing game-pad inputs.
 
 Float is most commonly used to store color values
 
 Strings are used to store common strings or text values like a status of initialization
 
 - When to use public vs. private variables?
-    - You generally want to always use public unless it is something that you don't want to share with other opmodes, like a runtime.
+    - You generally want to always use public unless it is something that you don't want to share with other opModes, like a runtime.
 
 ### TeleOp <a name="tele"></a>
 Here is the [FTC BasicOpMode (21-22)][lop] it uses 2 motors.
@@ -75,11 +75,11 @@ First, comments are indicated by ```//```
 
 Imports are how you get the references and all the different pieces to the code.
 
-Next we have ```@TeleOp(name="exampleTeleOpBlank",group="Pushbot")```, this means that this opmode is being classified under the teleop section, with the name "exampleTeleOpBlank" and it is being placed in the Pushbot group
+Next we have ```@TeleOp(name="exampleTeleOpBlank",group="Pushbot")```, this means that this opmode is being classified under the teleOp section, with the name "exampleTeleOpBlank" and it is being placed in the Push-bot group
 
-Now we have the ```public class exampleTeleOpBlank extends LinearOpMode{``` this means that this opmode can now be used as a base opmode, extending an opmode means that all variables and functions are shared between the opmodes. In this case the file is extending the Linear Op Mode file which you will be able to find in your forked repository.
+Now we have the ```public class exampleTeleOpBlank extends LinearOpMode{``` this means that this opmode can now be used as a base opmode, extending an opmode means that all variables and functions are shared between the opModes. In this case the file is extending the Linear Op Mode file which you will be able to find in your forked repository.
 
-Next we have our ``` HardwarePushbot robot = new HardwarePushbot(); ``` and ```private ElapsedTime   runtime = new ElapsedTime();``` the first part declares the robot as a robot, we will be using pushbot software for the season. Elapsed time is a very important thing to consider, it times the round as it is going. You can use this for a lot of things including having an endgame timer and restricting your auto time to 30 seconds.
+Next we have our ``` HardwarePushbot robot = new HardwarePushbot(); ``` and ```private ElapsedTime   runtime = new ElapsedTime();``` the first part declares the robot as a robot, we will be using push-bot software for the season. Elapsed time is a very important thing to consider, it times the round as it is going. You can use this for a lot of things including having an endgame timer and restricting your auto time to 30 seconds.
 
 Next we have the function ```public void runOpMode(){``` this runs when you press Init it will run that part. Remember, when you hit Init, it is not running the whole program yet, just the small part in between runOpMode and opModeIsActive.
 
@@ -135,7 +135,7 @@ while (getRuntime()<=30) {
 This gets the runtime, checks it and if it is less than or equal to 30 seconds, it keeps running. If it is over or equal to 30, it stops.
 
 ### Editing your code <a name="edit"></a>
-One major part is editing your code, to do this you will open your project in android studio, then tap FTC Robot Controller/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples to get to the samples, you will need to find the teamcode part to edit your code correctly.
+One major part is editing your code, to do this you will open your project in android studio, then tap FTC Robot Controller/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples to get to the samples, you will need to find the team code part to edit your code correctly.
 
 ### Functions <a name="functions"></a>
 - What is the format?
@@ -302,9 +302,9 @@ Color.colorToHSV(color.toColor(), hsvValues);
 touchSensor.isPressed()//will return true if it is pressed
 ```
 
-## Gamepad Input <a name="gp"></a>
+## Game-pad Input <a name="gp"></a>
 
-Gamepad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){``` to check if it has been pressed. Other gamepad buttons give different inputs. Some will give floats back while some are boolean. You can also use gamepad2 to use a second one. Below is a list of every input and what type it will give back to the robot.
+Game-pad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){``` to check if it has been pressed. Other game-pad buttons give different inputs. Some will give floats back while some are boolean. You can also use game-pad2 to use a second one. Below is a list of every input and what type it will give back to the robot.
 
 ```
 .a boolean
@@ -376,7 +376,6 @@ Gamepad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){`
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
-[at]: /images/at.png
 [step1]: /images/step1.png
 [step2]: /images/step2.png
 [step3]: /images/step3.png

@@ -59,7 +59,6 @@ https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
-[at]: /images/at.png
 [step1]: /images/step1.png
 [step2]: /images/step2.png
 [step3]: /images/step3.png
