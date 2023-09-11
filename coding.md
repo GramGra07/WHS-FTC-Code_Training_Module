@@ -19,7 +19,7 @@ The java coding language that we use is not incredibly hard to learn once you fi
 
 - Configuration <a name = "config"></a>
 
-```DcMotor name = hardwareMap.get(DistanceSensor.class, "name");```
+```DcMotor name = hardwareMap.get(DcMotor.class, "name");```
 
 The second name is the one you will use in the configuration guide in your driver station. The first name is the one you will use to set powers and other functions.
 
