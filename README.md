@@ -1,5 +1,5 @@
-# WHS-FTC-GramGra07-Code_Training_Module
-## Created by Graden FTC Team 5115
+# WHS-FTC Code_Training_Module
+## Created by FTC Team 5115
 ### To help everyone that wants to understand the coding process and language involved in FTC programming and Java
 ## Note: I will try to keep updating for as long as possible but please request features and give feedback [here][feed]
 
