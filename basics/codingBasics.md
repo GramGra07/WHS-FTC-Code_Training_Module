@@ -98,8 +98,8 @@ Math:
 [setting]: /images/settings.png
 [beTele]: /examples/exampleTeleOpBlank
 [feTele]: /examples/exampleTeleOpFull
-[beAuto]: /examples/exampleAutoBlank.java
-[feAuto]: /examples/exampleAutoFull.java
+[beAuto]: /examples/exampleAutoBlank.txt
+[feAuto]: /examples/exampleAutoFull.txt
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
@@ -113,16 +113,16 @@ Math:
 [open]: /images/open.png
 [new]: /images/new.png
 [import]: /examples/import.txt
-[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
-[color]: /examples/SensorColor.java
-[IMU]: /examples/SensorBNO055IMU.java
+[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.txt
+[color]: /examples/SensorColor.txt
+[IMU]: /examples/SensorBNO055IMU.txt
 
-[blcP]: /codingBasics.md
+[blcP]: /basics/codingBasics.mdsics.md
 [cP]: /coding.md
-[mlP]: /machineLearning.md
-[gbP]: /githubBasics.md
-[laP]: /linksAndAcknowledgements.md
-[eP]: /encoders.md
+[mlP]: /autonomous/advanced/machineLearning.md
+[gbP]: /basics/githubBasics.mdsics.md
+[laP]: /.etc/linksAndAcknowledgements.md
+[eP]: /autonomous/encoders.md
 [hP]: /README.md
-[rr]: /roadRunner.md
-[cv]: /openCV.md
+[rr]: /autonomous/advanced/roadRunner.md
+[cv]: /autonomous/advanced/openCV.md

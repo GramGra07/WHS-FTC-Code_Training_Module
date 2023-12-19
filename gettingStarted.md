@@ -2,12 +2,12 @@
 
 To get started with Github, Android Studio, and Java Programming, you will need to follow these steps:
 1. Create a Github account if you haven't already
-2. Fork the [FTC Robot Controller][ftcpage] repository, look at [this](/githubBasics.md#fork) for help and more info
-3. Download Android Studio, instructions [here](/githubBasics.md#setup)
-4. Clone your forked repository if you haven't already, instructions [here](/githubBasics.md#clone)
+2. Fork the [FTC Robot Controller][ftcpage] repository, look at [this](/basics/githubBasics.md#fork) for help and more info
+3. Download Android Studio, instructions [here](/basics/githubBasics.md#setup)
+4. Clone your forked repository if you haven't already, instructions [here](/basics/githubBasics.md#clone)
 5. Open the project in Android Studio
 
-[Next up: Github Basics](/githubBasics.md)
+[Next up: Github Basics](/basics/githubBasics.md)
 
 [Go back home][hP]
 
@@ -52,8 +52,8 @@ To get started with Github, Android Studio, and Java Programming, you will need 
 [setting]: /images/settings.png
 [beTele]: /examples/exampleTeleOpBlank
 [feTele]: /examples/exampleTeleOpFull
-[beAuto]: /examples/exampleAutoBlank.java
-[feAuto]: /examples/exampleAutoFull.java
+[beAuto]: /examples/exampleAutoBlank.txt
+[feAuto]: /examples/exampleAutoFull.txt
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
@@ -67,16 +67,16 @@ To get started with Github, Android Studio, and Java Programming, you will need 
 [open]: /images/open.png
 [new]: /images/new.png
 [import]: /examples/import.txt
-[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
-[color]: /examples/SensorColor.java
-[IMU]: /examples/SensorBNO055IMU.java
+[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.txt
+[color]: /examples/SensorColor.txt
+[IMU]: /examples/SensorBNO055IMU.txt
 
 [blcP]: /baseLevelCode.md
 [cP]: /coding.md
-[mlP]: /machineLearning.md
-[gbP]: /githubBasics.md
-[laP]: /linksAndAcknowledgements.md
-[eP]: /encoders.md
+[mlP]: /autonomous/advanced/machineLearning.md
+[gbP]: /basics/githubBasics.md
+[laP]: /.etc/linksAndAcknowledgements.md
+[eP]: /autonomous/encoders.md
 [hP]: /README.md
-[rr]: /roadRunner.md
-[cv]: /openCV.md
+[rr]: /autonomous/advanced/roadRunner.md
+[cv]: /autonomous/advanced/openCV.md

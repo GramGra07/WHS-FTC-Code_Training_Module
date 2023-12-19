@@ -89,8 +89,8 @@ You should use them because they are very helpful to go to an exact distance. Us
 [setting]: /images/settings.png
 [beTele]: /examples/exampleTeleOpBlank
 [feTele]: /examples/exampleTeleOpFull
-[beAuto]: /examples/exampleAutoBlank.java
-[feAuto]: /examples/exampleAutoFull.java
+[beAuto]: /examples/exampleAutoBlank.txt
+[feAuto]: /examples/exampleAutoFull.txt
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
@@ -104,16 +104,16 @@ You should use them because they are very helpful to go to an exact distance. Us
 [open]: /images/open.png
 [new]: /images/new.png
 [import]: /examples/import.txt
-[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
-[color]: /examples/SensorColor.java
-[IMU]: /examples/SensorBNO055IMU.java
+[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.txt
+[color]: /examples/SensorColor.txt
+[IMU]: /examples/SensorBNO055IMU.txt
 
 [blcP]: /baseLevelCode.md
 [cP]: /coding.md
-[mlP]: /machineLearning.md
-[gbP]: /githubBasics.md
-[laP]: /linksAndAcknowledgements.md
-[eP]: /encoders.md
+[mlP]: /autonomous/advanced/machineLearning.md
+[gbP]: /basics/githubBasics.md
+[laP]: /.etc/linksAndAcknowledgements.md
+[eP]: /autonomous/encoders.mdencoders.md
 [hP]: /README.md
-[rr]: /roadRunner.md
-[cv]: /openCV.md
+[rr]: /autonomous/advanced/roadRunner.md
+[cv]: /autonomous/advanced/openCV.md

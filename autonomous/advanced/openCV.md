@@ -229,8 +229,8 @@ There is so much you can do with OpenCV and practice but I would recommend readi
 [setting]: /images/settings.png
 [beTele]: /examples/exampleTeleOpBlank
 [feTele]: /examples/exampleTeleOpFull
-[beAuto]: /examples/exampleAutoBlank.java
-[feAuto]: /examples/exampleAutoFull.java
+[beAuto]: /examples/exampleAutoBlank.txt
+[feAuto]: /examples/exampleAutoFull.txt
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
@@ -244,16 +244,16 @@ There is so much you can do with OpenCV and practice but I would recommend readi
 [open]: /images/open.png
 [new]: /images/new.png
 [import]: /examples/import.txt
-[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
-[color]: /examples/SensorColor.java
-[IMU]: /examples/SensorBNO055IMU.java
+[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.txt
+[color]: /examples/SensorColor.txt
+[IMU]: /examples/SensorBNO055IMU.txt
 
 [blcP]: /baseLevelCode.md
 [cP]: /coding.md
-[mlP]: /machineLearning.md
-[gbP]: /githubBasics.md
-[laP]: /linksAndAcknowledgements.md
-[eP]: /encoders.md
+[mlP]: /autonomous/machineLearning.mdd/machineLearning.md
+[gbP]: /basics/githubBasics.md
+[laP]: /.etc/linksAndAcknowledgements.md
+[eP]: /autonomous/encoders.md
 [hP]: /README.md
-[rr]: /roadRunner.md
-[cv]: /openCV.md
+[rr]: /autonomous/roadRunner.mdvanced/roadRunner.md
+[cv]: /autonomous/openCV.mds/advanced/openCV.md

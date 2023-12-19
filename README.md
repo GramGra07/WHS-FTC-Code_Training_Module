@@ -12,21 +12,21 @@ Code Training Module Info/Feedback located [here][feed]
 ## Start [here](gettingStarted.md)
 
 # Table of Contents <a name="top"></a>
-- [Links](/linksAndAcknowledgements.md#link)
+- [Links](/.etc/linksAndAcknowledgements.md#link)
 - [Tips and Hints](#tip)
 - [Fatal Errors](/coding.md#fatal)
 - [Getting Started](/gettingStarted.md)
-- [Github Basics](/githubBasics.md)
-  - [Set-up Android Studio](/githubBasics.md#setup)
-  - [Forking](/githubBasics.md#fork)
-  - [Cloning the repository](/githubBasics.md#clone)
-- [Github Basics](/githubBasics.md#gbasics)
-  - [Commits](/githubBasics.md#commit)
-  - [Push](/githubBasics.md#push)
-  - [Pull/merge](/githubBasics.md#pull)
-  - [Managing your server](/githubBasics.md#manage)
-  - [Personal Access Token](/githubBasics.md#pat)
-  - [Video Explanation of GitHub](/githubBasics.md#gitvid)
+- [Github Basics](/basics/githubBasics.md)
+  - [Set-up Android Studio](/basics/githubBasics.md#setup)
+  - [Forking](/basics/githubBasics.md#fork)
+  - [Cloning the repository](/basics/githubBasics.md#clone)
+- [Github Basics](/basics/githubBasics.md#gbasics)
+  - [Commits](/basics/githubBasics.md#commit)
+  - [Push](/basics/githubBasics.md#push)
+  - [Pull/merge](/basics/githubBasics.md#pull)
+  - [Managing your server](/basics/githubBasics.md#manage)
+  - [Personal Access Token](/basics/githubBasics.md#pat)
+  - [Video Explanation of GitHub](/basics/githubBasics.md#gitvid)
 - [Coding](/coding.md#code)
   - [Code Basics](/baseLevelCode.md#cbasics)
     - [What is a...](/baseLevelCode.md#wia)
@@ -50,18 +50,18 @@ Code Training Module Info/Feedback located [here][feed]
     - [Indicators](/coding.md#indicator)
     - [Built in Functions](/coding.md#built)
   - [GamePad Input](/coding.md#gp)
-- [Encoders](/encoders.md#encode)
-  - [How do they work?](/encoders.md#eWork)
-  - [How do I use them?](/encoders.md#eUse)
-  - [Why should I use them?](/encoders.md#eyUse)
+- [Encoders](/autonomous/encoders.md#encode)
+  - [How do they work?](/autonomous/encoders.md#eWork)
+  - [How do I use them?](/autonomous/encoders.md#eUse)
+  - [Why should I use them?](/autonomous/encoders.md#eyUse)
 - [Running your code](#run)
-- [Machine Learning and TFOD](/machineLearning.md#ml)
-- [OpenCV](/openCV.md)
-- [Road Runner](/roadRunner.md)
+- [Machine Learning and TFOD](/autonomous/advanced/machineLearning.md#ml)
+- [OpenCV](/autonomous/advanced/openCV.md)
+- [Road Runner](/autonomous/advanced/roadRunner.md)
 - [Updating your devices](#update)
 - [Overall game](#ovr)
 - [Feedback](#feed)
-- [Acknowledgements](/linksAndAcknowledgements.md#agk)
+- [Acknowledgements](/.etc/linksAndAcknowledgements.md#agk)
 - [Glossary](#gloss)
 
 ## Tips and Hints <a name="tip"></a>
@@ -141,8 +141,8 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [setting]: /images/settings.png
 [beTele]: /examples/exampleTeleOpBlank
 [feTele]: /examples/exampleTeleOpFull
-[beAuto]: /examples/exampleAutoBlank.java
-[feAuto]: /examples/exampleAutoFull.java
+[beAuto]: /examples/exampleAutoBlank.txt
+[feAuto]: /examples/exampleAutoFull.txt
 [code]: /images/code.png
 [zip]: /images/zip.png
 [vcs]: /images/vcs.png
@@ -156,16 +156,16 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [open]: /images/open.png
 [new]: /images/new.png
 [import]: /examples/import.txt
-[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.java
-[color]: /examples/SensorColor.java
-[IMU]: /examples/SensorBNO055IMU.java
+[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.txt
+[color]: /examples/SensorColor.txt
+[IMU]: /examples/SensorBNO055IMU.txt
 
 [blcP]: /baseLevelCode.md
 [cP]: /coding.md
-[mlP]: /machineLearning.md
-[gbP]: /githubBasics.md
-[laP]: /linksAndAcknowledgements.md
-[eP]: /encoders.md
+[mlP]: /autonomous/advanced/machineLearning.md
+[gbP]: /basics/githubBasics.md
+[laP]: /.etc/linksAndAcknowledgements.md
+[eP]: /autonomous/encoders.md
 [hP]: /README.md
-[rr]: /roadRunner.md
-[cv]: /openCV.md
+[rr]: /autonomous/advanced/roadRunner.md
+[cv]: /autonomous/advanced/openCV.md
