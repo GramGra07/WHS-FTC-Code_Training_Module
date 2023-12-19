@@ -117,7 +117,7 @@ Math:
 [color]: /examples/SensorColor.java
 [IMU]: /examples/SensorBNO055IMU.java
 
-[blcP]: /baseLevelCode.md
+[blcP]: /codingBasics.md
 [cP]: /coding.md
 [mlP]: /machineLearning.md
 [gbP]: /githubBasics.md
