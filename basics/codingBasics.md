@@ -119,10 +119,10 @@ Math:
 
 [blcP]: /basics/codingBasics.mdsics.md
 [cP]: /coding.md
-[mlP]: /autonomous/advanced/machineLearning.md
+[mlP]: /autonomous/machineLearning.md
 [gbP]: /basics/githubBasics.mdsics.md
 [laP]: /.etc/linksAndAcknowledgements.md
 [eP]: /autonomous/encoders.md
 [hP]: /README.md
-[rr]: /autonomous/advanced/roadRunner.md
-[cv]: /autonomous/advanced/openCV.md
+[rr]: /autonomous/roadRunner.md
+[cv]: /autonomous/openCV.md

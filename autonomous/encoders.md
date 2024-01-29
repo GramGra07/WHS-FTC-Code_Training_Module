@@ -110,10 +110,10 @@ You should use them because they are very helpful to go to an exact distance. Us
 
 [blcP]: /baseLevelCode.md
 [cP]: /coding.md
-[mlP]: /autonomous/advanced/machineLearning.md
+[mlP]: /autonomous/machineLearning.md
 [gbP]: /basics/githubBasics.md
 [laP]: /.etc/linksAndAcknowledgements.md
 [eP]: /autonomous/encoders.mdencoders.md
 [hP]: /README.md
-[rr]: /autonomous/advanced/roadRunner.md
-[cv]: /autonomous/advanced/openCV.md
+[rr]: /autonomous/roadRunner.md
+[cv]: /autonomous/openCV.md

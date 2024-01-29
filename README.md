@@ -54,10 +54,16 @@ Code Training Module Info/Feedback located [here][feed]
   - [How do they work?](/autonomous/encoders.md#eWork)
   - [How do I use them?](/autonomous/encoders.md#eUse)
   - [Why should I use them?](/autonomous/encoders.md#eyUse)
+- [PIDF](advanced/PIDF.md#pidf)
+  - [What is it?](advanced/PIDF.md#what)
+  - [How do I use it?](advanced/PIDF.md#use)
+  - [How do I tune it?](advanced/PIDF.md#tune)
+  - [How do I implement it?](advanced/PIDF.md#implement)
+  - [Resources](advanced/PIDF.md#resources)
 - [Running your code](#run)
-- [Machine Learning and TFOD](/autonomous/advanced/machineLearning.md#ml)
-- [OpenCV](/autonomous/advanced/openCV.md)
-- [Road Runner](/autonomous/advanced/roadRunner.md)
+- [Machine Learning and TFOD](/autonomous/machineLearning.md#ml)
+- [OpenCV](/autonomous/openCV.md)
+- [Road Runner](/autonomous/roadRunner.md)
 - [Updating your devices](#update)
 - [Overall game](#ovr)
 - [Feedback](#feed)
@@ -162,10 +168,10 @@ My apologies if this doesn't work, some code software allows this exact code, so
 
 [blcP]: /baseLevelCode.md
 [cP]: /coding.md
-[mlP]: /autonomous/advanced/machineLearning.md
+[mlP]: /autonomous/machineLearning.md
 [gbP]: /basics/githubBasics.md
 [laP]: /.etc/linksAndAcknowledgements.md
 [eP]: /autonomous/encoders.md
 [hP]: /README.md
-[rr]: /autonomous/advanced/roadRunner.md
-[cv]: /autonomous/advanced/openCV.md
+[rr]: /autonomous/roadRunner.md
+[cv]: /autonomous/openCV.md
