@@ -64,6 +64,7 @@ Code Training Module Info/Feedback located [here][feed]
 - [Machine Learning and TFOD](/autonomous/machineLearning.md#ml)
 - [OpenCV](/autonomous/openCV.md)
 - [Road Runner](/autonomous/roadRunner.md)
+- [StateMachine](/autonomous/StateMachine.md)
 - [Updating your devices](#update)
 - [Overall game](#ovr)
 - [Feedback](#feed)

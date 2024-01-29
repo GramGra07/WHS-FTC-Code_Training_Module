@@ -67,3 +67,5 @@
 [hP]: /README.md
 [rr]: /autonomous/roadRunner.md
 [cv]: /autonomous/openCV.md
+[pidf]: /advanced/PIDF.md
+[sm]: /autonomous/StateMachine.md
