@@ -185,6 +185,53 @@ Edge detection is a useful tool to outline things and it will show you a black a
 
 There is so much you can do with OpenCV and practice but I would recommend reading through more of the Easy Open CV library to see how they do things.
 
+## Vision Portal Integration
+
+Vision Portal, provided by FTC is a very easy way to initialize your Open CV processor and use it in your OpMode.
+
+It comes automatically installed with the FTC SDK.
+
+First, your class must ```implements VisionProcessor, CameraStreamSource```
+
+Immediately in your opMode you have to have ```private final AtomicReference<Bitmap> lastFrame =
+new AtomicReference<>(Bitmap.createBitmap(1, 1, Bitmap.Config.RGB_565));```
+
+Which will allow it to show on the camera stream.
+
+You must also add 
+```
+@Override
+public void init(int width, int height, CameraCalibration calibration) {
+    lastFrame.set(Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565));
+}
+@Override
+public void onDrawFrame(Canvas canvas, int onscreenWidth, int onscreenHeight, float scaleBmpPxToCanvasPx, float scaleCanvasDensity, Object userContext) {
+
+}
+
+@Override
+public void getFrameBitmap(Continuation<? extends Consumer<Bitmap>> continuation) {
+    continuation.dispatch(bitmapConsumer -> bitmapConsumer.accept(lastFrame.get()));
+}
+```
+
+Which will initialize the camera stream so you can view it.
+
+Then your process frame method will change to:
+```
+@Override
+public Object processFrame(Mat frame, long captureTimeNanos) {
+```
+
+This changes input to frame in your code so you will need to make sure you change that.
+
+Right before you return the frame, you will need to add 
+```
+Bitmap b = Bitmap.createBitmap(frame.width(), frame.height(), Bitmap.Config.RGB_565);
+Utils.matToBitmap(frame, b);
+lastFrame.set(b);
+```
+
 [Next up: Road Runner][rr]
 
 [Go back home][hP]
