@@ -46,6 +46,7 @@ class SamplePipeline extends OpenCvPipeline{
                     new Scalar(0, 255, 0), 4);
             return input;
         }
+}
 ```
 
 The first line is a class declaration which can have any name but must extend OpenCvPipeline for it to work.
