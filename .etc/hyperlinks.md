@@ -58,11 +58,10 @@
 [color]: /examples/SensorColor.txt
 [IMU]: /examples/SensorBNO055IMU.txt
 
-[blcP]: /baseLevelCode.md
 [cP]: /coding.md
 [mlP]: /autonomous/machineLearning.md
 [gbP]: /basics/githubBasics.md
-[laP]: /.etc/linksAndAcknowledgements.mdts.md
+[laP]: /.etc/linksAndAcknowledgements.md
 [eP]: /autonomous/encoders.md
 [hP]: /README.md
 [rr]: /autonomous/roadRunner.md

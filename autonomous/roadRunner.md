@@ -49,7 +49,7 @@ kP is fine tuning to make sure it is closer to the path we want it to be at
 If the robot is supposed to be going straight, and it isn't, make sure your motor directions are set correctly in SampleMecanumDrive or your tracking localizer
 
 
-[rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
+[rhc]:https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
@@ -109,12 +109,13 @@ If the robot is supposed to be going straight, and it isn't, make sure your moto
 [color]: /examples/SensorColor.txt
 [IMU]: /examples/SensorBNO055IMU.txt
 
-[blcP]: /baseLevelCode.md
 [cP]: /coding.md
-[mlP]: /autonomous/machineLearning.mdd/machineLearning.md
+[mlP]: /autonomous/machineLearning.md
 [gbP]: /basics/githubBasics.md
 [laP]: /.etc/linksAndAcknowledgements.md
 [eP]: /autonomous/encoders.md
 [hP]: /README.md
-[rr]: /autonomous/roadRunner.mdvanced/roadRunner.md
-[cv]: /autonomous/openCV.mds/advanced/openCV.md
+[rr]: /autonomous/roadRunner.md
+[cv]: /autonomous/openCV.md
+[pidf]: /advanced/PIDF.md
+[sm]: /autonomous/StateMachine.md

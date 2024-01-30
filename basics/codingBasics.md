@@ -57,7 +57,7 @@ Math:
 
 [Go back home][hP]
 
-[rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
+[rhc]:https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
@@ -117,12 +117,13 @@ Math:
 [color]: /examples/SensorColor.txt
 [IMU]: /examples/SensorBNO055IMU.txt
 
-[blcP]: /basics/codingBasics.mdsics.md
 [cP]: /coding.md
 [mlP]: /autonomous/machineLearning.md
-[gbP]: /basics/githubBasics.mdsics.md
+[gbP]: /basics/githubBasics.md
 [laP]: /.etc/linksAndAcknowledgements.md
 [eP]: /autonomous/encoders.md
 [hP]: /README.md
 [rr]: /autonomous/roadRunner.md
 [cv]: /autonomous/openCV.md
+[pidf]: /advanced/PIDF.md
+[sm]: /autonomous/StateMachine.md

@@ -11,7 +11,7 @@ To get started with Github, Android Studio, and Java Programming, you will need 
 
 [Go back home][hP]
 
-[rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
+[rhc]:https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
@@ -71,7 +71,6 @@ To get started with Github, Android Studio, and Java Programming, you will need 
 [color]: /examples/SensorColor.txt
 [IMU]: /examples/SensorBNO055IMU.txt
 
-[blcP]: /baseLevelCode.md
 [cP]: /coding.md
 [mlP]: /autonomous/machineLearning.md
 [gbP]: /basics/githubBasics.md
@@ -80,3 +79,5 @@ To get started with Github, Android Studio, and Java Programming, you will need 
 [hP]: /README.md
 [rr]: /autonomous/roadRunner.md
 [cv]: /autonomous/openCV.md
+[pidf]: /advanced/PIDF.md
+[sm]: /autonomous/StateMachine.md

@@ -330,7 +330,7 @@ Game-pad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){
 
 [Go back home][hP]
 
-[rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
+[rhc]:https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
@@ -390,7 +390,6 @@ Game-pad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){
 [color]: /examples/SensorColor.txt
 [IMU]: /examples/SensorBNO055IMU.txt
 
-[blcP]: /baseLevelCode.md
 [cP]: /coding.md
 [mlP]: /autonomous/machineLearning.md
 [gbP]: /basics/githubBasics.md
@@ -399,3 +398,5 @@ Game-pad inputs are the base of teleOp. You can use ```if(gamepad1.left_bumper){
 [hP]: /README.md
 [rr]: /autonomous/roadRunner.md
 [cv]: /autonomous/openCV.md
+[pidf]: /advanced/PIDF.md
+[sm]: /autonomous/StateMachine.md

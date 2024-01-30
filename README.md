@@ -28,15 +28,15 @@ Code Training Module Info/Feedback located [here][feed]
   - [Personal Access Token](/basics/githubBasics.md#pat)
   - [Video Explanation of GitHub](/basics/githubBasics.md#gitvid)
 - [Coding](/coding.md#code)
-  - [Code Basics](/baseLevelCode.md#cbasics)
-    - [What is a...](/baseLevelCode.md#wia)
-      - [Operation](/baseLevelCode.md#oper)
-      - [Variable](/baseLevelCode.md#var)
-      - [Function](/baseLevelCode.md#func)
-      - [If Statement](/baseLevelCode.md#if)
-      - [Print/Telemetry System](/baseLevelCode.md#print)
-      - [Loop](/baseLevelCode.md#loop)
-      - [Import](/baseLevelCode.md#import)
+  - [Code Basics](/basics/codingBasics.md#cbasics)
+    - [What is a...](/basics/codingBasics.md#wia)
+      - [Operation](/basics/codingBasics.md#oper)
+      - [Variable](/basics/codingBasics.md#var)
+      - [Function](/basics/codingBasics.md#func)
+      - [If Statement](/basics/codingBasics.md#if)
+      - [Print/Telemetry System](/basics/codingBasics.md#print)
+      - [Loop](/basics/codingBasics.md#loop)
+      - [Import](/basics/codingBasics.md#import)
   - [Getting Started](/coding.md#start2)
   - [Setting up your files](/coding.md#files)
   - [Using Variables](/coding.md#usevar)
@@ -107,7 +107,7 @@ A  Autonomous opmode is an opmode that continuously loops for 30 seconds at the 
 
 My apologies if this doesn't work, some code software allows this exact code, some doesn't.  
 
-[rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
+[rhc]:https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
 [ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
 [user]: https://github.com/GramGra07
 [team]: https://github.com/WindsorHSRobotics/Team_Resources
@@ -167,7 +167,6 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [color]: /examples/SensorColor.txt
 [IMU]: /examples/SensorBNO055IMU.txt
 
-[blcP]: /baseLevelCode.md
 [cP]: /coding.md
 [mlP]: /autonomous/machineLearning.md
 [gbP]: /basics/githubBasics.md
@@ -176,3 +175,5 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [hP]: /README.md
 [rr]: /autonomous/roadRunner.md
 [cv]: /autonomous/openCV.md
+[pidf]: /advanced/PIDF.md
+[sm]: /autonomous/StateMachine.md
