@@ -232,6 +232,25 @@ Utils.matToBitmap(frame, b);
 lastFrame.set(b);
 ```
 
+Next, we will add it to our auto opMode.
+
+In the variables area:
+```
+public static VisionPortal visionPortal = null; // vision portal for the webcam
+public static YourDetection objProcessor = null; // processor for the vision portal
+```
+
+Then in your init, before runOpMode:
+
+```
+objProcessor = new YourDetection;
+visionPortal = new VisionPortal.Builder()
+.setCamera(hardwareMap.get(WebcamName.class, "Webcam 1"))
+.setCameraResolution(new Size(400, 280))
+.addProcessors(objProcessor)
+.build();
+```
+
 [Next up: Road Runner][rr]
 
 [Go back home][hP]
