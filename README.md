@@ -133,7 +133,7 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [bb]: https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/blocks-programming-guide.pdf
 [page]: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
 [repo]: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
-[feed]: https://gramgra07.github.io/CTMWeb/
+[feed]: https://gramgra07.github.io/gg-web/
 [eocv]: https://github.com/OpenFTC/EasyOpenCV
 [hsv]: https://i.stack.imgur.com/gyuw4.png
 [lrr]: https://learnroadrunner.com/#frequently-asked-questions
