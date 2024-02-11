@@ -38,6 +38,8 @@ Math:
 
   Functions are statements to make the code run one part when you "call" the function. It is like calling a whole new section of the code. This is useful to have the code execute specific instructions. This is useful to tell the code to update something or to set a value to a variable. You can also set parameters that are localized variables. A local variable can only be used in that function. Parameters are very useful to help us define and change local variables inside of of the function.
 
+  These can return specific values like a boolean or if they are not meant to return anything, a void function. This is done by ```void name(){}```
+
 - If statement <a name="if"></a>
   An if statement is simply ```if (condition) { (do something) }```. Conditions can be found in [operations](#oper).
 
