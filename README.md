@@ -131,8 +131,8 @@ My apologies if this doesn't work, some code software allows this exact code, so
 [qm]: https://gm0.org/en/latest/docs/software/tutorials/mecanum-drive.html
 [qt]: https://docs.revrobotics.com/kickoff-concepts/freight-frenzy-2021-2022/programming-teleoperated
 [bb]: https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/blocks-programming-guide.pdf
-[page]: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
-[repo]: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
+[page]: https://gramgra07.github.io/WHS-FTC-Code_Training_Module/
+[repo]: https://github.com/GramGra07/WHS-FTC-Code_Training_Module/blob/main/README.md
 [feed]: https://gramgra07.github.io/gg-web/
 [eocv]: https://github.com/OpenFTC/EasyOpenCV
 [hsv]: https://i.stack.imgur.com/gyuw4.png
