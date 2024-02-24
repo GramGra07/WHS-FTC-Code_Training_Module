@@ -11,7 +11,3 @@ Go to [this website](https://developer.vuforia.com/license-manager) and log in, 
 Video showing entire process:
 
 https://user-images.githubusercontent.com/101433010/199403553-69995287-3eaf-4af7-b74c-d8ae17b0868a.mp4
-
-[Next up: OpenCV](../opencv.md)
-
-[Go back home](../)

@@ -12,5 +12,4 @@
 * [PIDF Controller](pidf.md)
 * [.etc](.etc/README.md)
   * [Machine learning](.etc/machinelearning.md)
-  * [hyperlinks](.etc/hyperlinks.md)
   * [linksAndAcknowledgements](.etc/linksAndAcknowledgements.md)

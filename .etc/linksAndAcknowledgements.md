@@ -1,98 +1,32 @@
-## Useful Links <a name="link"></a>
-- My [user page][user] (GramGra07)
-- FTC Official Github [user page](https://github.com/FIRST-Tech-Challenge)
-- Team Resources [folder][team]
-- [Rev Hardware Client][rhc]
-- [FTC Sample OpModes][ftcpage]
-- [FTC BasicOpModeLinear (21-22)][lop]
-- [Game Format](../README.md#ovr)
-- [Game Manual 0][gm0]
-- [FTC Resource Library][lib]
-- [Github -> Discord Web Hooks][web]
-- [3D Printing Basics by my Dad][3D]
-- [Mecanum Drivetrain QuickStart][qm]
-- [TankDrive Drivetrain Quickstart][qt]
-- [Very good overall tutorial on the basics of blocks][bb]
+# linksAndAcknowledgements
 
-## Acknowledgements <a name="agk"></a>
-- [Google][ggl]
-- [Mr Cline][clineuser]
-- [Mr Mayfield][juser]
-- [FTC User Page][ftcpage]
-- [Rev Robotics][rev]
-- [Android Studio][aslink]
-#### Proofreaders
-- [C Timmons][cuser]
-- [B Sanger][buser]
+### Useful Links <a href="#link" id="link"></a>
 
-[Go back home][hP]
+* My [user page](https://github.com/GramGra07) (GramGra07)
+* FTC Official Github [user page](https://github.com/FIRST-Tech-Challenge)
+* Team Resources [folder](https://github.com/WindsorHSRobotics/Team\_Resources)
+* [Rev Hardware Client](https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions)
+* [FTC Sample OpModes](https://github.com/FIRST-Tech-Challenge/FtcRobotController)
+* [FTC BasicOpModeLinear (21-22)](https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode\_Linear.java)
+* [Game Format](../#ovr)
+* [Game Manual 0](https://gm0.org/en/latest/)
+* [FTC Resource Library](https://www.firstinspires.org/resource-library/ftc/game-and-season-info)
+* [Github -> Discord Web Hooks](https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22)
+* [3D Printing Basics by my Dad](https://docs.google.com/presentation/d/1MeLkA9mCI4vZMiejlqMZpAhZvbV2ThvSf6oZBzhQGdo/edit?usp=sharing)
+* [Mecanum Drivetrain QuickStart](https://gm0.org/en/latest/docs/software/tutorials/mecanum-drive.html)
+* [TankDrive Drivetrain Quickstart](https://docs.revrobotics.com/kickoff-concepts/freight-frenzy-2021-2022/programming-teleoperated)
+* [Very good overall tutorial on the basics of blocks](https://www.firstinspires.org/sites/default/files/uploads/resource\_library/ftc/blocks-programming-guide.pdf)
 
-[rhc]: https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions
-[ftcpage]: https://github.com/FIRST-Tech-Challenge/FtcRobotController
-[user]: https://github.com/GramGra07
-[team]: https://github.com/WindsorHSRobotics/Team_Resources
-[rev]: https://www.revrobotics.com/
-[clineuser]: https://github.com/stcline
-[aslink]: https://developer.android.com/studio
-[ggl]: https://www.google.com/
-[lop]: https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.java
-[cuser]: https://github.com/ctimmons25
-[juser]: https://github.com/JohnMayfield
-[buser]: https://github.com/sangerb19
-[gm0]: https://gm0.org/en/latest/
-[lib]: https://www.firstinspires.org/resource-library/ftc/game-and-season-info
-[web]: https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22
-[mlguide]: https://ftc-docs.firstinspires.org/ftc_ml/
-[ml]: https://ftc-ml.firstinspires.org/
-[mlset]: https://ftc-docs.firstinspires.org/ftc_ml/logging_on/logging-on.html#adding-students-to-your-teams-ftc-ml-workspace
-[tfodweb]: https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.java
-[vu]: https://developer.vuforia.com/license-manager
-[3D]: https://docs.google.com/presentation/d/1MeLkA9mCI4vZMiejlqMZpAhZvbV2ThvSf6oZBzhQGdo/edit?usp=sharing
-[qm]: https://gm0.org/en/latest/docs/software/tutorials/mecanum-drive.html
-[qt]: https://docs.revrobotics.com/kickoff-concepts/freight-frenzy-2021-2022/programming-teleoperated
-[bb]: https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/blocks-programming-guide.pdf
-[page]: https://gramgra07.github.io/WHS-FTC-GramGra07-Code_Training_Module/
-[repo]: https://github.com/GramGra07/WHS-FTC-GramGra07-Code_Training_Module/blob/main/README.md
-[feed]: https://gramgra07.github.io/CTMWeb/
-[eocv]: https://github.com/OpenFTC/EasyOpenCV
-[hsv]: https://i.stack.imgur.com/gyuw4.png
-[lrr]: https://learnroadrunner.com/#frequently-asked-questions
-[dash]: http://192.168.43.1:8080/dash
+### Acknowledgements <a href="#agk" id="agk"></a>
 
-[fork]: /images/fork.png
-[gitcommit]: /images/gitCommit.png
-[commit]: /images/commit.png
-[push]: /images/push.png
-[pull]: /images/pull.png
-[run]: /images/run.png
-[setting]: /images/settings.png
-[beTele]: /examples/exampleTeleOpBlank
-[feTele]: /examples/exampleTeleOpFull
-[beAuto]: /examples/exampleAutoBlank.txt
-[feAuto]: /examples/exampleAutoFull.txt
-[code]: /images/code.png
-[zip]: /images/zip.png
-[vcs]: /images/vcs.png
-[step1]: /images/step1.png
-[step2]: /images/step2.png
-[step3]: /images/step3.png
-[step4]: /images/step4.png
-[step5]: /images/step5.png
-[step6]: /images/step6.png
-[file]: /images/file.png
-[open]: /images/open.png
-[new]: /images/new.png
-[import]: /examples/import.txt
-[eDemo]: /examples/RobotAutoDriveByEncoder_Linear.txt
-[color]: /examples/SensorColor.txt
-[IMU]: /examples/SensorBNO055IMU.txt
+* [Google](https://www.google.com/)
+* [Mr Cline](https://github.com/stcline)
+* [Mr Mayfield](https://github.com/JohnMayfield)
+* [FTC User Page](https://github.com/FIRST-Tech-Challenge/FtcRobotController)
+* [Rev Robotics](https://www.revrobotics.com/)
+* [Android Studio](https://developer.android.com/studio)
 
-[blcP]: /baseLevelCode.md
-[cP]: /coding.md
-[mlP]: /autonomous/machineLearning.md
-[gbP]: /basics/githubBasics.md
-[laP]: /.etc/linksAndAcknowledgements.mdts.md
-[eP]: /autonomous/encoders.md
-[hP]: /README.md
-[rr]: /autonomous/roadRunner.md
-[cv]: /autonomous/openCV.md
+**Proofreaders**
+
+* [C Timmons](https://github.com/ctimmons25)
+* [B Sanger](https://github.com/sangerb19)
