@@ -8,7 +8,9 @@
 
 Github Repo located [here](https://github.com/GramGra07/WHS-FTC-Code\_Training\_Module)
 
-#### 1. PRACTICE!!
+**Tips and Tricks**
+
+1\. PRACTICE!!
 
 * It is known that if you practice something, you will get better at it over time, this is the same for coding and robotics
 
