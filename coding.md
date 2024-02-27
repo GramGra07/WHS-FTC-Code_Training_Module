@@ -1,9 +1,5 @@
 # Coding
 
-### Fatal Errors <a href="#fatal" id="fatal"></a>
-
-**Null Pointer Exception** - Can't find whatever you are calling such as a motor. You can get this if the motor or object is not initialized or setup correctly.
-
 When updating or upgrading your control hub, you may get an error saying something like, could not find a file, in some random folder that you can't find. This is caused by an error in your gradle code. If you can't find another way to fix it I would recommend this method, it is a little complicated but will solve it. First, create a new repository **DO NOT ADD ANYTHING AUTOMATICALLY** not even a read me we will call this repository our bridge. Then scroll down to the bottom and tap import from repository, grab the URL of your old repository and make sure it finished importing. Then go into the old repositories settings and delete the repository. Then go to the FTC Robot Controller and fork it. You will want to clone both the bridge repository and the new one we just forked. Now you will copy over all of your working files from the bridge repo and put them in your new repository. As soon as that is finished and committed you should be good to go, you can then delete the bridge repository.
 
 ### Coding <a href="#code" id="code"></a>
@@ -22,6 +18,8 @@ The java coding language that we use is not incredibly hard to learn once you fi
 * Configuration
 
 `DcMotor name = hardwareMap.get(DcMotor.class, "name");`
+
+`Servo name = hardwareMap.get(Servo.class, "name");`
 
 The second name is the one you will use in the configuration guide in your driver station. The first name is the one you will use to set powers and other functions.
 
