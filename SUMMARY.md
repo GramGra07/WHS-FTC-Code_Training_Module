@@ -6,10 +6,16 @@
 * [Coding Basics](codingbasics.md)
 * [Coding](coding.md)
 * [Common Errors](common-errors.md)
-* [Encoders](encoders.md)
-* [OpenCV](opencv.md)
-* [RoadRunner](roadrunner.md)
-* [StateMachine](statemachine.md)
+
+## Autonomous
+
+* [Encoders](autonomous/encoders.md)
+* [OpenCV](autonomous/opencv.md)
+* [RoadRunner](autonomous/roadrunner.md)
+* [StateMachine](autonomous/statemachine.md)
+
+***
+
 * [PIDF Controller](pidf.md)
 * [Subsystem Control](subsystem-control.md)
 * [Switching to Kotlin](switching-to-kotlin.md)

@@ -38,4 +38,4 @@ This will make sure it doesn't stop before going the distance it needs to. After
 
 ## Why should you use them? <a href="#eyuse" id="eyuse"></a>
 
-You should use them because they are very helpful to go to an exact distance. Using the opMode found [here](examples/RobotAutoDriveByEncoder\_Linear.txt).
+You should use them because they are very helpful to go to an exact distance. Using the opMode found [here](../examples/RobotAutoDriveByEncoder\_Linear.txt).

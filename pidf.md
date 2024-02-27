@@ -96,7 +96,7 @@ You can also switch the target position to a variable that is changed throughout
 
 #### State Machine
 
-More information on State Machines can be found [here](statemachine.md).
+More information on State Machines can be found [here](autonomous/statemachine.md).
 
 In this example, we would set the target as a variable and set that differently throughout the program.
 
