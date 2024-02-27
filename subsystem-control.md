@@ -95,6 +95,7 @@ driveSubsystemName = DriveSubsystem(hardwareMap)
 <pre class="language-java"><code class="lang-java">class Person(){
     String name;
     Int age;
+    // constructor
     public Person(name, age){
         this.name = name;
         this.age = age;
@@ -161,7 +162,7 @@ public class ClawSubsystem {
     private Servo claw2;
     private Servo flipServo;
 
-    private ClawStates[] states = {ClawStates.OPEN, ClawStates.OPEN};
+    private ClawStates[] states = {ClawStates.OPEN, ClawStates.OPEN}; //left //right
     private FlipStates flipState = FlipStates.BACK;
 
     public ClawSubsystem(HardwareMap ahwMap) {
