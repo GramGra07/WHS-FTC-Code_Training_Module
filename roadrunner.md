@@ -20,7 +20,7 @@ Wheel Radius is the radius of your wheel in inches.
 
 You will need to set your USB facing dir and logo facing dir to the correct direction for your robot. This is the direction the logo on the motor is facing and the direction the USB is facing. Mine are as follows:
 
-```
+```java
 public static final RevHubOrientationOnRobot.UsbFacingDirection USB_FACING_DIR = RevHubOrientationOnRobot.UsbFacingDirection.LEFT;
 public static final RevHubOrientationOnRobot.LogoFacingDirection LOGO_FACING_DIR = RevHubOrientationOnRobot.LogoFacingDirection.UP; 
 ```

@@ -60,7 +60,7 @@ You can then tune I and D to make it more accurate but I will not cover that in 
 
 ### TeleOp
 
-```
+```java
 if (gamepad2.right_stick_y < 0 && usePIDF) {
     PIDF.setPIDF(PIDFCo.p, PIDFCo.i, PIDFCo.d, PIDFCo.f);
     Power = Range.clip(PIDF.calculate(motor.getCurrentPosition(), maxTicks), -1, 1);
@@ -85,7 +85,7 @@ During autonomous usage, you can also use PIDF loops fairly easy with a while lo
 
 #### While loop
 
-```
+```java
 while (opModeIsActive()){
     PIDF.setPIDF(PIDFCo.p, PIDFCo.i, PIDFCo.d, PIDFCo.f);
     motor.setPower(PIDF.calculate(motor.getCurrentPosition(), targetPosition));
@@ -102,6 +102,6 @@ In this example, we would set the target as a variable and set that differently 
 
 ## Resources <a href="#resources" id="resources"></a>
 
-https://youtu.be/E6H6Nqe6qJo?si=luVu2EeaFapRfCl3
+[https://youtu.be/E6H6Nqe6qJo?si=luVu2EeaFapRfCl3](https://youtu.be/E6H6Nqe6qJo?si=luVu2EeaFapRfCl3)
 
-https://cookbook.dairy.foundation/integrating\_a\_custom\_PIDF\_controller.html
+[https://cookbook.dairy.foundation/integrating\_a\_custom\_PIDF\_controller.html](https://cookbook.dairy.foundation/integrating\_a\_custom\_PIDF\_controller.html)

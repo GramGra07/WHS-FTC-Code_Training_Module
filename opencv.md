@@ -30,7 +30,7 @@ OpenCV is pretty easy to use, but can be hard to retrieve data from. The [EasyOp
 
 Here is the code for a sample pipeline that will strictly draw a box in the middle of the screen.
 
-```
+```java
 class SamplePipeline extends OpenCvPipeline{
         @Override
         public Mat processFrame(Mat input){
@@ -117,7 +117,7 @@ That is all the major parts of running OpenCv as an OpMode although I would defi
 
 This pipeline is very useful because it will isolate the color you are trying to detect and will return a black and white image with only the color you are trying to detect.
 
-```
+```java
 public static class ColorDetection extends OpenCvPipeline {//isolation of color
         Mat hsv = new Mat();  //create hsv mat
         Mat mask1, mask2 = new Mat();  //create masks
@@ -164,7 +164,7 @@ You might notice that detecting red makes it harder. You can see that on this [i
 
 Edge detection is a useful tool to outline things and it will show you a black and white image, with the white parts being edges.
 
-```
+```java
     public static class EdgeDetection extends OpenCvPipeline {
         Mat gray = new Mat(); //create grayscale mat
         Mat edges = new Mat(); // create edges mat
@@ -193,7 +193,7 @@ Which will allow it to show on the camera stream.
 
 You must also add
 
-```
+```java
 @Override
 public void init(int width, int height, CameraCalibration calibration) {
     lastFrame.set(Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565));
@@ -213,7 +213,7 @@ Which will initialize the camera stream so you can view it.
 
 Then your process frame method will change to:
 
-```
+```java
 @Override
 public Object processFrame(Mat frame, long captureTimeNanos) {
 ```
@@ -222,7 +222,7 @@ This changes input to frame in your code so you will need to make sure you chang
 
 Right before you return the frame, you will need to add
 
-```
+```java
 Bitmap b = Bitmap.createBitmap(frame.width(), frame.height(), Bitmap.Config.RGB_565);
 Utils.matToBitmap(frame, b);
 lastFrame.set(b);
@@ -232,14 +232,14 @@ Next, we will add it to our auto opMode.
 
 In the variables area:
 
-```
+```java
 public static VisionPortal visionPortal = null; // vision portal for the webcam
 public static YourDetection objProcessor = null; // processor for the vision portal
 ```
 
 Then in your init, before runOpMode:
 
-```
+```java
 objProcessor = new YourDetection;
 visionPortal = new VisionPortal.Builder()
 .setCamera(hardwareMap.get(WebcamName.class, "Webcam 1"))

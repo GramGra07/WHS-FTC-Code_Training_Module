@@ -12,7 +12,7 @@ Most of them work by having a light on one side of the encoder disk. On the othe
 
 ## How do you use them? <a href="#euse" id="euse"></a>
 
-```
+```java
 static final double COUNTS_PER_MOTOR_REV = your specific encoder counts per revolution;
 static final double WHEEL_DIAMETER_MM = your wheel diameter in mm;
 static final double WHEEL_DIAMETER_INCHES = WHEEL_DIAMETER_MM * 0.0393701;     // For figuring circumference
@@ -22,7 +22,7 @@ static final double COUNTS_PER_INCH = (COUNTS_PER_MOTOR_REV * your gear ratio) /
 
 These calculations are the exact calculations that you should use to calculate the counts per inch of the encoder. `.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);` This run mode will stop and reset the encoder to 0 ticks. `.setMode(DcMotor.RunMode.RUN_USING_ENCODER);` This run mode will make it start to track the encoder position. `newLeftTarget = motorBackLeft.getCurrentPosition() + (int) (leftInches * COUNTS_PER_INCH);` This sets a new target by setting a target position based on the current position. `.setTargetPosition(newLeftTarget);` `.setMode(DcMotor.RunMode.RUN_TO_POSITION);` This sets the target position of the motor to the target we just got above. It will also run the motor to the position. After that use the method `.setPower(1);` to set the power of the motor.
 
-```
+```java
 while (opModeIsActive() &&
    (runtime.seconds() < timeout) &&  //timeout is used to make sure it doesn't run for too long 
    (motor.isBusy())) {

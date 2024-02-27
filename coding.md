@@ -31,7 +31,7 @@ Refer to the blank examples [TeleOp](examples/exampleTeleOpBlank) and [Auto](exa
 
 Variables in java consist of:
 
-```
+```java
 boolean  True or False
 int  Integer, a whole number
 double  Floating point number
@@ -56,7 +56,7 @@ Strings are used to store common strings or text values like a status of initial
 
 Here is the [FTC BasicOpMode (21-22)](https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode\_Linear.java) it uses 2 motors. In the [blank TeleOp Example](examples/exampleTeleOpBlank) you will find that there are 20 lines
 
-```
+```java
 //imports
 @TeleOp(name="exampleTeleOpBlank",group="Pushbot")
 //@Disabled
@@ -98,7 +98,7 @@ Now we will run `runtime.reset();` and `getRuntime()`, these are required in ord
 
 In the [Blank Autonomous Example](examples/exampleAutoBlank.txt) you will find 18 lines.
 
-```
+```java
 //imports
 @Autonomous(name="exampleAutoBlank", group="Autonomous")
 //@Disabled
@@ -132,7 +132,7 @@ Now we will run `runtime.reset();` and `getRuntime()`, these are required in ord
 
 `waitForStart();` tells the opmode to wait until the user presses go, when this happens, everything inside this function runs.
 
-```
+```java
 while (getRuntime()<=30) {
        getRuntime();
        telemetry.addData(String.valueOf(runtime), "Working");
@@ -149,7 +149,7 @@ One major part is editing your code, to do this you will open your project in an
 
 * What is the format?
 
-```
+```java
  public void imaginaryFunction(){
    //code
  }
@@ -157,7 +157,7 @@ One major part is editing your code, to do this you will open your project in an
 
 * What about parameters?
 
-```
+```java
 public void imaginaryFunction2(int hi, boolean hello){
    if (hello == true){
      //do something
@@ -168,13 +168,13 @@ public void imaginaryFunction2(int hi, boolean hello){
 
 * What about calling a function?
 
-```
+```java
   imaginaryFunction(6,false);
 ```
 
 * Returning values?
 
-```
+```java
  public int imaginaryFunction3(int hi, boolean hello){
     if (hello == true){
       //do something
@@ -224,7 +224,7 @@ Distance Sensors
 
 Color Sensors
 
-```
+```java
 import com.qualcomm.robotcore.hardware.NormalizedColorSensor;
 import com.qualcomm.robotcore.hardware.NormalizedRGBA;
 ```
@@ -239,18 +239,18 @@ IMU
 
 The IMU or Internal Measurement Unit, is a very useful tool to find the robot orientation
 
-```
+```java
 import com.qualcomm.hardware.bosch.BNO055IMU;
 import com.qualcomm.hardware.bosch.JustLoggingAccelerationIntegrator;
 ```
 
-```
+```java
 public BNO055IMU imu;    //imu module inside expansion hub
 public Orientation angles;     //imu uses these to find angles and classify them
 public Acceleration gravity;    //Imu uses to get acceleration
 ```
 
-```
+```java
 BNO055IMU.Parameters parameters = new BNO055IMU.Parameters();
 parameters.angleUnit = BNO055IMU.AngleUnit.DEGREES;
 parameters.accelUnit = BNO055IMU.AccelUnit.METERS_PERSEC_PERSEC;
@@ -275,19 +275,19 @@ Digital LED Indicators are a very good way to get feedback from your robot. It i
 
 `import com.qualcomm.robotcore.hardware.DigitalChannel;`
 
-```
+```java
 public DigitalChannel red1;
 public DigitalChannel green1;
 ```
 
 This will follow the same pattern of all of the sensors
 
-```
+```java
 red1 = hardwareMap.get(DigitalChannel.class, "red1");
 green1 = hardwareMap.get(DigitalChannel.class, "green1");
 ```
 
-```
+```java
 red1.setMode(DigitalChannel.Mode.OUTPUT);//required to use indicators
 green1.setMode(DigitalChannel.Mode.OUTPUT);
 ```
@@ -298,7 +298,7 @@ Call it in your code with `green1.setState(false); red1.setState(true);` or the 
 
 A lot of devices in FTC have some very useful built in functions. This list will only include a few as I haven't actually looked into the depth of these but these should be most of the skim level ones everyone will use.
 
-```
+```java
 motor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);//sets the motor to reset encoder
 motor.setDirection(DcMotor.Direction.REVERSE);//sets the direction as reverse, it assumes it will be FORWARD if you don't put this in
 motor.setMode(DcMotor.RunMode.RUN_USING_ENCODER);//sets the motor to give encoder output back to the user
@@ -323,7 +323,7 @@ touchSensor.isPressed()//will return true if it is pressed
 
 Game-pad inputs are the base of teleOp. You can use `if(gamepad1.left_bumper){` to check if it has been pressed. Other game-pad buttons give different inputs. Some will give floats back while some are boolean. You can also use game-pad2 to use a second one. Below is a list of every input and what type it will give back to the robot.
 
-```
+```java
 .a boolean
 .b boolean
 .y boolean
