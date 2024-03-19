@@ -1,5 +1,23 @@
 # RoadRunner
 
+### Road Runner 1.x
+
+Road Runner 1.x has some major advantages over 0.5 , but is also much harder to learn and understand in terms of path building.
+
+Pros:
+
+It is SO much easier to tune, considering there are 5 steps in 1.x versus the 20 some steps in 0.5
+
+I have found it took me about 1 hour to effectively tune 1.x instead of the 2-4 hours it takes to meticulously tune 0.5
+
+Cons:
+
+The actions api is difficult for new coders to learn. Especially because it uses concepts such as the command system and command based programming along with subsystem control of the robot
+
+
+
+[Road Runner Docs](https://rr.brott.dev/docs/v1-0/installation/) is an amazing site with all the documentation, installation instructions, and everything you could need to get it set up. It is extremely easy and quick to tune along with getting it correct very quickly. Read through 0.5 in order to see all of the specifics in accordance with FTC Dashboard and other setup instructions.
+
 ### Road Runner 0.5.x
 
 Road Runner is a very convenient, easy to use software to make your robot follow a path you create.
@@ -48,5 +66,3 @@ kP is fine tuning to make sure it is closer to the path we want it to be at
 #### Troubleshooting
 
 If the robot is supposed to be going straight, and it isn't, make sure your motor directions are set correctly in SampleMecanumDrive or your tracking localizer
-
-### Road Runner 1.x.x
