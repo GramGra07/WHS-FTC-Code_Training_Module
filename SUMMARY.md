@@ -1,7 +1,7 @@
 # Table of contents
 
 * [WHS-FTC Code\_Training\_Module](README.md)
-* [Getting Started](gettingStarted.md)
+* [Getting Started](gettingstarted.md)
 * [Github Basics](githubbasics.md)
 * [Coding Basics](codingbasics.md)
 * [Coding](coding.md)
@@ -21,4 +21,4 @@
 * [Switching to Kotlin](switching-to-kotlin.md)
 * [.etc](.etc/README.md)
   * [Machine learning](.etc/machinelearning.md)
-  * [linksAndAcknowledgements](.etc/linksAndAcknowledgements.md)
+  * [linksAndAcknowledgements](.etc/linksandacknowledgements.md)
