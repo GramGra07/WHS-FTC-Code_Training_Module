@@ -1,22 +1,63 @@
-# Github Basics
+# Getting Started
 
-### Setting up Git <a href="#start" id="start"></a>
+### Basic Steps
 
-In order to setup your repository correctly you will do 2 things. 1.Fork and 2. Clone this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa](.gitbook/assets/step1.png) and to **collaborators** then add your team members using the add people button.
+To get started with Github, Android Studio, and Java Programming, you will need to follow these steps:
+
+1. Create a Github account if you haven't already
+2. Fork the [FTC Robot Controller](https://github.com/FIRST-Tech-Challenge/FtcRobotController) repository, look at [this](githubbasics.md#fork) for help and more info
+3. Download Android Studio, instructions [here](githubbasics.md#setup)
+4. Clone your forked repository, instructions [here](githubbasics.md#clone)
+5. Open the project in Android Studio
+6. Code
+7. Send the robot your updated code
+8. Setup a config on your robot
+9. Start controlling your robot!
+
+### Android Studio Tutorial <a href="#fork" id="fork"></a>
 
 #### Android Studio Setup <a href="#setup" id="setup"></a>
 
 Android Studio Setup Video Tutorial:
 
-https://user-images.githubusercontent.com/101433010/229647434-4ded3127-106e-4e6b-9b0e-e24864b23ba8.mov
+{% embed url="https://user-images.githubusercontent.com/101433010/229647434-4ded3127-106e-4e6b-9b0e-e24864b23ba8.mov" %}
+
+***
+
+Android studio is one of the more intuitive IDE's I have encountered. There are a lot of things that you can get lost with easily though.
+
+**Gradle** - The gradle is the way your app (robot) will run
+
+**ADB** - Android Debug Bridge is the way your computer will connect to the control hub and build the application
+
+#### How does everything work?
+
+* Basically, when you hit upload, it runs and installs an app to the robot's control hub. What this does is allow it to run effectively while connected to the driver station. The **gradle** is the way that this app gets built. This is also why it is so important to fork the FTC Robot Controller. They make the onboarding steps so much easier just because all of the work for setup is done for you.
+
+#### Plugins
+
+I have encountered a bunch of plugins for AS that make the experience so much better. None of these are mandatory but may improve your experience. You access this page in the settings for AS.
+
+* ADB Idea - Allows you to effectively use ADB with your computer to make sure everything is working properly.
+* Better Comments - Changes your comments to different colors with different tags. This is extremely beneficial because it catches your eye more so you can leave notes for yourself.
+* CodeGlance Pro - This improves the normal sidebar you will see when scrolling, it shows you the color of all of your code so you can easily see where you might need to be looking.
+* Discord Integration - Definitely not necessary but very fun to use and show everyone which project you are working on in Discord.
+* Dracula Theme - My personal favorite theme for AS because it looks very nice and the color coding makes a lot of sense to me.
+* GitHub Copilot - A very useful companion when you are coding. It is a **subscription** that you can get free with GitHub Student Developer but basically allows you to have an AI "copilot" built in to your IDE for code completion and general help.
+* SonarLint - This is a very nice "linting" or code checking software that can provide helpful resources to tell you where something might be broken, or when you aren't following proper programming practices.
+* Star Wars Progress Bar - My personal favorite plugin I have. All it really does is change your progress bars to Star Wars ships. It adds a lot of fun to the IDE.
+
+### Setting up Git <a href="#start" id="start"></a>
+
+In order to setup your repository correctly you will do 2 things. 1.Fork and 2. Clone this will get the repository to your github account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa](.gitbook/assets/step1.png) and to **collaborators** then add your team members using the add people button.
 
 #### Forking <a href="#fork" id="fork"></a>
 
-Go to this [website](https://github.com/FIRST-Tech-Challenge/FtcRobotController) and find the latest repository from the company. Press the ![fork button](.gitbook/assets/fork.png) button. This will "copy" the repository onto your github account. Remember **only one person will need to fork the repo**!
+Go to this [website](https://github.com/FIRST-Tech-Challenge/FtcRobotController) and find the latest repository from the company. Press the ![fork button](.gitbook/assets/fork.png) button. This will "copy" the repository onto your github account. Remember **only one person will need to fork the repo per team**!
 
 #### Cloning the repository <a href="#clone" id="clone"></a>
 
-To clone the repository, first find it on your github profile. You have 2 options on what to do you can do it through android studio or through github. **Everyone will need to do this!!**
+To clone the repository, first find it on your github profile. You have 2 options on what to do you can do it through android studio or through github. **Everyone on a team will need to do this!!**
 
 Android Studio: Tap ![fila](.gitbook/assets/file.png), then ![newa](.gitbook/assets/new.png) , ![vcsa](.gitbook/assets/vcs.png). Go back to your repository and copy the url, paste it into the box and make sure the destination is desktop. You might need to have an access token to do this.
 

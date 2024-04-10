@@ -52,3 +52,4 @@ Math:
 *   Imports
 
     Imports are very useful and can give you many more abilities in your code, one of the biggest known things to import is time. Other than that, every different sensor and motor you use will need to be imported.
+* Enums - more info found [here](https://gentrified-apps.gitbook.io/statemachineftc)

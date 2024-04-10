@@ -34,13 +34,9 @@ Github Repo located [here](https://github.com/GramGra07/WHS-FTC-Code\_Training\_
 
 * Even if your prior knowledge is in a different language, it **will** help you understand this code.
 
-7. Trust your IDE
+**7. Trust your IDE**
 
 * Your IDE will prevent most common problems if you trust that it knows what its doing, which it does
-
-### Running your code <a href="#run" id="run"></a>
-
-To put the code onto your robot, you will plug in the RC phone or the control hub to your computer and press the ![runa](.gitbook/assets/run.png) button. It will take a bit to load and once it finishes, you can disconnect and then go to your DS phone and select your opmode, then select the run button once, tap it again and your code will run.
 
 ### Updating your devices <a href="#update" id="update"></a>
 
