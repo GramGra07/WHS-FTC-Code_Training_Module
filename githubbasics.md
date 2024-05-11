@@ -20,7 +20,7 @@ To get started with Github, Android Studio, and Java Programming, you will need 
 
 Android Studio Setup Video Tutorial:
 
-{% embed url="https://user-images.githubusercontent.com/101433010/229647434-4ded3127-106e-4e6b-9b0e-e24864b23ba8.mov" %}
+{% embed url="https://youtu.be/BsSF6oaqdbM" %}
 
 ***
 
@@ -98,4 +98,4 @@ In github, tap on your profile ( top right corner ), then:
 
 #### Video Explanation of GitHub <a href="#gitvid" id="gitvid"></a>
 
-https://user-images.githubusercontent.com/101433010/227430075-0f257d68-aff1-4b53-9fdb-045a19c1fb97.mov
+{% embed url="https://youtu.be/AbqlhFFBKnA" %}

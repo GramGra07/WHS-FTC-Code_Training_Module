@@ -1,6 +1,7 @@
 # Table of contents
 
 * [WHS-FTC Code\_Training\_Module](README.md)
+* [Presented at Worlds 2024](presented-at-worlds-2024.md)
 * [Getting Started](githubbasics.md)
 * [Coding Basics](codingbasics.md)
 * [Coding](coding.md)
