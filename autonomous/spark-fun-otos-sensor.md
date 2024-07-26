@@ -23,6 +23,8 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 
+@TeleOp
+@Disabled
 public class OTOS extends LinearOpMode {
     SparkFunOTOS sparkFunOTOS;
     @Override
