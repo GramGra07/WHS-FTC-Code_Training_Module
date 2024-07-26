@@ -3,19 +3,23 @@
 * [WHS-FTC Code\_Training\_Module](README.md)
 * [Presented at Worlds 2024](presented-at-worlds-2024.md)
 * [Getting Started](githubbasics.md)
+* [How does everything work?](how-does-everything-work.md)
 * [Coding Basics](codingbasics.md)
 * [Coding](coding.md)
 * [Running Code](running-code.md)
+* [Hub Connect Over Wifi](hub-connect-over-wifi.md)
 * [General Tips](general-tips.md)
 * [Common Errors](common-errors.md)
 
 ## Autonomous
 
 * [Encoders](autonomous/encoders.md)
+* [Spark Fun OTOS Sensor](autonomous/spark-fun-otos-sensor.md)
 * [OpenCV](autonomous/opencv.md)
 * [VelocityVision](autonomous/velocityvision.md)
 * [RoadRunner](autonomous/roadrunner.md)
 * [StateMachine](autonomous/statemachine.md)
+* [Pedro Pathing](autonomous/pedro-pathing.md)
 
 ## Advanced
 

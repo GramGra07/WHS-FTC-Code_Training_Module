@@ -1,14 +1,13 @@
 # Coding
 
-**Note: following paragraph is a FIX not something mandatory**
-
-When updating or upgrading your control hub, you may get an error saying something like, could not find a file, in some random folder that you can't find. This is caused by an error in your gradle code. If you can't find another way to fix it I would recommend this method, it is a little complicated but will solve it. First, create a new repository **DO NOT ADD ANYTHING AUTOMATICALLY** not even a read me we will call this repository our bridge. Then scroll down to the bottom and tap import from repository, grab the URL of your old repository and make sure it finished importing. Then go into the old repositories settings and delete the repository. Then go to the FTC Robot Controller and fork it. You will want to clone both the bridge repository and the new one we just forked. Now you will copy over all of your working files from the bridge repo and put them in your new repository. As soon as that is finished and committed you should be good to go, you can then delete the bridge repository.
-
 ### Coding <a href="#code" id="code"></a>
 
 The java coding language that we use is not incredibly hard to learn once you figure it all out. It follows all of the coding fundamentals you may already know.
 
-## **IMPORTANT** when editing your code, only edit it in the **team code** section, you will have to copy and paste the files from the external samples. **DO NOT** edit the ftc robot controller sample code
+## **IMPORTANT** when editing your code, only edit it in the **Team Code** section. **DO NOT** edit the FTC robot controller sample code
+
+* You will have to copy and paste the files from the external samples
+* It is very important that you only modify the TEAMCODE directory, any other directory can corrupt your project very easily and I see it happen and break Control Hubs a LOT
 
 ### There are a lot of really good info and sample opModes [here](https://github.com/FIRST-Tech-Challenge/FtcRobotController)
 
@@ -28,6 +27,22 @@ The second name is the one you will use in the configuration guide in your drive
 #### Setting up your files <a href="#files" id="files"></a>
 
 Refer to the blank examples [TeleOp](examples/exampleTeleOpBlank) and [Auto](examples/exampleAutoBlank.txt). These both have the proper setup and code to get started coding both of these modes. I will get into more detail into what everything means in TeleOp and auto.
+
+#### What is contained in an OpMode? <a href="#usevar" id="usevar"></a>
+
+The OpMode is where all your code goes, it includes functions such as the following in order to aid you in the process of coding:
+
+```java
+waitForStart() //must be called before your while loop
+runOpMode() // usually is right after variables to tell the robot what code it needs to run
+loop() // a less commonly used function that does the same thing as while(opModeIsActive()){}
+init() // is run during robot in init
+opModeIsActive() // returns a boolean if the opMode is running or not
+opModeInInit() //returns a boolean if the opMode is currently in the init state
+requestOpModeStop() // requests the opMode to stop
+isStarted() // returns if the robot is started or not
+isStopRequested() // returns if stop button has been pressed or not
+```
 
 #### Using variables <a href="#usevar" id="usevar"></a>
 
@@ -189,6 +204,10 @@ public void imaginaryFunction2(int hi, boolean hello){
 You will see that this is saying public int, you use void if you are returning nothing, and the proper variable type if you are returning something. This would be called as, `telemetry.addData("Number",String(imaginaryFunction3(9,true)))`
 
 Hint: Int() puts the string into int form
+
+#### What about an override function?
+
+This type of function is special in that it is used almost everywhere to change the "normal" or "given" function from FTC, this annotation is required on a couple of functions and is 100% necessary and your IDE will even tell you it needs it.
 
 ### Hardware <a href="#ware" id="ware"></a>
 

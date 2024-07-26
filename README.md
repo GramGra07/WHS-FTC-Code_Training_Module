@@ -8,36 +8,6 @@
 
 Github Repo located [here](https://github.com/GramGra07/WHS-FTC-Code\_Training\_Module)
 
-**Tips and Tricks**
-
-1\. PRACTICE!!
-
-* It is known that if you practice something, you will get better at it over time, this is the same for coding and robotics
-
-#### 2. Ask Questions
-
-* A lot of people know what they are doing and are willing to help if you just ask
-
-#### 3. If you don't know a concept, look it up
-
-* There are a lot of helpful solutions and people on the internet, someone **WILL** usually know the answer to your problem
-
-#### 4. READ
-
-* All of the example opModes have very helpful comments to show you exactly what each part does, also if you read this whole thing you should be good to go
-
-#### 5. Collaborate
-
-* A lot of problems can be solved by collaboration with friends and peers
-
-#### 6. Use prior knowledge
-
-* Even if your prior knowledge is in a different language, it **will** help you understand this code.
-
-**7. Trust your IDE**
-
-* Your IDE will prevent most common problems if you trust that it knows what its doing, which it does
-
 ### Updating your devices <a href="#update" id="update"></a>
 
 Go to this [website](https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions). It will take you to rev hardware client. Once you download the app you will be able to connect the DS phone or the Control Hub and it will show you your possible updates, take them all and you are good to go!

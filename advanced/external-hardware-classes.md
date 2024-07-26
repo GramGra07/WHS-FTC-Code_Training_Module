@@ -60,40 +60,20 @@ import java.util.List;
 public class HardwareConfig {
     private LinearOpMode myOpMode;
     private Telemetry telemetry;
-    private FtcDashboard dashboard;
-    private TelemetryPacket packet;
-    private ElapsedTime timer;
 
     private DriveSubsystem driveSubsystem;
     private ClawSubsystem clawSubsystem;
     private EndgameSubsystem endgameSubsystem;
     private ExtendoSubsystem extendoSubsystem;
     private LocalizationSubsystem localizationSubsystem;
-    private AvoidanceSubsystem avoidanceSubsystem;
 
     private RevBlinkinLedDriver lights;
-    private double loops;
-    private double LPS;
-    private double refreshRate;
-    private double rrPS;
-    private double currentTime;
-    private double pastRefreshRate;
-    private double pastSecondLoops;
-    private double pastTimeRR;
-    private double lastTimeOpen;
-    private boolean pastUseLoopTime;
-    private DigitalChannel green1, green2, green3, green4, red1, red2, red3, red4;
     private AnalogInput potentiometer;
     private VoltageSensor vSensor;
     private MecanumDrive drive;
     private FileWriter fileWriter;
     private boolean once;
-    private int correctedLPS;
-
-    public static final String CURRENT_VERSION = "7.0.0";
     private List<LynxModule> allHubs;
-
-    public HardwareConfig() {}
 
     public HardwareConfig(LinearOpMode opMode, HardwareMap ahwMap, boolean auto) {
         myOpMode = opMode;
@@ -104,43 +84,16 @@ public class HardwareConfig {
         vSensor = SensorExtensions.initVSensor(ahwMap, "Expansion Hub 2");
         lights = SensorExtensions.initLights(ahwMap, "blinkin");
         potentiometer = SensorExtensions.initPotent(ahwMap, "potent");
-        green1 = SensorExtensions.initDigiChan(ahwMap, "green1");
-        green2 = SensorExtensions.initDigiChan(ahwMap, "green2");
-        green3 = SensorExtensions.initDigiChan(ahwMap, "green3");
-        green4 = SensorExtensions.initDigiChan(ahwMap, "green4");
-        red1 = SensorExtensions.initDigiChan(ahwMap, "red1");
-        red2 = SensorExtensions.initDigiChan(ahwMap, "red2");
-        red3 = SensorExtensions.initDigiChan(ahwMap, "red3");
-        red4 = SensorExtensions.initDigiChan(ahwMap, "red4");
-        allHubs = ahwMap.getAll(LynxModule.class);
-        for (LynxModule hub : allHubs) {
-            hub.setBulkCachingMode(LynxModule.BulkCachingMode.MANUAL);
-        }
         driveSubsystem = new DriveSubsystem(ahwMap);
         clawSubsystem = new ClawSubsystem(ahwMap);
         endgameSubsystem = new EndgameSubsystem(ahwMap);
         extendoSubsystem = new ExtendoSubsystem(ahwMap);
         localizationSubsystem = new LocalizationSubsystem(ahwMap);
-        avoidanceSubsystem = new AvoidanceSubsystem(AvoidanceSubsystem.AvoidanceTypes.PUSH);
 
         drive = driveSubsystem.getDrive();
-        telemetry = new MultipleTelemetry(myOpMode.telemetry, FtcDashboard.getInstance().getTelemetry());
-        dashboard = FtcDashboard.getInstance();
 
         once = false;
-        String file = String.format("%s/FIRST/matchlogs/log.txt", Environment.getExternalStorageDirectory().getAbsolutePath());
-        try {
-            fileWriter = new FileWriter(file, true);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        FileWriterFTC.setUpFile(fileWriter);
-        timer = new ElapsedTime();
-        timer.reset();
-        green1.ledIND(red1, true);
-        green2.ledIND(red2, true);
-        green3.ledIND(red3, true);
-        green4.ledIND(red4, true);
+        
         telemetry.addData("Color", lights.currentColor());
         telemetry.addData("Version", CURRENT_VERSION);
         telemetry.addData("Voltage", "%.2f", vSensor.currentVoltage());
@@ -150,39 +103,19 @@ public class HardwareConfig {
         if (!auto) {
             telemetry.update();
         }
-        drawPackets();
     }
 
     public void doBulk() {
-        currentTime = timer.seconds();
-        loopTimeCalculations();
-        Drivers.bindDriverButtons(myOpMode, driveSubsystem, clawSubsystem, endgameSubsystem);
-        Operator.bindOtherButtons(myOpMode, clawSubsystem, extendoSubsystem, driveSubsystem);
-        if (varConfig.multipleDrivers) {
-            Drivers.switchProfile(myOpMode);
-        }
         driveSubsystem.driveByGamepads(Drivers.fieldCentric, myOpMode);
         driveSubsystem.update(avoidanceSubsystem);
         endgameSubsystem.update();
         clawSubsystem.update();
         extendoSubsystem.update();
-        avoidanceSubsystem.update(drive);
         localizationSubsystem.relocalize(drive);
         buildTelemetry();
-        lynxModules();
-        if (currentTime > correctedLPS) {
-            loops++;
-        }
-    }
-
-    private void lynxModules() {
-        for (LynxModule hub : allHubs) {
-            hub.clearBulkCache();
-        }
     }
 
     private void buildTelemetry() {
-        telemetry.addData("Drivers", Drivers.currDriver + " " + Drivers.currOther);
         telemetry.addData("Voltage", "%.1f", vSensor.currentVoltage());
         if (vSensor.lowVoltage()) {
             telemetry.addData("", "We have a low battery");
@@ -190,13 +123,7 @@ public class HardwareConfig {
         telemetry.addData("Pose: ", PoseExtensions.toPoint(drive.getPose()).toString());
         telemetry.addData("potentiometer", "%.1f", potentiometer.potentAngle());
         driveSubsystem.telemetry(telemetry);
-        avoidanceSubsystem.telemetry(telemetry);
         extendoSubsystem.telemetry(telemetry);
-        teleSpace();
-        telemetry.addData("Timer", "%.1f", currentTime);
-        telemetry.addData("Loops", "%.1f", loops);
-        telemetry.addData("Current LPS", "%.1f", LPS);
-        telemetry.addData("Refresh Rate", "%.1f", rrPS);
         teleSpace();
         telemetry.addData("Color", lights.currentColor());
         teleSpace();
@@ -204,60 +131,6 @@ public class HardwareConfig {
         localizationSubsystem.telemetry(telemetry);
         telemetry.update();
         drawPackets();
-    }
-
-    private void drawPackets() {
-        packet = new TelemetryPacket();
-        double rad = avoidanceSubsystem.rad;
-        double roboRad = varConfig.robotRadiusAvoidance;
-        packet.fieldOverlay()
-                .setFill("red")
-                .setAlpha(0.3);
-        for (AvoidanceSubsystem.Field field : avoidanceSubsystem.fields) {
-            packet.fieldOverlay()
-                    .fillCircle(field.point.y, field.point.x, rad);
-        }
-        Vector2d t = drive.getPose().vec();
-        Vector2d halfv = t.heading().vec().times(0.5 * roboRad);
-        Vector2d p1 = t.plus(halfv);
-        double x = p1.getX() + halfv.getX();
-        double y = p1.getY() + halfv.getY();
-        packet.fieldOverlay()
-                .setStrokeWidth(1)
-                .setFill("DeepPink")
-                .setAlpha(1.0)
-                .strokeCircle(t.getX(), t.getY(), roboRad).strokeLine(p1.getX(), p1.getY(), x, y);
-        dashboard.sendTelemetryPacket(packet);
-    }
-
-    private void teleSpace() {
-        telemetry.addLine(" ");
-    }
-
-    private void loopTimeCalculations() {
-        if (pastSecondLoops != LoopTime.loopInterval) {
-            timer.reset();
-            loops = 0.0;
-            refreshRate = 0.0;
-            pastSecondLoops = LoopTime.loopInterval;
-        }
-        if (LoopTime.useLoopTime != pastUseLoopTime) {
-            timer.reset();
-            loops = 0.0;
-            refreshRate = 0.0;
-            pastUseLoopTime = LoopTime.useLoopTime;
-        }
-        LPS = loops / (currentTime - correctedLPS);
-        if (refreshRate != pastRefreshRate) {
-            rrPS = currentTime - pastTimeRR;
-            pastRefreshRate = refreshRate;
-            pastTimeRR = currentTime;
-        }
-
-        if (LoopTime.useLoopTime && loops % LoopTime.loopInterval == 0.0) {
-            refreshRate++;
-            drive.updatePoseEstimate();
-        }
     }
 }
 ```

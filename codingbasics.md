@@ -42,7 +42,9 @@ Math:
     Functions are statements to make the code run one part when you "call" the function. It is like calling a whole new section of the code. This is useful to have the code execute specific instructions. This is useful to tell the code to update something or to set a value to a variable. You can also set parameters that are localized variables. A local variable can only be used in that function. Parameters are very useful to help us define and change local variables inside of of the function.
 
     These can return specific values like a boolean or if they are not meant to return anything, a void function. This is done by `void name(){}`
-* If statementAn if statement is simply `if (condition) { (do something) }`. Conditions can be found in [operations](codingbasics.md#oper).
+*   If statement &#x20;
+
+    An if statement is simply `if (condition) { (do something) }`. Conditions can be found in [operations](codingbasics.md#oper).
 *   Print/telemetry statement
 
     Print statements are very useful in debugging your code, essentially what they do is show you a value that you tell it to. `telemetry.addData("caption"," info")` This will give you values on the Driver Station phone and you can use this to see values like if a certain variable is on or off. In other languages you would use `print('',value)` to get the same information.
