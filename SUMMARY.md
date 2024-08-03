@@ -2,10 +2,10 @@
 
 * [WHS-FTC Code\_Training\_Module](README.md)
 * [Presented at Worlds 2024](presented-at-worlds-2024.md)
-* [Getting Started](githubbasics.md)
+* [Getting Started with Programming](githubbasics.md)
 * [How does everything work?](how-does-everything-work.md)
-* [Coding Basics](codingbasics.md)
-* [Coding](coding.md)
+* [Java Coding Basics](codingbasics.md)
+* [Java with FTC Coding](coding.md)
 * [Running Code](running-code.md)
 * [Hub Connect Over Wifi](hub-connect-over-wifi.md)
 * [General Tips](general-tips.md)
