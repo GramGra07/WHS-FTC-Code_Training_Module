@@ -19,6 +19,7 @@
 * [VelocityVision](autonomous/velocityvision.md)
 * [RoadRunner](autonomous/roadrunner.md)
 * [StateMachine](autonomous/statemachine.md)
+* [Gentrified Apps Util](autonomous/gentrified-apps-util.md)
 * [Pedro Pathing](autonomous/pedro-pathing.md)
 
 ## Advanced

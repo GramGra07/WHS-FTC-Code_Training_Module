@@ -8,6 +8,10 @@ When updating or upgrading your control hub, you may get an error saying somethi
 
 </details>
 
+### Cannot find hostname ...
+
+This means that it cannot download the necessary components (typically during a gradle build). To fix this, you must get on an available wifi channel and press the make build button on Android Studio. Either this or rebuild project will download the gradle resources and then you can easily fo the build to the robot.
+
 ### Null Pointer Exception
 
 This basically means that the thing you are trying to call hasn't been initialized yet. This occurs most with motors and other hardware devices. This happens when you have not set the device to equal a hardware map.get instance. To fix this, read through [#code](coding.md#code "mention")
