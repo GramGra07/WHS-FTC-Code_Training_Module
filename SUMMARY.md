@@ -1,6 +1,7 @@
 # Table of contents
 
 * [WHS-FTC Code\_Training\_Module](README.md)
+* [WHS\_Robotics Specific](whs_robotics-specific.md)
 * [Presented at Worlds 2024](presented-at-worlds-2024.md)
 * [Getting Started with Programming](githubbasics.md)
 * [How does everything work?](how-does-everything-work.md)

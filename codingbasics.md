@@ -1,4 +1,4 @@
-# Coding Basics
+# Java Coding Basics
 
 #### Coding Basics <a href="#cbasics" id="cbasics"></a>
 
@@ -50,8 +50,9 @@ Math:
     Print statements are very useful in debugging your code, essentially what they do is show you a value that you tell it to. `telemetry.addData("caption"," info")` This will give you values on the Driver Station phone and you can use this to see values like if a certain variable is on or off. In other languages you would use `print('',value)` to get the same information.
 *   Loops
 
-    While loops are very helpful in robot code. They can help you to make the robot do something until a condition is met. These are used by the ftc company in their own opModes to have the robot be on when you tell it to. These are very useful for distance or color sensors. For loops run the event a certain amount of times. In Java: `for (int i = 0; i < 100; i++){` this is the same as you would use in python: `for i in range(100){`, this would have the stuff in the loop run 10 times.
+    While loops are very helpful in robot code. They can help you to make the robot do something until a condition is met. These are used by the ftc company in their own opModes to have the robot be on when you tell it to. These are very useful for distance or color sensors. For loops run the event a certain amount of times. In Java: `for (int i = 0; i < 100; i++){` this is the same as you would use in python: `for i in range(100):`, this would have the stuff in the loop run 10 times.
 *   Imports
 
     Imports are very useful and can give you many more abilities in your code, one of the biggest known things to import is time. Other than that, every different sensor and motor you use will need to be imported.
 * Enums - more info found [here](https://gentrified-apps.gitbook.io/statemachineftc)
+* Classes - Classes simply are an easier way of organizing code platforms and designating certain tasks to be run easier. More info on this in subsystems, but if you want to enhance FTC code, classes are a great way to go

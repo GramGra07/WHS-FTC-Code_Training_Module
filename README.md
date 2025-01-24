@@ -6,15 +6,11 @@
 
 ### Note: I will try to keep updating for as long as possible but please request features and give feedback [here](https://gramgra07.github.io/gg-web/)
 
-Github Repo located [here](https://github.com/GramGra07/WHS-FTC-Code\_Training\_Module)
+Github Repo located [here](https://github.com/GramGra07/WHS-FTC-Code_Training_Module)
 
 ### Updating your devices <a href="#update" id="update"></a>
 
-Go to this [website](https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions). It will take you to rev hardware client. Once you download the app you will be able to connect the DS phone or the Control Hub and it will show you your possible updates, take them all and you are good to go!
-
-### Overall Game <a href="#ovr" id="ovr"></a>
-
-The game begins with a 30 second autonomous period, runtime helps us achieve this, and then a 2 minute TeleOp period, the goal is to score as many points as possible.
+Go to this [website](https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions). It will take you to rev hardware client. Once you download the app you will be able to connect the DS phone or the Control Hub and it will show you your possible updates, take them all and you are good to go! If you need to update your control hub from code, update it by looking at the latest commit on FTCRobotController and see what they've changed.
 
 ### Feedback <a href="#feed" id="feed"></a>
 
