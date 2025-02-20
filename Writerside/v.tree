@@ -7,6 +7,7 @@
 
     <toc-element topic="README.md"/>
     <toc-element topic="presented-at-worlds-2024.md"/>
+    <toc-element topic="gettingstarted.md"/>
     <toc-element topic="githubbasics.md"/>
     <toc-element topic="how-does-everything-work.md"/>
     <toc-element topic="codingbasics.md"/>
@@ -36,5 +37,4 @@
         <toc-element topic="linksandacknowledgements.md"/>
         <toc-element topic="code-review.md"/>
     </toc-element>
-    <toc-element topic="gettingstarted.md"/>
 </instance-profile>
