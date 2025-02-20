@@ -16,17 +16,17 @@ The actions api is difficult for new coders to learn. Especially because it uses
 
 
 
-[Road Runner Docs](https://rr.brott.dev/docs/v1-0/installation/) is an amazing site with all the documentation, installation instructions, and everything you could need to get it set up. It is extremely easy and quick to tune along with getting it correct very quickly. Read through 0.5 in order to see all of the specifics in accordance with FTC Dashboard and other setup instructions.
+[Road Runner Docs](https://rr.brott.dev/docs/v1-0/installation/) is an amazing site with all the documentation, installation instructions, and everything you could need to get it set up. It is extremely easy and quick to tune along with getting it correct very quickly. Read through 0.5 in order to see all the specifics in accordance with FTC Dashboard and other setup instructions.
 
 ### Road Runner 0.5.x
 
 Road Runner is a very convenient, easy to use software to make your robot follow a path you create.
 
-[Learn Road Runner](https://learnroadrunner.com/#frequently-asked-questions) is one of the best sites I have found to learn how to use Road Runner. It walks through all of the steps from start to finish but I have found some specific things that I have found to be slightly different for my robot, using Rev Ultra-planetary Motors with a gearboxes.
+[Learn Road Runner](https://learnroadrunner.com/#frequently-asked-questions) is one of the best sites I have found to learn how to use Road Runner. It walks through all the steps from start to finish but I have found some specific things that I have found to be slightly different for my robot, using Rev Ultra-planetary Motors with a gearboxes.
 
 I went through all of Learn Road Runner in around two hours after I was able to make my Drive Constants file work correctly.
 
-Drive Constants is where your robot's specifications are stored and accessed and it is vital these are correct
+Drive Constants is where your robot's specifications are stored and accessed, and it is vital these are correct
 
 **Note: this is what worked for me, it may not work for you**
 
@@ -34,7 +34,7 @@ In Drive Constants I have set MaxRpm to whatever the manual says (6000 in my cas
 
 I have Gear Ratio set to 1/ gear ratio. So in my case 1/15.
 
-TicksPerRev can be set to your ticks per revolution of your motor as found on the specifications. For me it was 28.
+TicksPerRev can be set to your ticks per revolution of your motor as found on the specifications. For me, it was 28.
 
 Wheel Radius is the radius of your wheel in inches.
 
@@ -59,9 +59,9 @@ kV changes the max velocity to make the top of the peak
 
 kA is acceleration(lower = slower acceleration)
 
-kP is fine tuning to make sure it is closer to the path we want it to be at
+kP is fine-tuning to make sure it is closer to the path we want it to be at
 
-**Now you should be able to go and just go through the rest of Learn Road Runner and it should work if you have tuned everything properly**
+**Now you should be able to go and just go through the rest of Learn Road Runner, and it should work if you have tuned everything properly**
 
 #### Troubleshooting
 

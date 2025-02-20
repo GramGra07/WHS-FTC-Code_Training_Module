@@ -12,11 +12,11 @@ If you want to do code reviews with me, please DM me over Discord or email.
 
 Here are general instructions on getting your GitHub repo ready for a code review.
 
-1. Add my github account as a collaborator on your repository (GramGra07)
-2. Add a branch rulset
+1. Add my GitHub account as a collaborator on your repository (GramGra07)
+2. Add a branch ruleset
    1. ![](Screenshot 2025-01-26 184029.png)
    2. ![](Screenshot 2025-01-26 183915.png)
-   3. Leave the ones that are already selected on the rulset
+   3. Leave the ones that are already selected on the ruleset
 3. Create a new branch
    1. ![](Screenshot 2025-01-26 184132.png)
 4. Create the "code review"/pull request

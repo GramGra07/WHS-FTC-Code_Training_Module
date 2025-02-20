@@ -1,4 +1,4 @@
-# Hub Connect Over Wifi
+# Hub Connect Over Wi-Fi
 
 This is somewhat of a complex process and will require a lot of steps:
 
@@ -33,4 +33,4 @@ Now we will add this tool to your toolbar for ease of use:&#x20;
 ![](Screenshot 2024-07-25 at 10.20.21 PM.png)
 
 * Hit OK and move it to where you want it to be ordered in your toolbar
-* Simply connect to your robot's Wi-Fi and hit the button to connect to it wirelessly!
+* Simply connect to your robot's Wi-Fi and hit the button to connect to it wireless!

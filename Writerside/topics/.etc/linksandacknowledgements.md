@@ -3,7 +3,7 @@
 ### Useful Links 
 
 * My [user page](https://github.com/GramGra07) (GramGra07)
-* FTC Official Github [user page](https://github.com/FIRST-Tech-Challenge)
+* FTC Official GitHub [user page](https://github.com/FIRST-Tech-Challenge)
 * Team Resources [folder](https://github.com/WindsorHSRobotics/Team\_Resources)
 * [Rev Hardware Client](https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions)
 * [FTC Sample OpModes](https://github.com/FIRST-Tech-Challenge/FtcRobotController)

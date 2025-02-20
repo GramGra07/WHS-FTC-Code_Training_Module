@@ -2,14 +2,14 @@
 
 ### Coding
 
-The java coding language that we use is not incredibly hard to learn once you figure it all out. It follows all of the coding fundamentals you may already know.
+The java coding language that we use is not incredibly hard to learn once you figure it all out. It follows all the coding fundamentals you may already know.
 
 ## **IMPORTANT** when editing your code, only edit it in the **Team Code** section. **DO NOT** edit the FTC robot controller sample code
 
 * You will have to copy and paste the files from the external samples
 * It is very important that you only modify the TEAMCODE directory, any other directory can corrupt your project very easily and I see it happen and break Control Hubs a LOT
 
-### There are a lot of really good info and sample opModes [here](https://github.com/FIRST-Tech-Challenge/FtcRobotController)
+### There is a lot of excellent info and sample opModes [here](https://github.com/FIRST-Tech-Challenge/FtcRobotController)
 
 #### Getting started 
 

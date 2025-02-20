@@ -109,7 +109,7 @@ webcam = OpenCvCameraFactory.getInstance().createWebcam(hardwareMap.get(WebcamNa
 
 Then they set the pipeline `webcam.setPipeline(new SamplePipeline());` You can also change the name of the pipeline to your own pipeline.
 
-That is all the major parts of running OpenCv as an OpMode although I would definitely refer teo the WebcamExample a lot as you are setting up your own OpMode.
+That is all the major parts of running OpenCv as an OpMode, although I would definitely refer teo the WebcamExample a lot as you are setting up your own OpMode.
 
 #### Detection using OpenCV
 
@@ -162,7 +162,7 @@ You might notice that detecting red makes it harder. You can see that on this [i
 
 **Edge Detection**
 
-Edge detection is a useful tool to outline things and it will show you a black and white image, with the white parts being edges.
+Edge detection is a useful tool to outline things, and it will show you a black and white image, with the white parts being edges.
 
 ```java
     public static class EdgeDetection extends OpenCvPipeline {
@@ -177,7 +177,7 @@ Edge detection is a useful tool to outline things and it will show you a black a
     }
 ```
 
-There is so much you can do with OpenCV and practice but I would recommend reading through more of the Easy Open CV library to see how they do things.
+There is so much you can do with OpenCV and practice, but I would recommend reading through more of the Easy Open CV library to see how they do things.
 
 ### Vision Portal Integration
 

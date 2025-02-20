@@ -16,7 +16,7 @@
 
 #### 4. READ
 
-* All of the example opModes have very helpful comments to show you exactly what each part does, also if you read this whole thing you should be good to go
+* All the example opModes have very helpful comments to show you exactly what each part does, also if you read this whole thing you should be good to go
 
 #### 5. Collaborate
 
@@ -32,7 +32,7 @@
 
 ### Create a config.md file in your code:
 
-This has saved me so many times with motor and servo naming and where they are supposed to be put. This allows you to have a config map of every single thing you have connected to your robot. This helps with the configuration of the Control Hub as you can just refer to this document. Create this by right clicking on the folder you want it in, add file, name = config.md, and then just copy this text in to the file.
+This has saved me so many times with motor and servo naming and where they are supposed to be put. This allows you to have a config map of every single thing you have connected to your robot. This helps with the configuration of the Control Hub as you can just refer to this document. Create this by right-clicking on the folder you want it in, add file, name = config.md, and then just copy this text in to the file.
 
 ```
 Only a template, don't edit this file, copy it and make a new file

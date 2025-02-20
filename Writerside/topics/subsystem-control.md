@@ -10,7 +10,7 @@ Subsystem control is a very good way of abstracting your code and making it more
 
 ### How to switch
 
-In the process of switching, I would recommend keeping all previous code you have. This will allow you to cross reference it and make sure it all will work correctly. I will warn that this process will take programming knowledge even though I try to explain it the best I can. It is not an easy concept to learn for new people to coding.
+In the process of switching, I would recommend keeping all previous code you have. This will allow you to cross-reference it and make sure it all will work correctly. I will warn that this process will take programming knowledge even though I try to explain it the best I can. It is not an easy concept to learn for new people to coding.
 
 Steps to switch effectively:
 
@@ -112,7 +112,7 @@ driveSubsystemName = DriveSubsystem(hardwareMap)
    bob.age;
 ```
 
-8. Access and call the functions where they need to be called. I cannot give you much instruction on this part but this is where you need to be creative and make the variables and functions that you need. In my code, I call the driveByGamepads function and update function in my main teleOp loop. These are the two functions that completely control the drivetrain for me but it will usually be different with other robots.
+8. Access and call the functions where they need to be called. I cannot give you much instruction on this part but this is where you need to be creative and make the variables and functions that you need. In my code, I call the driveByGamepads function and update function in my main teleOp loop. These are the two functions that completely control the drivetrain for me, but it will usually be different with other robots.
 
 ### State Based Class
 

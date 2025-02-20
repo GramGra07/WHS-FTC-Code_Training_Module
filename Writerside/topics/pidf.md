@@ -54,7 +54,7 @@ Then add the following code to your code:
 2. Slowly increase P until it starts to stop oscillating back and forth on the target position
 3. Slowly increase F until it stops oscillating and gravity is not affecting it
 
-You can then tune I and D to make it more accurate but I will not cover that in this guide.
+You can then tune I and D to make it more accurate, but I will not cover that in this guide.
 
 ## How do I implement it?
 

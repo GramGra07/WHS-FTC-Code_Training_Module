@@ -14,7 +14,7 @@ It is basically a computer mouse! It also includes a very nice 6-axis IMU, which
 
 ## How do I code it?
 
-Here is an example opMode to make the OTOS Sensor work, it is fairly self explanatory:
+Here is an example opMode to make the OTOS Sensor work, it is fairly self-explanatory:
 
 ```java
 import com.qualcomm.hardware.sparkfun.SparkFunOTOS;

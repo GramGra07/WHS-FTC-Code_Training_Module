@@ -21,7 +21,7 @@
 
 ### How do I get started?
 
-* Connect to your robot via Wifi
+* Connect to your robot via Wi-Fi
 * Comprehensive tutorial here (read
   carefully):[](https://ftc-docs.firstinspires.org/en/latest/programming\_resources/shared/installing\_javascript\_browser/Installing-a-Javascript-Enabled-Browser.html)
 
@@ -29,29 +29,29 @@
 
 ### Why use it?
 
-* Much simpler to setup than Android Studio
+* Much simpler to set up than Android Studio
 * All code is stored on the RC
 * No clutter of other classes
 
 ### How do I start?
 
-* Connect to your robot via Wifi
+* Connect to your robot via Wi-Fi
 * Go to, and read through this site: [https://ftc-docs.firstinspires.org/en/latest/programming\_resources/onbot\_java/opmode/opmode.html](https://ftc-docs.firstinspires.org/en/latest/programming\_resources/onbot\_java/opmode/opmode.html)
 
 ## Android Studio
 
 ### Basic Steps
 
-To get started with Github, Android Studio, and Java Programming, you will need to follow these steps:
+To get started with GitHub, Android Studio, and Java Programming, you will need to follow these steps:
 
-1. Create a Github account if you haven't already
+1. Create a GitHub account if you haven't already
 2. Fork the [FTC Robot Controller](https://github.com/FIRST-Tech-Challenge/FtcRobotController) repository
 3. Download Android Studio
 4. Clone your forked repository
 5. Open the project in Android Studio
 6. Code
 7. Send the robot your updated code
-8. Setup a config on your robot
+8. Set up a config on your robot
 9. Start controlling your robot!
 
 ### Android Studio Tutorial
@@ -72,7 +72,7 @@ Android studio is one of the more intuitive IDE's I have encountered. There are 
 
 #### How does everything work?
 
-* Basically, when you hit upload, it runs and installs an app to the robot's control hub. What this does is allow it to run effectively while connected to the driver station. The **gradle** is the way that this app gets built. This is also why it is so important to fork the FTC Robot Controller. They make the onboarding steps so much easier just because all of the work for setup is done for you.
+* Basically, when you hit upload, it runs and installs an app to the robot's control hub. What this does is allow it to run effectively while connected to the driver station. The **gradle** is the way that this app gets built. This is also why it is so important to fork the FTC Robot Controller. They make the onboarding steps so much easier just because all the work for setup is done for you.
 
 #### Plugins
 
@@ -89,11 +89,11 @@ I have encountered a bunch of plugins for AS that make the experience so much be
 
 ### Setting up Git 
 
-In order to setup your repository correctly you will do 2 things. 1.Fork and 2. Clone this will get the repository to your GitHub account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa](step1.png) and to **collaborators** then add your team members using the add people button.
+In order to set up your repository correctly you will do 2 things. 1.Fork and 2. Clone this will get the repository to your GitHub account and then put that repository local on your computer. Remember **only one person will need to fork the repo** then you will share it to the rest of your team. You will go through ![settingsa](step1.png) and to **collaborators** then add your team members using the add people button.
 
 #### Forking 
 
-Go to this [website](https://github.com/FIRST-Tech-Challenge/FtcRobotController) and find the latest repository from the company. Press the ![fork button](fork.png) button. This will "copy" the repository onto your GitHub account. Remember **only one person will need to fork the repo per team**!
+Go to this [website](https://github.com/FIRST-Tech-Challenge/FtcRobotController) and find the latest repository from the company. Press the ![fork button](fork.png). This will "copy" the repository onto your GitHub account. Remember **only one person will need to fork the repo per team**!
 
 #### Cloning the repository 
 
@@ -127,7 +127,7 @@ Managing a server is really not that hard if you do it correctly from the start.
 
 #### Personal Access Token
 
-In github, tap on your profile ( top right corner ), then:
+In GitHub, tap on your profile ( top right corner ), then:
 
 1. ![step1a](step1.png)
 2. ![step2a](step2.png)
