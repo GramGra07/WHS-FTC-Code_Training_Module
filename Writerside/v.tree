@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="v"
+                  name="Code Training Module" start-page="README.md">
+
+    <toc-element topic="README.md"/>
+    <toc-element topic="presented-at-worlds-2024.md"/>
+    <toc-element topic="githubbasics.md"/>
+    <toc-element topic="how-does-everything-work.md"/>
+    <toc-element topic="codingbasics.md"/>
+    <toc-element topic="coding.md"/>
+    <toc-element topic="running-code.md"/>
+    <toc-element topic="hub-connect-over-wifi.md"/>
+    <toc-element topic="general-tips.md"/>
+    <toc-element topic="common-errors.md"/>
+    <toc-element toc-title="Autonomous">
+        <toc-element topic="encoders.md"/>
+        <toc-element topic="spark-fun-otos-sensor.md"/>
+        <toc-element topic="opencv.md"/>
+        <toc-element topic="velocityvision.md"/>
+        <toc-element topic="roadrunner.md"/>
+        <toc-element topic="statemachine.md"/>
+        <toc-element topic="gentrified-apps-util.md"/>
+        <toc-element topic="pedro-pathing.md"/>
+    </toc-element>
+    <toc-element toc-title="Advanced">
+        <toc-element topic="external-hardware-classes.md"/>
+        <toc-element topic="pidf.md"/>
+        <toc-element topic="subsystem-control.md"/>
+        <toc-element topic="switching-to-kotlin.md"/>
+    </toc-element>
+    <toc-element toc-title=".etc">
+        <toc-element topic="machinelearning.md"/>
+        <toc-element topic="linksandacknowledgements.md"/>
+        <toc-element topic="code-review.md"/>
+    </toc-element>
+    <toc-element topic="gettingstarted.md"/>
+</instance-profile>
