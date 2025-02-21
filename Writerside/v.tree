@@ -29,7 +29,9 @@
     <toc-element toc-title="Advanced">
         <toc-element topic="external-hardware-classes.md"/>
         <toc-element topic="pidf.md"/>
+        <toc-element topic="ServoStateMachines.md"/>
         <toc-element topic="subsystem-control.md"/>
+        <toc-element topic="OpModeRegistrars.md"/>
         <toc-element topic="switching-to-kotlin.md"/>
     </toc-element>
     <toc-element toc-title=".etc">

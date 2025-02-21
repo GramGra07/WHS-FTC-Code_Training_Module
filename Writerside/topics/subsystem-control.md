@@ -277,3 +277,7 @@ To create your own:
 3. Create setter functions to set values differently
 4. Create an update function that sets the values requested by the states
 5. All done, now just make sure to call your subsystem functions correctly and initialize everything well
+
+OR
+
+Use this handy website I created to generate code for a subsystem! [Subsystem Generator](https://gramgra07.github.io/SubsystemMaker/)
