@@ -10,4 +10,8 @@
         <description>Created after removal of "Java with FTC Coding" from Code Training Module</description>
         <accepts>Java-with-FTC-Coding.html</accepts>
     </rule>
+    <rule id="712bdc9c">
+        <description>Created after removal of "Import" from Code Training Module</description>
+        <accepts>Import.html</accepts>
+    </rule>
 </rules>
