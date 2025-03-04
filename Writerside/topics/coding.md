@@ -363,3 +363,5 @@ Game-pad inputs are the base of teleOp. You can use `if(gamepad1.left_bumper){` 
 .right_trigger or left float
 .touchpad_finger_1_x or y float
 ```
+
+This is a very helpful resource [here](https://github.com/Beta8397/virtual_robot) used to test code before.
