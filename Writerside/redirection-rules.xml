@@ -14,4 +14,16 @@
         <description>Created after removal of "Import" from Code Training Module</description>
         <accepts>Import.html</accepts>
     </rule>
+    <rule id="3d8043e7">
+        <description>Created after removal of "VelocityVision" from Code Training Module</description>
+        <accepts>velocityvision.html</accepts>
+    </rule>
+    <rule id="78781f68">
+        <description>Created after removal of "StateMachine" from Code Training Module</description>
+        <accepts>statemachine.html</accepts>
+    </rule>
+    <rule id="1233e87c">
+        <description>Created after removal of "Servo" from Code Training Module</description>
+        <accepts>Servo.html</accepts>
+    </rule>
 </rules>

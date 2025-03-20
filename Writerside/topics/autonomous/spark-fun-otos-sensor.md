@@ -1,8 +1,7 @@
----
-description: https://www.sparkfun.com/products/24904
----
-
 # Spark Fun OTOS Sensor
+
+[](https://www.sparkfun.com/products/24904)
+<img alt="otos.jpg" height="200" src="../../../images/enc/otos.jpg" width="200"/>
 
 ## What is it?
 

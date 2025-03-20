@@ -2,29 +2,17 @@
 
 ### Road Runner 1.x
 
-Road Runner 1.x has some major advantages over 0.5 , but is also much harder to learn and understand in terms of path building.
+It is very easy to tune, taking relatively little time for an effective tune.
 
-Pros:
-
-It is SO much easier to tune, considering there are 5 steps in 1.x versus the 20 some steps in 0.5
-
-I have found it took me about 1 hour to effectively tune 1.x instead of the 2-4 hours it takes to meticulously tune 0.5
+I have found it took me about 1 hour to effectively tune 1.x.
 
 Cons:
 
 The actions api is difficult for new coders to learn. Especially because it uses concepts such as the command system and command based programming along with subsystem control of the robot
 
-
-
 [Road Runner Docs](https://rr.brott.dev/docs/v1-0/installation/) is an amazing site with all the documentation, installation instructions, and everything you could need to get it set up. It is extremely easy and quick to tune along with getting it correct very quickly. Read through 0.5 in order to see all the specifics in accordance with FTC Dashboard and other setup instructions.
 
-### Road Runner 0.5.x
-
-Road Runner is a very convenient, easy to use software to make your robot follow a path you create.
-
-[Learn Road Runner](https://learnroadrunner.com/#frequently-asked-questions) is one of the best sites I have found to learn how to use Road Runner. It walks through all the steps from start to finish but I have found some specific things that I have found to be slightly different for my robot, using Rev Ultra-planetary Motors with a gearboxes.
-
-I went through all of Learn Road Runner in around two hours after I was able to make my Drive Constants file work correctly.
+### Setting up Road Runner
 
 Drive Constants is where your robot's specifications are stored and accessed, and it is vital these are correct
 

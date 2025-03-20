@@ -3,8 +3,8 @@
 This is somewhat of a complex process and will require a lot of steps:
 
 * Make sure ADB is installed on your computer
-  * Check that it is installed by typing adb in your terminal and hitting enter, if it reports anything you are good to go, if it says "adb command not found", continue with setting it up
-    * [https://www.xda-developers.com/install-adb-windows-macos-linux/](https://www.xda-developers.com/install-adb-windows-macos-linux/)
+  * Check that it is installed by typing adb in your terminal and hitting enter, if it reports anything you are good to go, if it says `adb command not found`, continue with setting it up
+    * [](https://www.xda-developers.com/install-adb-windows-macos-linux/)
 * Open Android Studio Settings
 * Open up the external tools portion
 
@@ -15,12 +15,12 @@ This is somewhat of a complex process and will require a lot of steps:
 
 * Fill out the description and activities for the tool
   * Name: HUB connect over Wi-Fi direct
-  * Program: $ModuleSdkPath$/platform-tools/adb
-  * Arguments: connect 192.168.43.1:5555
-  * Working Directory: $ProjectFileDir$
+  * Program: `$ModuleSdkPath$/platform-tools/adb`
+  * Arguments: `connect 192.168.43.1:5555`
+  * Working Directory: `$ProjectFileDir$`
 * Then hit OK and Apply and then you can close the settings
 
-Now we will add this tool to your toolbar for ease of use:&#x20;
+Now we will add this tool to your toolbar for ease of use:
 
 * Right-click on your toolbar
 

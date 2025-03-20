@@ -12,15 +12,11 @@ This [website](https://github.com/OpenFTC/EasyOpenCV) has some very good instruc
 
 Open `build.gradle` in the TeamCode Module and at the bottom add this:
 
-`dependencies { implementation 'org.openftc:easyopencv:1.7.0' }`
+`dependencies { 
+    implementation 'org.openftc:easyopencv:1.7.3' 
+}`
 
 Then sync the gradle and you should be good to go. It should have a pop-up asking if you want to sync it.
-
-**OnBotJava**
-
-Go to this [link](https://github.com/OpenFTC/EasyOpenCV/releases) and download the latest .aar file from the assets section.
-
-In the OnBotJava menu select Upload Files and upload the file you just downloaded.
 
 #### Using OpenCV
 
@@ -68,15 +64,35 @@ A Point is a class used for setting an x,y coordinate.
 
 To create a Point you can use `Point point = new Point(x,y);`
 
-**HSV**
+## Color Spaces
+
+Color spaces are a way to represent colors in a different way. There are many different color spaces, but the most common are RGB, HSV, and YCrCb.
+
+### HSV
 
 HSV stands for Hue, Saturation, and Value. It is the most common for color detection.
 
 Hue is the color, saturation is how much of the color, and value is the brightness of the color.
 
-Here is a [picture](https://i.stack.imgur.com/gyuw4.png) that shows what each value does.
+![hsv.png](../../../images/cv/hsv.png)
 
-I personally prefer to use the YCrCb color space which stands for luminescence, color red, and color blue. I have found it to be more accurate in detecting a difference between red and blue as needed in 2023-24 Centerstage.
+### RGB (A)
+
+RGB stands for Red, Green, Blue. It is the most common color space for images. It is used in most cameras and displays.
+
+The A stands for Alpha, which is the transparency of the color.
+
+![rgb.png](../../../images/cv/rgb.png)
+
+### YCrCb
+
+YCrCb is a color space that is used for video compression. It is not commonly used for color detection, but it is used in some cameras.
+
+I personally prefer this because it is easiest to detect red in OpenCV.
+
+![ycrcb.png](../../../images/cv/ycrcb.png)
+
+## Color Detection
 
 **Scalar**
 
@@ -178,6 +194,19 @@ Edge detection is a useful tool to outline things, and it will show you a black 
 ```
 
 There is so much you can do with OpenCV and practice, but I would recommend reading through more of the Easy Open CV library to see how they do things.
+
+#### Practical Example
+![in.png](../../../images/cv/pv/in.png)
+
+In this image, you can see there is a little red here and there, lets find that.
+
+![color thresh.png](../../../images/cv/pv/color thresh.png)
+
+This is a small color thresh tuned in [PaperVision](https://docs.deltacv.org/papervision)
+
+![contours.png](../../../images/cv/pv/contours.png)
+
+Then, we apply the contours and draw them on the screen and find the resulting image.
 
 ### Vision Portal Integration
 

@@ -14,7 +14,7 @@ It allows you to not repeat yourself when coding. Often young coders have every 
 
 There is a handy example by FTC [here](https://github.com/FIRST-Tech-Challenge/FtcRobotController/blob/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptExternalHardwareClass.java)
 
-* Start with creating a new class, probably called HardwareConfig, or something of that sort.&#x20;
+* Start with creating a new class, probably called HardwareConfig, or something of that sort.
 * Then define all of your motors, servos, and variables you normally use.
 * Make a function called "initRobot" or something of that sort. That will allow you to have a good function. This should take parameters such as an opMode, HardwareMap and maybe an auto (boolean) so you can initialize things differently in auto versus teleOp.
 * Make a function that will handle all teleOp "logic". This is handy because you will only need to call one function during your teleOp code.

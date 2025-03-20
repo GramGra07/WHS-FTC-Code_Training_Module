@@ -1,14 +1,14 @@
 # General Tips
 
-**Tips and Tricks**
-
-1. PRACTICE!!
+#### 1. PRACTICE!!
 
 * It is known that if you practice something, you will get better at it over time, this is the same for coding and robotics
 
 #### 2. Ask Questions
 
 * A lot of people know what they are doing and are willing to help if you just ask
+
+* Join the FTC Discord! 
 
 #### 3. If you don't know a concept, look it up
 
@@ -26,15 +26,15 @@
 
 * Even if your prior knowledge is in a different language, it **will** help you understand this code.
 
-**7. Trust your IDE**
+#### 7. **Trust your IDE**
 
 * Your IDE will prevent most common problems if you trust that it knows what its doing, which it does
 
-### Create a config.md file in your code:
+### Create a config.md file in your code: (OR use the one I made in Gentrified Apps Util)
 
 This has saved me so many times with motor and servo naming and where they are supposed to be put. This allows you to have a config map of every single thing you have connected to your robot. This helps with the configuration of the Control Hub as you can just refer to this document. Create this by right-clicking on the folder you want it in, add file, name = config.md, and then just copy this text in to the file.
 
-```
+```md
 Only a template, don't edit this file, copy it and make a new file
 Format: # - type : name
 

@@ -3,14 +3,15 @@
 Encoders are very accurate measurement systems that rely on the wheel movements to measure distances.
 
 ## How do they work? 
-
-![encoder demo](https://user-images.githubusercontent.com/101433010/204153129-1034463b-cef9-4044-8814-035f8cbce675.png)
+![encSchematic.png](../../../images/enc/demo/encSchematic.png)
 
 Most of them work by having a light on one side of the encoder disk. On the other side of the disk there is usually a receiver. On the encoder disk there are a bunch of holes, this is the encoder ticks per revolution, and you should be able to find this where you ordered the motor you are using. Most of the motors available for FTC have encoders built into them.
 
-![encoder](https://user-images.githubusercontent.com/101433010/204154390-d6a49351-b7ba-4319-a151-6f3f3db761b1.gif)
+![encDemo.gif](../../../images/enc/demo/encDemo.gif)
 
 ## How do you use them? 
+
+Translating ticks to inches is a very simple process, you simply need ticks/rev and circumference of the wheel. This is found with the below code:
 
 ```java
 static final double COUNTS_PER_MOTOR_REV = your specific encoder counts per revolution;
@@ -28,7 +29,7 @@ while (opModeIsActive() &&
    (motor.isBusy())) {
 
    // Display it for the driver.
-   telemetry.addData("Running to", -newLeftTarget);
+   telemetry.addData("Running to", newLeftTarget);
    telemetry.addData("Currently at", motor.getCurrentPosition());
    telemetry.update();
 }
@@ -39,3 +40,17 @@ This will make sure it doesn't stop before going the distance it needs to. After
 ## Why should you use them?
 
 You should use them because they are very helpful to go to an exact distance.
+
+## Some example encoders
+
+**Rev Through Bore**
+
+<img alt="tb.jpg" height="500" src="../../../images/enc/tb.jpg" width="500"/>
+
+**GoBilda Swingarm**
+
+<img alt="swingarm.jpg" height="500" src="../../../images/enc/swingarm.jpg" width="500"/>
+
+**GoBilda 4 Bar**
+
+<img alt="4bar.jpg" height="500" src="../../../images/enc/4bar.jpg" width="500"/>
