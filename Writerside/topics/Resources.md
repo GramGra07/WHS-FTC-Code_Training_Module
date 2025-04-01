@@ -33,6 +33,9 @@
 
 [](https://docs.deltacv.org/papervision)
 
+<img alt="IMG_0515.JPG" height="150" src="IMG_0515.JPG" width="150"/>
+
+
 ## Other Useful Links
 
 My [user page](https://github.com/GramGra07) (GramGra07)
