@@ -43,6 +43,7 @@
     </toc-element>
     <toc-element topic="gentrified-apps-util.md"/>
     <toc-element topic="common-errors.md"/>
+    <toc-element topic="FTC-Linter-Plugin.md"/>
     <toc-element toc-title="Vision">
         <toc-element topic="opencv.md"/>
         <toc-element topic="Velocity-Vision.md"/>
