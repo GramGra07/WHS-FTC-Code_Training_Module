@@ -1,0 +1,558 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="exampleAutoBlank" href="exampleAutoBlank.html" /><link rel="prev" title="SensorBNO055IMU" href="SensorBNO055IMU.html" />
+
+    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+        <title>SensorColor - WHS-FTC-Code_Training_Module 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">WHS-FTC-Code_Training_Module 1.0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">WHS-FTC-Code_Training_Module 1.0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../presented-at-worlds-2024.html">Presented at Worlds 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general-tips.html">General Tips</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../java_coding_basics/index.html">Java Coding Basics</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Java Coding Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/codingbasics.html">Intro to Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Generic-Knowledge.html">Generic Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Operations.html">Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Classes.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/how-does-everything-work.html">How does everything work?</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ftc_programming_basics/index.html">FTC Programming Basics</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of FTC Programming Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/Resources.html">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/githubbasics.html">Getting Started with Programming</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../ftc_programming_basics/android_studio/index.html">Android Studio Setup</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Android Studio Setup</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/android_studio/Basics.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/android_studio/GitHub-Setup.html">GitHub Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/coding.html">Coding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/OpMode.html">OpMode</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../ftc_programming_basics/hardware/index.html">Hardware</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Hardware</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Motors.html">Motors and Servos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Gamepad.html">Gamepad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Sensors.html">Sensors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/Implementations.html">Implementations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../programming_your_robot/index.html">Programming Your Robot</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Programming Your Robot</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/gettingstarted.html">Starting your project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/Driver-Station-Walkthrough.html">Driver Station Walkthrough</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/Configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/running-code.html">Running Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/hub-connect-over-wifi.html">Hub Connect Over Wi-Fi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../gentrified-apps-util.html">Gentrified Apps Util</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common-errors.html">Common Errors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FTC-Linter-Plugin.html">FTC-Linter Plugin</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vision/index.html">Vision</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Vision</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vision/opencv.html">OpenCV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vision/Velocity-Vision.html">Velocity Vision</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autonomous/index.html">Autonomous</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Autonomous</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autonomous/odometry/index.html">Odometry</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Odometry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/encoders.html">Encoders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/spark-fun-otos-sensor.html">Spark Fun OTOS Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/pedro-pathing.html">Pedro Pathing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/roadrunner.html">RoadRunner</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../advanced/index.html">Advanced</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Advanced</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/external-hardware-classes.html">External Hardware Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/pidf.html">PIDF Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/ServoStateMachines.html">ServoStateMachines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/subsystem-control.html">Subsystem Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/OpModeRegistrars.html">OpModeRegistrars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/switching-to-kotlin.html">Switching to Kotlin</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Examples</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="AutoDriveByEncoderLinear.html">AutoDriveByEncoderLinear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SensorBNO055IMU.html">SensorBNO055IMU</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">SensorColor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exampleAutoBlank.html">exampleAutoBlank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exampleAutoFull.html">exampleAutoFull</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exampleTeleOpBlank.html">exampleTeleOpBlank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exampleTeleOpFull.html">exampleTeleOpFull</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../.etc/index.html">.etc</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of .etc</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../.etc/linksandacknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../.etc/code-review.html">Code Review</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="sensorcolor">
+<span id="sc"></span><h1>SensorColor<a class="headerlink" href="#sensorcolor" title="Permalink to this heading">#</a></h1>
+<div class="highlight-Java notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Copyright (c) 2017-2020 FIRST. All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Redistribution and use in source and binary forms, with or without modification,</span>
+<span class="cm"> * are permitted (subject to the limitations in the disclaimer below) provided that</span>
+<span class="cm"> * the following conditions are met:</span>
+<span class="cm"> *</span>
+<span class="cm"> * Redistributions of source code must retain the above copyright notice, this list</span>
+<span class="cm"> * of conditions and the following disclaimer.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Redistributions in binary form must reproduce the above copyright notice, this</span>
+<span class="cm"> * list of conditions and the following disclaimer in the documentation and/or</span>
+<span class="cm"> * other materials provided with the distribution.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Neither the name of FIRST nor the names of its contributors may be used to endorse or</span>
+<span class="cm"> * promote products derived from this software without specific prior written permission.</span>
+<span class="cm"> *</span>
+<span class="cm"> * NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY&#39;S PATENT RIGHTS ARE GRANTED BY THIS</span>
+<span class="cm"> * LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<span class="cm"> * &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,</span>
+<span class="cm"> * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span>
+<span class="cm"> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE</span>
+<span class="cm"> * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span>
+<span class="cm"> * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR</span>
+<span class="cm"> * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="cm"> * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,</span>
+<span class="cm"> * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span>
+<span class="cm"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="cm"> */</span>
+
+<span class="kn">package</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.robotcontroller.external.samples</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.app.Activity</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.graphics.Color</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.view.View</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.eventloop.opmode.Disabled</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.eventloop.opmode.LinearOpMode</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.eventloop.opmode.TeleOp</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.hardware.DistanceSensor</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.hardware.NormalizedColorSensor</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.hardware.NormalizedRGBA</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.hardware.SwitchableLight</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * This is an example LinearOpMode that shows how to use a color sensor in a generic</span>
+<span class="cm"> * way, regardless of which particular make or model of color sensor is used. The Op Mode</span>
+<span class="cm"> * assumes that the color sensor is configured with a name of &quot;sensor_color&quot;.</span>
+<span class="cm"> *</span>
+<span class="cm"> * There will be some variation in the values measured depending on the specific sensor you are using.</span>
+<span class="cm"> *</span>
+<span class="cm"> * You can increase the gain (a multiplier to make the sensor report higher values) by holding down</span>
+<span class="cm"> * the A button on the gamepad, and decrease the gain by holding down the B button on the gamepad.</span>
+<span class="cm"> *</span>
+<span class="cm"> * If the color sensor has a light which is controllable from software, you can use the X button on</span>
+<span class="cm"> * the gamepad to toggle the light on and off. The REV sensors don&#39;t support this, but instead have</span>
+<span class="cm"> * a physical switch on them to turn the light on and off, beginning with REV Color Sensor V2.</span>
+<span class="cm"> *</span>
+<span class="cm"> * If the color sensor also supports short-range distance measurements (usually via an infrared</span>
+<span class="cm"> * proximity sensor), the reported distance will be written to telemetry. As of September 2020,</span>
+<span class="cm"> * the only color sensors that support this are the ones from REV Robotics. These infrared proximity</span>
+<span class="cm"> * sensor measurements are only useful at very small distances, and are sensitive to ambient light</span>
+<span class="cm"> * and surface reflectivity. You should use a different sensor if you need precise distance measurements.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Use Android Studio to Copy this Class, and Paste it into your team&#39;s code folder with a new name.</span>
+<span class="cm"> * Remove or comment out the @Disabled line to add this Op Mode to the Driver Station OpMode list</span>
+<span class="cm"> */</span>
+<span class="nd">@TeleOp</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Sensor: Color&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">group</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Sensor&quot;</span><span class="p">)</span>
+<span class="nd">@Disabled</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SensorColor</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">LinearOpMode</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">  </span><span class="cm">/** The colorSensor field will contain a reference to our color sensor hardware object */</span>
+<span class="w">  </span><span class="n">NormalizedColorSensor</span><span class="w"> </span><span class="n">colorSensor</span><span class="p">;</span>
+
+<span class="w">  </span><span class="cm">/** The relativeLayout field is used to aid in providing interesting visual feedback</span>
+<span class="cm">   * in this sample application; you probably *don&#39;t* need this when you use a color sensor on your</span>
+<span class="cm">   * robot. Note that you won&#39;t see anything change on the Driver Station, only on the Robot Controller. */</span>
+<span class="w">  </span><span class="n">View</span><span class="w"> </span><span class="n">relativeLayout</span><span class="p">;</span>
+
+<span class="w">  </span><span class="cm">/**</span>
+<span class="cm">   * The runOpMode() method is the root of this Op Mode, as it is in all LinearOpModes.</span>
+<span class="cm">   * Our implementation here, though is a bit unusual: we&#39;ve decided to put all the actual work</span>
+<span class="cm">   * in the runSample() method rather than directly in runOpMode() itself. The reason we do that is</span>
+<span class="cm">   * that in this sample we&#39;re changing the background color of the robot controller screen as the</span>
+<span class="cm">   * Op Mode runs, and we want to be able to *guarantee* that we restore it to something reasonable</span>
+<span class="cm">   * and palatable when the Op Mode ends. The simplest way to do that is to use a try...finally</span>
+<span class="cm">   * block around the main, core logic, and an easy way to make that all clear was to separate</span>
+<span class="cm">   * the former from the latter in separate methods.</span>
+<span class="cm">   */</span>
+<span class="w">  </span><span class="nd">@Override</span><span class="w"> </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">runOpMode</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="c1">// Get a reference to the RelativeLayout so we can later change the background</span>
+<span class="w">    </span><span class="c1">// color of the Robot Controller app to match the hue detected by the RGB sensor.</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">relativeLayoutId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hardwareMap</span><span class="p">.</span><span class="na">appContext</span><span class="p">.</span><span class="na">getResources</span><span class="p">().</span><span class="na">getIdentifier</span><span class="p">(</span><span class="s">&quot;RelativeLayout&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hardwareMap</span><span class="p">.</span><span class="na">appContext</span><span class="p">.</span><span class="na">getPackageName</span><span class="p">());</span>
+<span class="w">    </span><span class="n">relativeLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="n">Activity</span><span class="p">)</span><span class="w"> </span><span class="n">hardwareMap</span><span class="p">.</span><span class="na">appContext</span><span class="p">).</span><span class="na">findViewById</span><span class="p">(</span><span class="n">relativeLayoutId</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">runSample</span><span class="p">();</span><span class="w"> </span><span class="c1">// actually execute the sample</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// On the way out, *guarantee* that the background is reasonable. It doesn&#39;t actually start off</span>
+<span class="w">      </span><span class="c1">// as pure white, but it&#39;s too much work to dig out what actually was used, and this is good</span>
+<span class="w">      </span><span class="c1">// enough to at least make the screen reasonable again.</span>
+<span class="w">      </span><span class="c1">// Set the panel back to the default color</span>
+<span class="w">      </span><span class="n">relativeLayout</span><span class="p">.</span><span class="na">post</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Runnable</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">relativeLayout</span><span class="p">.</span><span class="na">setBackgroundColor</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="na">WHITE</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">});</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kd">protected</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">runSample</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// You can give the sensor a gain value, will be multiplied by the sensor&#39;s raw value before the</span>
+<span class="w">    </span><span class="c1">// normalized color values are calculated. Color sensors (especially the REV Color Sensor V3)</span>
+<span class="w">    </span><span class="c1">// can give very low values (depending on the lighting conditions), which only use a small part</span>
+<span class="w">    </span><span class="c1">// of the 0-1 range that is available for the red, green, and blue values. In brighter conditions,</span>
+<span class="w">    </span><span class="c1">// you should use a smaller gain than in dark conditions. If your gain is too high, all of the</span>
+<span class="w">    </span><span class="c1">// colors will report at or near 1, and you won&#39;t be able to determine what color you are</span>
+<span class="w">    </span><span class="c1">// actually looking at. For this reason, it&#39;s better to err on the side of a lower gain</span>
+<span class="w">    </span><span class="c1">// (but always greater than  or equal to 1).</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">gain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Once per loop, we will update this hsvValues array. The first element (0) will contain the</span>
+<span class="w">    </span><span class="c1">// hue, the second element (1) will contain the saturation, and the third element (2) will</span>
+<span class="w">    </span><span class="c1">// contain the value. See http://web.archive.org/web/20190311170843/https://infohost.nmt.edu/tcc/help/pubs/colortheory/web/hsv.html</span>
+<span class="w">    </span><span class="c1">// for an explanation of HSV color.</span>
+<span class="w">    </span><span class="kd">final</span><span class="w"> </span><span class="kt">float</span><span class="o">[]</span><span class="w"> </span><span class="n">hsvValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">float</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// xButtonPreviouslyPressed and xButtonCurrentlyPressed keep track of the previous and current</span>
+<span class="w">    </span><span class="c1">// state of the X button on the gamepad</span>
+<span class="w">    </span><span class="kt">boolean</span><span class="w"> </span><span class="n">xButtonPreviouslyPressed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">boolean</span><span class="w"> </span><span class="n">xButtonCurrentlyPressed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Get a reference to our sensor object. It&#39;s recommended to use NormalizedColorSensor over</span>
+<span class="w">    </span><span class="c1">// ColorSensor, because NormalizedColorSensor consistently gives values between 0 and 1, while</span>
+<span class="w">    </span><span class="c1">// the values you get from ColorSensor are dependent on the specific sensor you&#39;re using.</span>
+<span class="w">    </span><span class="n">colorSensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hardwareMap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">NormalizedColorSensor</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;sensor_color&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// If possible, turn the light on in the beginning (it might already be on anyway,</span>
+<span class="w">    </span><span class="c1">// we just make sure it is if we can).</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">colorSensor</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">SwitchableLight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="p">((</span><span class="n">SwitchableLight</span><span class="p">)</span><span class="n">colorSensor</span><span class="p">).</span><span class="na">enableLight</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Wait for the start button to be pressed.</span>
+<span class="w">    </span><span class="n">waitForStart</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// Loop until we are asked to stop</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">opModeIsActive</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Explain basic gain information via telemetry</span>
+<span class="w">      </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addLine</span><span class="p">(</span><span class="s">&quot;Hold the A button on gamepad 1 to increase gain, or B to decrease it.\n&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addLine</span><span class="p">(</span><span class="s">&quot;Higher gain values mean that the sensor will report larger numbers for Red, Green, and Blue, and Value\n&quot;</span><span class="p">);</span>
+
+<span class="w">      </span><span class="c1">// Update the gain value if either of the A or B gamepad buttons is being held</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">gamepad1</span><span class="p">.</span><span class="na">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Only increase the gain by a small amount, since this loop will occur multiple times per second.</span>
+<span class="w">        </span><span class="n">gain</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">0.005</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">gamepad1</span><span class="p">.</span><span class="na">b</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">gain</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// A gain of less than 1 will make the values smaller, which is not helpful.</span>
+<span class="w">        </span><span class="n">gain</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mf">0.005</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="c1">// Show the gain value via telemetry</span>
+<span class="w">      </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Gain&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">gain</span><span class="p">);</span>
+
+<span class="w">      </span><span class="c1">// Tell the sensor our desired gain value (normally you would do this during initialization,</span>
+<span class="w">      </span><span class="c1">// not during the loop)</span>
+<span class="w">      </span><span class="n">colorSensor</span><span class="p">.</span><span class="na">setGain</span><span class="p">(</span><span class="n">gain</span><span class="p">);</span>
+
+<span class="w">      </span><span class="c1">// Check the status of the X button on the gamepad</span>
+<span class="w">      </span><span class="n">xButtonCurrentlyPressed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gamepad1</span><span class="p">.</span><span class="na">x</span><span class="p">;</span>
+
+<span class="w">      </span><span class="c1">// If the button state is different than what it was, then act</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xButtonCurrentlyPressed</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">xButtonPreviouslyPressed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// If the button is (now) down, then toggle the light</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xButtonCurrentlyPressed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">colorSensor</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">SwitchableLight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">SwitchableLight</span><span class="w"> </span><span class="n">light</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">SwitchableLight</span><span class="p">)</span><span class="n">colorSensor</span><span class="p">;</span>
+<span class="w">            </span><span class="n">light</span><span class="p">.</span><span class="na">enableLight</span><span class="p">(</span><span class="o">!</span><span class="n">light</span><span class="p">.</span><span class="na">isLightOn</span><span class="p">());</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="n">xButtonPreviouslyPressed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xButtonCurrentlyPressed</span><span class="p">;</span>
+
+<span class="w">      </span><span class="c1">// Get the normalized colors from the sensor</span>
+<span class="w">      </span><span class="n">NormalizedRGBA</span><span class="w"> </span><span class="n">colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colorSensor</span><span class="p">.</span><span class="na">getNormalizedColors</span><span class="p">();</span>
+
+<span class="w">      </span><span class="cm">/* Use telemetry to display feedback on the driver station. We show the red, green, and blue</span>
+<span class="cm">       * normalized values from the sensor (in the range of 0 to 1), as well as the equivalent</span>
+<span class="cm">       * HSV (hue, saturation and value) values. See http://web.archive.org/web/20190311170843/https://infohost.nmt.edu/tcc/help/pubs/colortheory/web/hsv.html</span>
+<span class="cm">       * for an explanation of HSV color. */</span>
+
+<span class="w">      </span><span class="c1">// Update the hsvValues array by passing it to Color.colorToHSV()</span>
+<span class="w">      </span><span class="n">Color</span><span class="p">.</span><span class="na">colorToHSV</span><span class="p">(</span><span class="n">colors</span><span class="p">.</span><span class="na">toColor</span><span class="p">(),</span><span class="w"> </span><span class="n">hsvValues</span><span class="p">);</span>
+
+<span class="w">      </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addLine</span><span class="p">()</span>
+<span class="w">              </span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Red&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.3f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">colors</span><span class="p">.</span><span class="na">red</span><span class="p">)</span>
+<span class="w">              </span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Green&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.3f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">colors</span><span class="p">.</span><span class="na">green</span><span class="p">)</span>
+<span class="w">              </span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Blue&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.3f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">colors</span><span class="p">.</span><span class="na">blue</span><span class="p">);</span>
+<span class="w">      </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addLine</span><span class="p">()</span>
+<span class="w">              </span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Hue&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.3f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hsvValues</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">)</span>
+<span class="w">              </span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Saturation&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.3f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hsvValues</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="p">)</span>
+<span class="w">              </span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Value&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.3f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hsvValues</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span>
+<span class="w">      </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Alpha&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.3f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">colors</span><span class="p">.</span><span class="na">alpha</span><span class="p">);</span>
+
+<span class="w">      </span><span class="cm">/* If this color sensor also has a distance sensor, display the measured distance.</span>
+<span class="cm">       * Note that the reported distance is only useful at very close range, and is impacted by</span>
+<span class="cm">       * ambient light and surface reflectivity. */</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">colorSensor</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">DistanceSensor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Distance (cm)&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.3f&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">((</span><span class="n">DistanceSensor</span><span class="p">)</span><span class="w"> </span><span class="n">colorSensor</span><span class="p">).</span><span class="na">getDistance</span><span class="p">(</span><span class="n">DistanceUnit</span><span class="p">.</span><span class="na">CM</span><span class="p">));</span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="n">telemetry</span><span class="p">.</span><span class="na">update</span><span class="p">();</span>
+
+<span class="w">      </span><span class="c1">// Change the Robot Controller&#39;s background color to match the color detected by the color sensor.</span>
+<span class="w">      </span><span class="n">relativeLayout</span><span class="p">.</span><span class="na">post</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Runnable</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">relativeLayout</span><span class="p">.</span><span class="na">setBackgroundColor</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="na">HSVToColor</span><span class="p">(</span><span class="n">hsvValues</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">});</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="exampleAutoBlank.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">exampleAutoBlank</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="SensorBNO055IMU.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">SensorBNO055IMU</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2025, Graden Gentry
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=359c27e9"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
+    </body>
+</html>

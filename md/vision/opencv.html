@@ -1,0 +1,586 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Velocity Vision" href="Velocity-Vision.html" /><link rel="prev" title="Vision" href="index.html" />
+
+    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+        <title>OpenCV - WHS-FTC-Code_Training_Module 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">WHS-FTC-Code_Training_Module 1.0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">WHS-FTC-Code_Training_Module 1.0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../presented-at-worlds-2024.html">Presented at Worlds 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general-tips.html">General Tips</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../java_coding_basics/index.html">Java Coding Basics</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Java Coding Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/codingbasics.html">Intro to Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Generic-Knowledge.html">Generic Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Operations.html">Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Classes.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/how-does-everything-work.html">How does everything work?</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ftc_programming_basics/index.html">FTC Programming Basics</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of FTC Programming Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/Resources.html">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/githubbasics.html">Getting Started with Programming</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../ftc_programming_basics/android_studio/index.html">Android Studio Setup</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Android Studio Setup</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/android_studio/Basics.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/android_studio/GitHub-Setup.html">GitHub Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/coding.html">Coding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/OpMode.html">OpMode</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../ftc_programming_basics/hardware/index.html">Hardware</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Hardware</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Motors.html">Motors and Servos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Gamepad.html">Gamepad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Sensors.html">Sensors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/Implementations.html">Implementations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../programming_your_robot/index.html">Programming Your Robot</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Programming Your Robot</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/gettingstarted.html">Starting your project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/Driver-Station-Walkthrough.html">Driver Station Walkthrough</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/Configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/running-code.html">Running Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/hub-connect-over-wifi.html">Hub Connect Over Wi-Fi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../gentrified-apps-util.html">Gentrified Apps Util</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common-errors.html">Common Errors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FTC-Linter-Plugin.html">FTC-Linter Plugin</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Vision</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Vision</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">OpenCV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Velocity-Vision.html">Velocity Vision</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autonomous/index.html">Autonomous</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Autonomous</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autonomous/odometry/index.html">Odometry</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Odometry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/encoders.html">Encoders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/spark-fun-otos-sensor.html">Spark Fun OTOS Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/pedro-pathing.html">Pedro Pathing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/roadrunner.html">RoadRunner</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../advanced/index.html">Advanced</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Advanced</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/external-hardware-classes.html">External Hardware Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/pidf.html">PIDF Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/ServoStateMachines.html">ServoStateMachines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/subsystem-control.html">Subsystem Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/OpModeRegistrars.html">OpModeRegistrars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/switching-to-kotlin.html">Switching to Kotlin</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples/AutoDriveByEncoderLinear.html">AutoDriveByEncoderLinear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/SensorBNO055IMU.html">SensorBNO055IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/SensorColor.html">SensorColor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleAutoBlank.html">exampleAutoBlank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleAutoFull.html">exampleAutoFull</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleTeleOpBlank.html">exampleTeleOpBlank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleTeleOpFull.html">exampleTeleOpFull</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../.etc/index.html">.etc</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of .etc</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../.etc/linksandacknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../.etc/code-review.html">Code Review</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="opencv">
+<span id="ocv"></span><h1>OpenCV<a class="headerlink" href="#opencv" title="Permalink to this heading">#</a></h1>
+<section id="open-cv-computer-vision">
+<h2>Open CV (Computer Vision)<a class="headerlink" href="#open-cv-computer-vision" title="Permalink to this heading">#</a></h2>
+<p>OpenCV is a very good method for color and edge detection. It can be used for a lot of things if used correctly. It is personally my choice for vision recognition and detection because of the thorough documentation and ease of use. It can also be used in Python so if you find examples online, make sure to read and figure out what language it is in.</p>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h3>
+<p>This <a class="reference external" href="https://github.com/OpenFTC/EasyOpenCV">website</a> has some very good instructions on how to install OpenCV to Android Studio and OnBotJava. I would recommend following the instructions on the website, but I will also include some instructions here.</p>
+<p><strong>Android Studio</strong></p>
+<p>Open <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> in the TeamCode Module and at the bottom add this:</p>
+<p><code class="docutils literal notranslate"><span class="pre">dependencies</span> <span class="pre">{</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">implementation</span> <span class="pre">'org.openftc:easyopencv:1.7.3'</span>&#160; <span class="pre">}</span></code></p>
+<p>Then sync the gradle and you should be good to go. It should have a pop-up asking if you want to sync it.</p>
+</section>
+<section id="using-opencv">
+<h3>Using OpenCV<a class="headerlink" href="#using-opencv" title="Permalink to this heading">#</a></h3>
+<p>OpenCV is pretty easy to use, but can be hard to retrieve data from. The <a class="reference external" href="https://github.com/OpenFTC/EasyOpenCV">EasyOpenCV</a> website has some good examples and documentation on how to use it.</p>
+<p><strong>Example</strong></p>
+<p>Here is the code for a sample pipeline that will strictly draw a box in the middle of the screen.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">SamplePipeline</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">OpenCvPipeline</span><span class="p">{</span>
+<span class="w">        </span><span class="nd">@Override</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">Mat</span><span class="w"> </span><span class="nf">processFrame</span><span class="p">(</span><span class="n">Mat</span><span class="w"> </span><span class="n">input</span><span class="p">){</span>
+<span class="w">            </span><span class="n">Imgproc</span><span class="p">.</span><span class="na">rectangle</span><span class="p">(</span>
+<span class="w">                    </span><span class="n">input</span><span class="p">,</span>
+<span class="w">                    </span><span class="k">new</span><span class="w"> </span><span class="n">Point</span><span class="p">(</span>
+<span class="w">                            </span><span class="n">input</span><span class="p">.</span><span class="na">cols</span><span class="p">()</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                            </span><span class="n">input</span><span class="p">.</span><span class="na">rows</span><span class="p">()</span><span class="o">/</span><span class="mi">4</span><span class="p">),</span>
+<span class="w">                    </span><span class="k">new</span><span class="w"> </span><span class="n">Point</span><span class="p">(</span>
+<span class="w">                            </span><span class="n">input</span><span class="p">.</span><span class="na">cols</span><span class="p">()</span><span class="o">*</span><span class="p">(</span><span class="mf">3f</span><span class="o">/</span><span class="mf">4f</span><span class="p">),</span>
+<span class="w">                            </span><span class="n">input</span><span class="p">.</span><span class="na">rows</span><span class="p">()</span><span class="o">*</span><span class="p">(</span><span class="mf">3f</span><span class="o">/</span><span class="mf">4f</span><span class="p">)),</span>
+<span class="w">                    </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">input</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The first line is a class declaration which can have any name but must extend OpenCvPipeline for it to work.</p>
+<p>The second and third line are required for any class instance of OpenCvPipeline. This means that the processFrame method will always be called through OpenCvPipeline. The processFrame method is where you will put all of your code for the pipeline.</p>
+<p>Next, we see Imgproc.rectangle. This is the method that actually draws the rectangle. The parameters are, image to draw on, top left point, bottom right point, color, and thickness.</p>
+<p>Then, OpenCV requires you to return the final processed image, in this case input.</p>
+</section>
+<section id="terms-to-know">
+<h3>Terms to know<a class="headerlink" href="#terms-to-know" title="Permalink to this heading">#</a></h3>
+<p><strong>Pipeline</strong></p>
+<p>A pipeline is a class that uses OpenCv dependencies to show images, draw on them, and give back data on the image.</p>
+<p><strong>Point</strong></p>
+<p>A Point is a class used for setting an x,y coordinate.</p>
+<p>To create a Point you can use <code class="docutils literal notranslate"><span class="pre">Point</span> <span class="pre">point</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Point(x,y);</span></code></p>
+</section>
+</section>
+<section id="color-spaces">
+<h2>Color Spaces<a class="headerlink" href="#color-spaces" title="Permalink to this heading">#</a></h2>
+<p>Color spaces are a way to represent colors in a different way. There are many different color spaces, but the most common are RGB, HSV, and YCrCb.</p>
+<section id="hsv">
+<h3>HSV<a class="headerlink" href="#hsv" title="Permalink to this heading">#</a></h3>
+<p>HSV stands for Hue, Saturation, and Value. It is the most common for color detection.</p>
+<p>Hue is the color, saturation is how much of the color, and value is the brightness of the color.</p>
+<p><img alt="hsv.png" src="../../_images/hsv.png" /></p>
+</section>
+<section id="rgb-a">
+<h3>RGB (A)<a class="headerlink" href="#rgb-a" title="Permalink to this heading">#</a></h3>
+<p>RGB stands for Red, Green, Blue. It is the most common color space for images. It is used in most cameras and displays.</p>
+<p>The A stands for Alpha, which is the transparency of the color.</p>
+<p><img alt="rgb.png" src="../../_images/rgb.png" /></p>
+</section>
+<section id="ycrcb">
+<h3>YCrCb<a class="headerlink" href="#ycrcb" title="Permalink to this heading">#</a></h3>
+<p>YCrCb is a color space that is used for video compression. It is not commonly used for color detection, but it is used in some cameras.</p>
+<p>I personally prefer this because it is easiest to detect red in OpenCV.</p>
+<p><img alt="ycrcb.png" src="../../_images/ycrcb.png" /></p>
+</section>
+</section>
+<section id="color-detection">
+<h2>Color Detection<a class="headerlink" href="#color-detection" title="Permalink to this heading">#</a></h2>
+<p><strong>Scalar</strong></p>
+<p>Scalar is a class that is used to store color values. It is used in OpenCV to set the color of things as well as for low and high values for color detection. Scalars generally follow the same color type as the image.</p>
+<p>To create a Scalar you can use <code class="docutils literal notranslate"><span class="pre">Scalar</span> <span class="pre">scalar</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Scalar(hue,</span> <span class="pre">saturation,</span> <span class="pre">value);</span></code> or <code class="docutils literal notranslate"><span class="pre">Scalar</span> <span class="pre">scalar</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Scalar(red,</span> <span class="pre">green,</span> <span class="pre">blue);</span></code> depending on the color type.</p>
+<p><strong>Mat</strong></p>
+<p>Mat stands for matrix and is where you will process images. It is used in OpenCV to store images and process them.</p>
+<p>To create a Mat you can use <code class="docutils literal notranslate"><span class="pre">Mat</span> <span class="pre">mat</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Mat();</span></code></p>
+<p><strong>Placing Text</strong></p>
+<p>Placing text is a very useful tool for debugging and displaying information. It is very easy to do and can be done in one line.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Imgproc.putText(mat,</span> <span class="pre">text,</span> <span class="pre">new</span> <span class="pre">Point(x,y),</span> <span class="pre">fomt(Imgproc.FONT_HERSHEY_SIMPLEX),</span> <span class="pre">fontScale,</span> <span class="pre">scalarValue,</span> <span class="pre">thickness);</span></code></p>
+<section id="running-opencv-as-an-opmode">
+<h3>Running OpenCV as an OpMode<a class="headerlink" href="#running-opencv-as-an-opmode" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://github.com/OpenFTC/EasyOpenCV">EasyOpenCV</a> WebcamExample is the perfect way to run OpenCV through an opMode. First, they create the webcam instance <code class="docutils literal notranslate"><span class="pre">OpenCvWebcam</span> <span class="pre">webcam;</span></code></p>
+<p>And set up the camera</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">cameraMonitorViewId</span> <span class="o">=</span> <span class="n">hardwareMap</span><span class="o">.</span><span class="n">appContext</span><span class="o">.</span><span class="n">getResources</span><span class="p">()</span><span class="o">.</span><span class="n">getIdentifier</span><span class="p">(</span><span class="s2">&quot;cameraMonitorViewId&quot;</span><span class="p">,</span> <span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">hardwareMap</span><span class="o">.</span><span class="n">appContext</span><span class="o">.</span><span class="n">getPackageName</span><span class="p">());</span>
+<span class="n">webcam</span> <span class="o">=</span> <span class="n">OpenCvCameraFactory</span><span class="o">.</span><span class="n">getInstance</span><span class="p">()</span><span class="o">.</span><span class="n">createWebcam</span><span class="p">(</span><span class="n">hardwareMap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">WebcamName</span><span class="o">.</span><span class="n">class</span><span class="p">,</span> <span class="s2">&quot;Webcam 1&quot;</span><span class="p">),</span> <span class="n">cameraMonitorViewId</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Then they set the pipeline <code class="docutils literal notranslate"><span class="pre">webcam.setPipeline(new</span> <span class="pre">SamplePipeline());</span></code> You can also change the name of the pipeline to your own pipeline.</p>
+<p>That is all the major parts of running OpenCv as an OpMode, although I would definitely refer teo the WebcamExample a lot as you are setting up your own OpMode.</p>
+</section>
+<section id="detection-using-opencv">
+<h3>Detection using OpenCV<a class="headerlink" href="#detection-using-opencv" title="Permalink to this heading">#</a></h3>
+<p><strong>Color Detection</strong></p>
+<p>This pipeline is very useful because it will isolate the color you are trying to detect and will return a black and white image with only the color you are trying to detect.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ColorDetection</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">OpenCvPipeline</span><span class="w"> </span><span class="p">{</span><span class="c1">//isolation of color</span>
+<span class="w">        </span><span class="n">Mat</span><span class="w"> </span><span class="n">hsv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Mat</span><span class="p">();</span><span class="w">  </span><span class="c1">//create hsv mat</span>
+<span class="w">        </span><span class="n">Mat</span><span class="w"> </span><span class="n">mask1</span><span class="p">,</span><span class="w"> </span><span class="n">mask2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Mat</span><span class="p">();</span><span class="w">  </span><span class="c1">//create masks</span>
+<span class="w">        </span><span class="n">Mat</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Mat</span><span class="p">();</span><span class="w">   </span><span class="c1">//create output mat</span>
+
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">color</span><span class="p">;</span><span class="w">  </span><span class="c1">// create the color string</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="nf">ColorDetection</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">color</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// creates this class with a parameter of color</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">color</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="nd">@Override</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">Mat</span><span class="w"> </span><span class="nf">processFrame</span><span class="p">(</span><span class="n">Mat</span><span class="w"> </span><span class="n">input</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Scalar</span><span class="w"> </span><span class="n">scalarLow</span><span class="p">,</span><span class="w"> </span><span class="n">scalarHigh</span><span class="p">;</span><span class="w"> </span><span class="c1">//create scalars for high and low values</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">color</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;yellow&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">scalarLow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="w">                </span><span class="n">scalarHigh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">color</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;blue&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">scalarLow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">90</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="w">                </span><span class="n">scalarHigh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">140</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">color</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;green&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">scalarLow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="w">                </span><span class="n">scalarHigh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">scalarLow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">                </span><span class="n">scalarHigh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">Imgproc</span><span class="p">.</span><span class="na">cvtColor</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">hsv</span><span class="p">,</span><span class="w"> </span><span class="n">Imgproc</span><span class="p">.</span><span class="na">COLOR_RGB2HSV</span><span class="p">);</span><span class="c1">//change to hsv</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">color</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;red&quot;</span><span class="p">))</span>
+<span class="w">                </span><span class="n">Core</span><span class="p">.</span><span class="na">inRange</span><span class="p">(</span><span class="n">hsv</span><span class="p">,</span><span class="w"> </span><span class="n">scalarLow</span><span class="p">,</span><span class="w"> </span><span class="n">scalarHigh</span><span class="p">,</span><span class="w"> </span><span class="n">end</span><span class="p">);</span><span class="c1">//detect color, output to end</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">color</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;red&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">Core</span><span class="p">.</span><span class="na">inRange</span><span class="p">(</span><span class="n">hsv</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">70</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">),</span><span class="w"> </span><span class="n">mask1</span><span class="p">);</span>
+<span class="w">                </span><span class="n">Core</span><span class="p">.</span><span class="na">inRange</span><span class="p">(</span><span class="n">hsv</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">172</span><span class="p">,</span><span class="w"> </span><span class="mi">70</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scalar</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">),</span><span class="w"> </span><span class="n">mask2</span><span class="p">);</span>
+<span class="w">                </span><span class="n">Core</span><span class="p">.</span><span class="na">bitwise_or</span><span class="p">(</span><span class="n">mask1</span><span class="p">,</span><span class="w"> </span><span class="n">mask2</span><span class="p">,</span><span class="w"> </span><span class="n">end</span><span class="p">);</span><span class="c1">//takes both masks and combines them</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">end</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+</pre></div>
+</div>
+<p>You might notice that detecting red makes it harder. You can see that on this <a class="reference external" href="https://i.stack.imgur.com/gyuw4.png">image</a> that red is split into two parts. To compensate for this you have to detect it twice essentially and combine the two created masks into one.</p>
+<p><strong>Edge Detection</strong></p>
+<p>Edge detection is a useful tool to outline things, and it will show you a black and white image, with the white parts being edges.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">EdgeDetection</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">OpenCvPipeline</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Mat</span><span class="w"> </span><span class="n">gray</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Mat</span><span class="p">();</span><span class="w"> </span><span class="c1">//create grayscale mat</span>
+<span class="w">        </span><span class="n">Mat</span><span class="w"> </span><span class="n">edges</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Mat</span><span class="p">();</span><span class="w"> </span><span class="c1">// create edges mat</span>
+<span class="w">        </span><span class="nd">@Override</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">Mat</span><span class="w"> </span><span class="nf">processFrame</span><span class="p">(</span><span class="n">Mat</span><span class="w"> </span><span class="n">input</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Imgproc</span><span class="p">.</span><span class="na">cvtColor</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">gray</span><span class="p">,</span><span class="w"> </span><span class="n">Imgproc</span><span class="p">.</span><span class="na">COLOR_BGR2GRAY</span><span class="p">);</span><span class="w">  </span><span class="c1">//takes the input Mat, converts it to grayscale, and outputs it to gray Mat</span>
+<span class="w">            </span><span class="n">Imgproc</span><span class="p">.</span><span class="na">Canny</span><span class="p">(</span><span class="n">gray</span><span class="p">,</span><span class="w"> </span><span class="n">edges</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span><span class="w"> </span><span class="c1">// uses canny edge detection on the gray Mat and outputs it to edges Mat</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">edges</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+</pre></div>
+</div>
+<p>There is so much you can do with OpenCV and practice, but I would recommend reading through more of the Easy Open CV library to see how they do things.</p>
+<section id="practical-example">
+<h4>Practical Example<a class="headerlink" href="#practical-example" title="Permalink to this heading">#</a></h4>
+<p><img alt="in.png" src="../../_images/in.png" /></p>
+<p>In this image, you can see there is a little red here and there, lets find that.</p>
+<p><img alt="color_thresh.png" src="../../_images/color_thresh.png" /></p>
+<p>This is a small color thresh tuned in <a class="reference external" href="https://docs.deltacv.org/papervision">PaperVision</a></p>
+<p><img alt="contours.png" src="../../_images/contours.png" /></p>
+<p>Then, we apply the contours and draw them on the screen and find the resulting image.</p>
+</section>
+</section>
+<section id="vision-portal-integration">
+<h3>Vision Portal Integration<a class="headerlink" href="#vision-portal-integration" title="Permalink to this heading">#</a></h3>
+<p>Vision Portal, provided by FTC is a very easy way to initialize your Open CV processor and use it in your OpMode.</p>
+<p>It comes automatically installed with the FTC SDK.</p>
+<p>First, your class must <code class="docutils literal notranslate"><span class="pre">implements</span> <span class="pre">VisionProcessor,</span> <span class="pre">CameraStreamSource</span></code></p>
+<p>Immediately in your opMode you have to have <code class="docutils literal notranslate"><span class="pre">private</span> <span class="pre">final</span> <span class="pre">AtomicReference&lt;Bitmap&gt;</span> <span class="pre">lastFrame</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">AtomicReference&lt;&gt;(Bitmap.createBitmap(1,</span> <span class="pre">1,</span> <span class="pre">Bitmap.Config.RGB_565));</span></code></p>
+<p>Which will allow it to show on the camera stream.</p>
+<p>You must also add</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">CameraCalibration</span><span class="w"> </span><span class="n">calibration</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">lastFrame</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">Bitmap</span><span class="p">.</span><span class="na">createBitmap</span><span class="p">(</span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">Bitmap</span><span class="p">.</span><span class="na">Config</span><span class="p">.</span><span class="na">RGB_565</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">onDrawFrame</span><span class="p">(</span><span class="n">Canvas</span><span class="w"> </span><span class="n">canvas</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">onscreenWidth</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">onscreenHeight</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">scaleBmpPxToCanvasPx</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">scaleCanvasDensity</span><span class="p">,</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="n">userContext</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">getFrameBitmap</span><span class="p">(</span><span class="n">Continuation</span><span class="o">&lt;?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Consumer</span><span class="o">&lt;</span><span class="n">Bitmap</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">continuation</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">continuation</span><span class="p">.</span><span class="na">dispatch</span><span class="p">(</span><span class="n">bitmapConsumer</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">bitmapConsumer</span><span class="p">.</span><span class="na">accept</span><span class="p">(</span><span class="n">lastFrame</span><span class="p">.</span><span class="na">get</span><span class="p">()));</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Which will initialize the camera stream so you can view it.</p>
+<p>Then your process frame method will change to:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="nf">processFrame</span><span class="p">(</span><span class="n">Mat</span><span class="w"> </span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">captureTimeNanos</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
+</div>
+<p>This changes input to frame in your code so you will need to make sure you change that.</p>
+<p>Right before you return the frame, you will need to add</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Bitmap</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Bitmap</span><span class="p">.</span><span class="na">createBitmap</span><span class="p">(</span><span class="n">frame</span><span class="p">.</span><span class="na">width</span><span class="p">(),</span><span class="w"> </span><span class="n">frame</span><span class="p">.</span><span class="na">height</span><span class="p">(),</span><span class="w"> </span><span class="n">Bitmap</span><span class="p">.</span><span class="na">Config</span><span class="p">.</span><span class="na">RGB_565</span><span class="p">);</span>
+<span class="n">Utils</span><span class="p">.</span><span class="na">matToBitmap</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<span class="n">lastFrame</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Next, we will add it to our auto opMode.</p>
+<p>In the variables area:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">VisionPortal</span><span class="w"> </span><span class="n">visionPortal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w"> </span><span class="c1">// vision portal for the webcam</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">YourDetection</span><span class="w"> </span><span class="n">objProcessor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w"> </span><span class="c1">// processor for the vision portal</span>
+</pre></div>
+</div>
+<p>Then in your init, before runOpMode:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">objProcessor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">YourDetection</span><span class="p">;</span>
+<span class="n">visionPortal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">VisionPortal</span><span class="p">.</span><span class="na">Builder</span><span class="p">()</span>
+<span class="p">.</span><span class="na">setCamera</span><span class="p">(</span><span class="n">hardwareMap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">WebcamName</span><span class="p">.</span><span class="na">class</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Webcam 1&quot;</span><span class="p">))</span>
+<span class="p">.</span><span class="na">setCameraResolution</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Size</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="w"> </span><span class="mi">280</span><span class="p">))</span>
+<span class="p">.</span><span class="na">addProcessors</span><span class="p">(</span><span class="n">objProcessor</span><span class="p">)</span>
+<span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="Velocity-Vision.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Velocity Vision</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Vision</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2025, Graden Gentry
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">OpenCV</a><ul>
+<li><a class="reference internal" href="#open-cv-computer-vision">Open CV (Computer Vision)</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#using-opencv">Using OpenCV</a></li>
+<li><a class="reference internal" href="#terms-to-know">Terms to know</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#color-spaces">Color Spaces</a><ul>
+<li><a class="reference internal" href="#hsv">HSV</a></li>
+<li><a class="reference internal" href="#rgb-a">RGB (A)</a></li>
+<li><a class="reference internal" href="#ycrcb">YCrCb</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#color-detection">Color Detection</a><ul>
+<li><a class="reference internal" href="#running-opencv-as-an-opmode">Running OpenCV as an OpMode</a></li>
+<li><a class="reference internal" href="#detection-using-opencv">Detection using OpenCV</a><ul>
+<li><a class="reference internal" href="#practical-example">Practical Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#vision-portal-integration">Vision Portal Integration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=359c27e9"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
+    </body>
+</html>

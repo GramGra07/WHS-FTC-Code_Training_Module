@@ -1,0 +1,376 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="External Hardware Classes" href="external-hardware-classes.html" /><link rel="prev" title="RoadRunner" href="../autonomous/odometry/roadrunner.html" />
+
+    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+        <title>Advanced - WHS-FTC-Code_Training_Module 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">WHS-FTC-Code_Training_Module 1.0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">WHS-FTC-Code_Training_Module 1.0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../presented-at-worlds-2024.html">Presented at Worlds 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general-tips.html">General Tips</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../java_coding_basics/index.html">Java Coding Basics</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Java Coding Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/codingbasics.html">Intro to Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Generic-Knowledge.html">Generic Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Operations.html">Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Classes.html">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/Enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../java_coding_basics/how-does-everything-work.html">How does everything work?</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ftc_programming_basics/index.html">FTC Programming Basics</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of FTC Programming Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/Resources.html">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/githubbasics.html">Getting Started with Programming</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../ftc_programming_basics/android_studio/index.html">Android Studio Setup</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Android Studio Setup</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/android_studio/Basics.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/android_studio/GitHub-Setup.html">GitHub Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/coding.html">Coding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/OpMode.html">OpMode</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../ftc_programming_basics/hardware/index.html">Hardware</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Hardware</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Motors.html">Motors and Servos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Gamepad.html">Gamepad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Sensors.html">Sensors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/Implementations.html">Implementations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../programming_your_robot/index.html">Programming Your Robot</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Programming Your Robot</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/gettingstarted.html">Starting your project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/Driver-Station-Walkthrough.html">Driver Station Walkthrough</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/Configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/running-code.html">Running Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/hub-connect-over-wifi.html">Hub Connect Over Wi-Fi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../gentrified-apps-util.html">Gentrified Apps Util</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common-errors.html">Common Errors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FTC-Linter-Plugin.html">FTC-Linter Plugin</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vision/index.html">Vision</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Vision</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vision/opencv.html">OpenCV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vision/Velocity-Vision.html">Velocity Vision</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autonomous/index.html">Autonomous</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Autonomous</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autonomous/odometry/index.html">Odometry</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Odometry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/encoders.html">Encoders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/spark-fun-otos-sensor.html">Spark Fun OTOS Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/pedro-pathing.html">Pedro Pathing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/roadrunner.html">RoadRunner</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Advanced</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Advanced</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="external-hardware-classes.html">External Hardware Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pidf.html">PIDF Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ServoStateMachines.html">ServoStateMachines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subsystem-control.html">Subsystem Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpModeRegistrars.html">OpModeRegistrars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switching-to-kotlin.html">Switching to Kotlin</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples/AutoDriveByEncoderLinear.html">AutoDriveByEncoderLinear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/SensorBNO055IMU.html">SensorBNO055IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/SensorColor.html">SensorColor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleAutoBlank.html">exampleAutoBlank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleAutoFull.html">exampleAutoFull</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleTeleOpBlank.html">exampleTeleOpBlank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleTeleOpFull.html">exampleTeleOpFull</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../.etc/index.html">.etc</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of .etc</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../.etc/linksandacknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../.etc/code-review.html">Code Review</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="advanced">
+<h1>Advanced<a class="headerlink" href="#advanced" title="Permalink to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="external-hardware-classes.html">External Hardware Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="external-hardware-classes.html#what-is-an-external-hardware-class">What is an external hardware class?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-hardware-classes.html#why-use-it">Why use it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-hardware-classes.html#where-do-i-start">Where do I start?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pidf.html">PIDF Controller</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pidf.html#what-are-we-trying-to-fix">What are we trying to fix?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pidf.html#what-is-it">What is it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pidf.html#how-do-i-use-it">How do I use it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pidf.html#how-do-i-tune-it">How do I tune it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pidf.html#how-do-i-implement-it">How do I implement it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pidf.html#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ServoStateMachines.html">ServoStateMachines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ServoStateMachines.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ServoStateMachines.html#code">Code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="subsystem-control.html">Subsystem Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="subsystem-control.html#what-is-it">What is it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subsystem-control.html#why-use-it">Why use it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subsystem-control.html#how-to-switch">How to switch</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="OpModeRegistrars.html">OpModeRegistrars</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="OpModeRegistrars.html#code">Code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="switching-to-kotlin.html">Switching to Kotlin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="switching-to-kotlin.html#what-is-it">What is it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switching-to-kotlin.html#why-switch">Why switch?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switching-to-kotlin.html#why-stay">Why stay?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switching-to-kotlin.html#how-to-switch">How to switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switching-to-kotlin.html#resources">Resources</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="external-hardware-classes.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">External Hardware Classes</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../autonomous/odometry/roadrunner.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">RoadRunner</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2025, Graden Gentry
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=359c27e9"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
+    </body>
+</html>

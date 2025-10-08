@@ -1,0 +1,517 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Enums" href="Enums.html" /><link rel="prev" title="Functions" href="Functions.html" />
+
+    <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
+        <title>Classes - WHS-FTC-Code_Training_Module 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">WHS-FTC-Code_Training_Module 1.0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">WHS-FTC-Code_Training_Module 1.0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../presented-at-worlds-2024.html">Presented at Worlds 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general-tips.html">General Tips</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Java Coding Basics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Java Coding Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="codingbasics.html">Intro to Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Generic-Knowledge.html">Generic Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Operations.html">Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Functions.html">Functions</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Enums.html">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="how-does-everything-work.html">How does everything work?</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ftc_programming_basics/index.html">FTC Programming Basics</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of FTC Programming Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/Resources.html">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/githubbasics.html">Getting Started with Programming</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../ftc_programming_basics/android_studio/index.html">Android Studio Setup</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Android Studio Setup</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/android_studio/Basics.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/android_studio/GitHub-Setup.html">GitHub Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/coding.html">Coding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/OpMode.html">OpMode</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../ftc_programming_basics/hardware/index.html">Hardware</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Hardware</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Motors.html">Motors and Servos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Gamepad.html">Gamepad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ftc_programming_basics/hardware/Sensors.html">Sensors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ftc_programming_basics/Implementations.html">Implementations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../programming_your_robot/index.html">Programming Your Robot</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Programming Your Robot</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/gettingstarted.html">Starting your project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/Driver-Station-Walkthrough.html">Driver Station Walkthrough</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/Configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/running-code.html">Running Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming_your_robot/hub-connect-over-wifi.html">Hub Connect Over Wi-Fi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../gentrified-apps-util.html">Gentrified Apps Util</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common-errors.html">Common Errors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FTC-Linter-Plugin.html">FTC-Linter Plugin</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vision/index.html">Vision</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Vision</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vision/opencv.html">OpenCV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vision/Velocity-Vision.html">Velocity Vision</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../autonomous/index.html">Autonomous</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Autonomous</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../autonomous/odometry/index.html">Odometry</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Odometry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/encoders.html">Encoders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/spark-fun-otos-sensor.html">Spark Fun OTOS Sensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/pedro-pathing.html">Pedro Pathing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/roadrunner.html">RoadRunner</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../advanced/index.html">Advanced</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Advanced</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/external-hardware-classes.html">External Hardware Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/pidf.html">PIDF Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/ServoStateMachines.html">ServoStateMachines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/subsystem-control.html">Subsystem Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/OpModeRegistrars.html">OpModeRegistrars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced/switching-to-kotlin.html">Switching to Kotlin</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples/AutoDriveByEncoderLinear.html">AutoDriveByEncoderLinear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/SensorBNO055IMU.html">SensorBNO055IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/SensorColor.html">SensorColor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleAutoBlank.html">exampleAutoBlank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleAutoFull.html">exampleAutoFull</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleTeleOpBlank.html">exampleTeleOpBlank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/exampleTeleOpFull.html">exampleTeleOpFull</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../.etc/index.html">.etc</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of .etc</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../.etc/linksandacknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../.etc/code-review.html">Code Review</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="classes">
+<h1>Classes<a class="headerlink" href="#classes" title="Permalink to this heading">#</a></h1>
+<section id="object-oriented-programming">
+<h2>Object Oriented Programming<a class="headerlink" href="#object-oriented-programming" title="Permalink to this heading">#</a></h2>
+<p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of classes and objects. It provides a structured way to organize code, making it more modular, reusable, and easier to manage. OOP helps reduce errors by encapsulating data and behavior within classes, reusing code, and minimizing duplication.</p>
+<p>In the context of FTC, you might use OOP to create a custom DcMotor class that extends or enhances the built-in DcMotor functionality, allowing for additional features such as preset motor speeds, automated braking, or advanced control algorithms.</p>
+<p>For a generic example, if you had a Person class with two parameters and variables, name and age. If you wanted to do this exact thing, you would create the Person class, and then access that property later in the program. Example below</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// constructor</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Person</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// initialize the class</span>
+<span class="n">Person</span><span class="w"> </span><span class="n">bob</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">(</span><span class="s">&quot;bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">29</span><span class="p">);</span>
+<span class="c1">// access bob&#39;s name</span>
+<span class="n">bob</span><span class="p">.</span><span class="na">name</span><span class="p">;</span>
+<span class="c1">// access his age</span>
+<span class="n">bob</span><span class="p">.</span><span class="na">age</span><span class="p">;</span>
+</pre></div>
+</div>
+</section>
+<section id="state-based-class">
+<h2>State Based Class<a class="headerlink" href="#state-based-class" title="Permalink to this heading">#</a></h2>
+<p>See <a class="reference internal" href="../advanced/subsystem-control.html#subc"><span class="std std-ref">Subsystem Control</span></a></p>
+<p>State based classes and subsystems are a little different from the base level subsystem like above. These are commonly used for servos or other simple classes that have foreseeable states. For instance, my claw subsystem class, included completely below, uses states for the claws and for the flip servo. Then, when it calls the update function, it will move the servos to the correct position based on the state it is in.</p>
+<p>Unfortunately, you will not be able to use this code but use it as an <strong>example</strong></p>
+<p>The parts of this code include:</p>
+<p>The enums, which control and operate the states</p>
+<p>Variables that contain the states</p>
+<p>The constructor (including my own initialize function)</p>
+<p>Functions that set the variables correctly (these are needed because it could be confusing to just set the variable differently in the program)</p>
+<p>The update function which will use a switch statement to control the claw and flip servo using my own commands</p>
+</section>
+<section id="private-variables-functions">
+<h2>Private Variables/Functions<a class="headerlink" href="#private-variables-functions" title="Permalink to this heading">#</a></h2>
+<p>Private variables are variables that can only be used inside the class they are defined within. This allows for more code security so you don’t accidentally mess something up. For instance, if you have a class that is for calculating ticks per inch, you don’t want to accidentally change the ticks per inch variable in the main program and instead make that var private.</p>
+<p>As for public variables, these are variables that can be used outside the class they are defined within. This allows for more flexibility in the code, but also makes it easier to mess up. For instance, if you have a class that is for calculating ticks per inch, you want to be able to access the variables used for calculating ticks per inch in the main program.</p>
+</section>
+<section id="static-variables-functions">
+<h2>Static Variables/Functions<a class="headerlink" href="#static-variables-functions" title="Permalink to this heading">#</a></h2>
+<p>Static variables are variables that can be shared and used in different classes at any time. A very good example of when you would use this is if you are using a class to store positions for a servo, you would want <code class="docutils literal notranslate"><span class="pre">static</span></code> variables for the positions so you can access them in the main program. This is also true for functions, if you have a function that is used in multiple classes, you would want to make it static so you can access it in any other program you want to.</p>
+<p>When using FTC Dash, the variables must be static, or they will not be able to be accessed in the dashboard.</p>
+</section>
+<section id="class-functions">
+<h2>Class Functions<a class="headerlink" href="#class-functions" title="Permalink to this heading">#</a></h2>
+<p>Functions inside classes are one of the most important parts of the class. These control the overall function of the class and allow you to call methods using the class.</p>
+<p>Example:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Person</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// constructor</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Person</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// function to get the name</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getName</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// function to get the age</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getAge</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In this example, getName() returns a String of name, and getAge() returns an int of age. In this way, you could also have <code class="docutils literal notranslate"><span class="pre">void</span></code> functions that do not return anything, but instead do something behind the scenes.</p>
+</section>
+<section id="class-inheritance">
+<h2>Class Inheritance<a class="headerlink" href="#class-inheritance" title="Permalink to this heading">#</a></h2>
+<p>Inheritance is a way to create a new class based on an existing class. The new class inherits the properties and methods of the existing class, allowing for code reuse and organization. Inheritance is a key feature of object-oriented programming (OOP) and helps create a hierarchical structure of classes.</p>
+<p>In the context of FTC, you might create a base class for a robot, and an inherited class for the autonomous part of it.</p>
+<p>For example, you could create a base class called <code class="docutils literal notranslate"><span class="pre">Robot</span></code> that contains common properties and methods for all robots, such as <code class="docutils literal notranslate"><span class="pre">drive()</span></code>, <code class="docutils literal notranslate"><span class="pre">turn()</span></code>, and <code class="docutils literal notranslate"><span class="pre">stop()</span></code>. Then, you could create a subclass called <code class="docutils literal notranslate"><span class="pre">AutonomousRobot</span></code> that inherits from the <code class="docutils literal notranslate"><span class="pre">Robot</span></code> class and adds specific functionality for autonomous operations, such as <code class="docutils literal notranslate"><span class="pre">followLine()</span></code> or <code class="docutils literal notranslate"><span class="pre">avoidObstacle()</span></code>. Inheritance is denoted by the <code class="docutils literal notranslate"><span class="pre">extends</span></code> keyword.</p>
+</section>
+<section id="class-extension">
+<h2>Class Extension<a class="headerlink" href="#class-extension" title="Permalink to this heading">#</a></h2>
+<p>Class extension is a way to use all functions of one class in another class. This is useful when you are creating complex system architectures and want to use similar functions in multiple classes. This is approximately the same as class inheritance, but is more commonly used in FTC.</p>
+<p>Specifically in FTC, every OpMode must <code class="docutils literal notranslate"><span class="pre">extends</span> <span class="pre">OpMode</span> <span class="pre">or</span> <span class="pre">LinearOpMode</span></code> (preference to LinearOpMode). This allows you to use all the functions of the OpMode class in your own OpMode. This is required because the OpMode class contains all the functions needed to run the robot.</p>
+</section>
+<section id="class-initialization">
+<h2>Class Initialization<a class="headerlink" href="#class-initialization" title="Permalink to this heading">#</a></h2>
+<p>Class initialization allows you to create a new instance of the class. This is done using the <code class="docutils literal notranslate"><span class="pre">new</span></code> keyword. For example, if you have a class called <code class="docutils literal notranslate"><span class="pre">Person</span></code>, you can create a new instance of the class using <code class="docutils literal notranslate"><span class="pre">Person</span> <span class="pre">bob</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Person(&quot;bob&quot;,</span> <span class="pre">29);</span></code>. This creates a new instance of the <code class="docutils literal notranslate"><span class="pre">Person</span></code> class and assigns it to the variable <code class="docutils literal notranslate"><span class="pre">bob</span></code>.</p>
+<p>You need to make sure that the class is initialized before you use it and that you are using the correct class instance when using multiple class instances.</p>
+</section>
+<section id="class-variables">
+<h2>Class Variables<a class="headerlink" href="#class-variables" title="Permalink to this heading">#</a></h2>
+<p>Class variables are variables that are shared in the instance of the class. This is most useful when you are using classes that contain HardwareDevices. It allows you to call specific motors or servos inside the class without having to create a new instance of the class.</p>
+</section>
+<section id="abstract-classes">
+<h2>Abstract Classes<a class="headerlink" href="#abstract-classes" title="Permalink to this heading">#</a></h2>
+<p>Abstract classes are classes that cannot be instantiated. This means that you cannot create a new instance of the class. This is useful when you want to create a base class that contains common properties and methods, but you do not want to create an instance of the class. Instead, you create a subclass that inherits from the abstract class and implements the abstract methods.</p>
+<p>For instance, if you have a class called <code class="docutils literal notranslate"><span class="pre">Person</span></code>, you could create an abstract class called <code class="docutils literal notranslate"><span class="pre">AbstractPerson</span></code> that contains common properties and methods, but cannot be instantiated. Then, you could create a subclass called <code class="docutils literal notranslate"><span class="pre">Student</span></code> that inherits from the <code class="docutils literal notranslate"><span class="pre">AbstractPerson</span></code> class and implements the abstract methods such as <code class="docutils literal notranslate"><span class="pre">eat</span></code> or <code class="docutils literal notranslate"><span class="pre">sleep</span></code>.</p>
+<section id="overriding-classes-functions">
+<h3>Overriding Classes/Functions<a class="headerlink" href="#overriding-classes-functions" title="Permalink to this heading">#</a></h3>
+<p>When you create an abstract class, the functions must be overridden in the subclass. This means that you must create a new implementation of the function in the subclass. This is useful when you want to create a base class that contains common properties and methods, but you want to create a new implementation of the function in the subclass.</p>
+<p>For instance, if you had a robot class, you could create a subclass called <code class="docutils literal notranslate"><span class="pre">AutonomousRobot</span></code> that overrides the <code class="docutils literal notranslate"><span class="pre">drive()</span></code> function to create a new (autonomous) implementation of the same function.</p>
+</section>
+</section>
+<section id="class-example">
+<h2>Class Example<a class="headerlink" href="#class-example" title="Permalink to this heading">#</a></h2>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">abstract</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Person</span><span class="p">{</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// constructor</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Person</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">age</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// abstract function</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">eat</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">sleep</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">calculateAge</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Student</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Person</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">school</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Constructor</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Student</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">school</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">);</span><span class="w"> </span><span class="c1">// Calls the superclass (Person) constructor</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">school</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">school</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Implementing abstract methods</span>
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">eat</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; is eating in the cafeteria.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">sleep</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; is sleeping after studying.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">calculateAge</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; is &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; years old.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>FTC example <a class="reference internal" href="../advanced/external-hardware-classes.html#ehc"><span class="std std-ref">External Hardware Classes</span></a></p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="Enums.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Enums</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="Functions.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Functions</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2025, Graden Gentry
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Classes</a><ul>
+<li><a class="reference internal" href="#object-oriented-programming">Object Oriented Programming</a></li>
+<li><a class="reference internal" href="#state-based-class">State Based Class</a></li>
+<li><a class="reference internal" href="#private-variables-functions">Private Variables/Functions</a></li>
+<li><a class="reference internal" href="#static-variables-functions">Static Variables/Functions</a></li>
+<li><a class="reference internal" href="#class-functions">Class Functions</a></li>
+<li><a class="reference internal" href="#class-inheritance">Class Inheritance</a></li>
+<li><a class="reference internal" href="#class-extension">Class Extension</a></li>
+<li><a class="reference internal" href="#class-initialization">Class Initialization</a></li>
+<li><a class="reference internal" href="#class-variables">Class Variables</a></li>
+<li><a class="reference internal" href="#abstract-classes">Abstract Classes</a><ul>
+<li><a class="reference internal" href="#overriding-classes-functions">Overriding Classes/Functions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#class-example">Class Example</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=359c27e9"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
+    </body>
+</html>
