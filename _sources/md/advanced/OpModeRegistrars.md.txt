@@ -34,4 +34,4 @@ public final class AutonomousRegistrar {
 Essentially, it just allows you to remove the ```@Autonomous``` or ```@TeleOp``` tags from your OpModes and instead use a registrar to register them, providing one central spot all of them are registered and stored.
 As well as this, if you start using constructors for your teleOp, ex getting Alliance color, this is an easy way because you can change it to include Alliance color as a param. While this is possible, it is not recommended as if you have to change back, it will not allow initialization.
 
-You can use this [website](https://gramgra07.github.io/OpModeRegistrarCreator/) that I made to generate code for you.
+You can use this [website](https://gramgra07.github.io/gg-web/content/ftcUtils/opmode_registrar_creator/index.html) that I made to generate code for you.

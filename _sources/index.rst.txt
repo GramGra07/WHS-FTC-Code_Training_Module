@@ -14,9 +14,11 @@ To help everyone that wants to understand the coding process and language involv
 Note: I will try to keep updating for as long as possible but please request features and give feedback
 =======================================================================================================
 
-Feedback `here <https://gramgra07.github.io/gg-web/feedback.html>`_
+Feedback `here <https://gramgra07.github.io/gg-web/content/feedback/feedback.html>`_
 
 GitHub Repo located here: `repo <https://github.com/GramGra07/WHS-FTC-Code_Training_Module>`_
+
+Tutorial Videos located `here <https://www.youtube.com/playlist?list=PL1fIjF60Zomk1agzg7Mp8WgeA0oDZPckW>`_
 
 Updating your devices
 =====================

@@ -242,7 +242,7 @@ To create your own:
 
 OR
 
-Use this handy website I created to generate code for a subsystem! [Subsystem Generator](https://gramgra07.github.io/SubsystemMaker/)
+Use this handy website I created to generate code for a subsystem! [Subsystem Generator](https://gramgra07.github.io/gg-web/content/ftcUtils/subsystem_maker/index.html)
 
 ### Another option is to use my abstract class
 
