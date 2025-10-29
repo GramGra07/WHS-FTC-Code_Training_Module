@@ -1,6 +1,6 @@
 # Common Errors
 
-You should look up errors [here](https://gramgra07.github.io/gg-web/content/ftcUtils/ftc_error_lookup/index.html) as well as requesting and adding errors [here](https://github.com/GramGra07/FTC-Error-Lookup/issues).
+You should look up errors [here](https://gramgra07.github.io/gg-web/content/ftcUtils/ftc_error_lookup/index.html) as well as requesting and adding errors [here](https://github.com/GramGra07/gg-web/issues).
 
 ## OpMode not appearing on the Driver Station
 
