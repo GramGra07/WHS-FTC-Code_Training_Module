@@ -48,4 +48,4 @@ This works because you send a command, and then when it gets updated, it will ru
 
 **Do not** forget the break, or it will try to do all in one.
 
-An easy way to set this up is to use this [website](https://gramgra07.github.io/SM-creator/) I made to generate code for you.
+An easy way to set this up is to use this [website](https://gramgra07.github.io/gg-web/content/ftcUtils/sm_creator/index.html) I made to generate code for you.
