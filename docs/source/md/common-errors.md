@@ -8,8 +8,8 @@ This could be a result of multiple things, you need to have the @TeleOp or @Auto
 
 ## Gradle Level Too Low
 
-```java
-this is a test
-```
+<!-- ```java -->
+<!-- this is a test -->
+<!-- ``` -->
 
 This is a very easy fix, just change `compileSdkVersion` to `34` in both `` and ``. Then run a gradle sync (elephant button).
