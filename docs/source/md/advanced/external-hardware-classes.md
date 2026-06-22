@@ -27,111 +27,36 @@ Use this code in order to get an idea of what you would like to do with your ext
 ```java
 package org.firstinspires.ftc.teamcode.opModes;
 
-import android.os.Environment;
-import com.acmerobotics.dashboard.FtcDashboard;
-import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
-import com.acmerobotics.dashboard.telemetry.TelemetryPacket;
-import com.acmerobotics.roadrunner.Vector2d;
-import com.qualcomm.hardware.lynx.LynxModule;
-import com.qualcomm.hardware.rev.RevBlinkinLedDriver;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
-import com.qualcomm.robotcore.hardware.AnalogInput;
-import com.qualcomm.robotcore.hardware.DigitalChannel;
-import com.qualcomm.robotcore.hardware.HardwareMap;
-import com.qualcomm.robotcore.hardware.VoltageSensor;
-import com.qualcomm.robotcore.util.ElapsedTime;
 import org.firstinspires.ftc.robotcore.external.Telemetry;
-import org.firstinspires.ftc.teamcode.UtilClass.FileWriterFTC;
-import org.firstinspires.ftc.teamcode.UtilClass.varConfigurations.LoopTime;
-import org.firstinspires.ftc.teamcode.UtilClass.varConfigurations.varConfig;
-import org.firstinspires.ftc.teamcode.extensions.BlinkExtensions;
-import org.firstinspires.ftc.teamcode.extensions.PoseExtensions;
-import org.firstinspires.ftc.teamcode.extensions.SensorExtensions;
-import org.firstinspires.ftc.teamcode.humanInput.Drivers;
-import org.firstinspires.ftc.teamcode.humanInput.Operator;
-import org.firstinspires.ftc.teamcode.rr.MecanumDrive;
-import org.firstinspires.ftc.teamcode.subsystems.*;
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class HardwareConfig {
     private LinearOpMode myOpMode;
     private Telemetry telemetry;
 
-    private DriveSubsystem driveSubsystem;
-    private ClawSubsystem clawSubsystem;
-    private EndgameSubsystem endgameSubsystem;
-    private ExtendoSubsystem extendoSubsystem;
-    private LocalizationSubsystem localizationSubsystem;
-
-    private RevBlinkinLedDriver lights;
-    private AnalogInput potentiometer;
-    private VoltageSensor vSensor;
-    private MecanumDrive drive;
-    private FileWriter fileWriter;
-    private boolean once;
-    private List<LynxModule> allHubs;
+	// all motors
 
     public HardwareConfig(LinearOpMode opMode, HardwareMap ahwMap, boolean auto) {
         myOpMode = opMode;
+		telemetry = myOpMode.telemetry;
         initRobot(ahwMap, auto);
     }
 
     public void initRobot(HardwareMap ahwMap, boolean auto) {
-        vSensor = SensorExtensions.initVSensor(ahwMap, "Expansion Hub 2");
-        lights = SensorExtensions.initLights(ahwMap, "blinkin");
-        potentiometer = SensorExtensions.initPotent(ahwMap, "potent");
-        driveSubsystem = new DriveSubsystem(ahwMap);
-        clawSubsystem = new ClawSubsystem(ahwMap);
-        endgameSubsystem = new EndgameSubsystem(ahwMap);
-        extendoSubsystem = new ExtendoSubsystem(ahwMap);
-        localizationSubsystem = new LocalizationSubsystem(ahwMap);
-
-        drive = driveSubsystem.getDrive();
-
-        once = false;
-        
-        telemetry.addData("Color", lights.currentColor());
-        telemetry.addData("Version", CURRENT_VERSION);
-        telemetry.addData("Voltage", "%.2f", vSensor.currentVoltage());
-        if (vSensor.lowVoltage()) {
-            telemetry.addData("lowBattery", "true");
-        }
-        if (!auto) {
+		// all robot initializations
+        if (!auto) { // different things may be initialized during auto
             telemetry.update();
         }
     }
 
     public void doBulk() {
-        driveSubsystem.driveByGamepads(Drivers.fieldCentric, myOpMode);
-        driveSubsystem.update(avoidanceSubsystem);
-        endgameSubsystem.update();
-        clawSubsystem.update();
-        extendoSubsystem.update();
-        localizationSubsystem.relocalize(drive);
+		// drive and the other "mainLoop()" operations
         buildTelemetry();
     }
 
     private void buildTelemetry() {
-        telemetry.addData("Voltage", "%.1f", vSensor.currentVoltage());
-        if (vSensor.lowVoltage()) {
-            telemetry.addData("", "We have a low battery");
-        }
-        telemetry.addData("Pose: ", PoseExtensions.toPoint(drive.getPose()).toString());
-        telemetry.addData("potentiometer", "%.1f", potentiometer.potentAngle());
-        driveSubsystem.telemetry(telemetry);
-        extendoSubsystem.telemetry(telemetry);
-        teleSpace();
-        telemetry.addData("Color", lights.currentColor());
-        teleSpace();
-        telemetry.addData("Version", CURRENT_VERSION);
-        localizationSubsystem.telemetry(telemetry);
+		// all of the telemetry!
         telemetry.update();
-        drawPackets();
     }
 }
 ```

@@ -6,7 +6,7 @@
 
 `public TouchSensor touchSensor;`
 
-`touchSensor = hardwareMap.get(TouchSensor.class, ("touchSensor"));`
+`touchSensor = hardwareMap.get(TouchSensor.class, "touchSensor");`
 
 ## Distance Sensors
 
@@ -56,7 +56,6 @@ imu = hardwareMap.get(BNO055IMU.class, "imu");
 imu.initialize(parameters);
 angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
 gravity = imu.getGravity();
-imu.startAccelerationIntegration(new Position(), new Velocity(), 1000);
 ```
 
 To get the heading, use angles.firstAngle for most control hub configurations. You might have to change this based on how your control hub is mounted.

@@ -5,11 +5,3 @@ You should look up errors at my [ftc_error_lookup](https://gramgra07.github.io/g
 ## OpMode not appearing on the Driver Station
 
 This could be a result of multiple things, you need to have the @TeleOp or @Autonomous annotations at the beginning of the class, or it won't show up at all. Other than that, if you have the @Disabled annotation at the beginning of the class, it will result in the same thing, and it won't show up at all.
-
-## Gradle Level Too Low
-
-<!-- ```java -->
-<!-- this is a test -->
-<!-- ``` -->
-
-This is a very easy fix, just change `compileSdkVersion` to `34` in both `` and ``. Then run a gradle sync (elephant button).
