@@ -198,7 +198,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../gentrified-apps-util.html">Gentrified Apps Util</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../common-errors.html">Common Errors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FTC-Linter-Plugin.html">FTC-Linter Plugin</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../vision/index.html">Vision</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Vision</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vision/opencv.html">OpenCV</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vision/Velocity-Vision.html">Velocity Vision</a></li>
@@ -208,8 +207,6 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../autonomous/odometry/index.html">Odometry</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Odometry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../autonomous/odometry/encoders.html">Encoders</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../autonomous/odometry/spark-fun-otos-sensor.html">Spark Fun OTOS Sensor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autonomous/odometry/pedro-pathing.html">Pedro Pathing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autonomous/odometry/roadrunner.html">RoadRunner</a></li>
 </ul>
 </li>
 </ul>
@@ -234,7 +231,6 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../.etc/index.html">.etc</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of .etc</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../.etc/linksandacknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../.etc/code-review.html">Code Review</a></li>
 </ul>
 </li>
@@ -274,7 +270,8 @@
         <article role="main">
           <section id="gamepad">
 <h1>Gamepad<a class="headerlink" href="#gamepad" title="Permalink to this heading">#</a></h1>
-<p>Game-pad inputs are the base of teleOp. You can use <code class="docutils literal notranslate"><span class="pre">if(gamepad1.left_bumper){</span></code> to check if it has been pressed. Other game-pad buttons give different inputs. Some will give floats back while some are boolean. You can also use game-pad2 to use a second one. Below is a list of every input and what type it will give back to the robot.</p>
+<p>Game-pad inputs are the base of teleOp. You can use <code class="docutils literal notranslate"><span class="pre">if(gamepad1.left_bumper){</span></code> to check if it has been pressed. Other game-pad buttons give different inputs. Some will give floats back while some are boolean. You can also use gamepad2 to use a second one. Below is a list of every input and what type it will give back to the robot.</p>
+<p>FTC recently also just added <code class="docutils literal notranslate"><span class="pre">wasPressed()</span></code> for all boolean controls, as well as <code class="docutils literal notranslate"><span class="pre">wasReleased()</span></code> to give a better level of control to the gamepads.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="na">a</span><span class="w"> </span><span class="kt">boolean</span>
 <span class="p">.</span><span class="na">b</span><span class="w"> </span><span class="kt">boolean</span>
 <span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="kt">boolean</span>
@@ -325,7 +322,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2025, Graden Gentry
+                Copyright &#169; 2026, Graden Gentry
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             

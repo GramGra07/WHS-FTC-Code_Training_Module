@@ -198,7 +198,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../gentrified-apps-util.html">Gentrified Apps Util</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../common-errors.html">Common Errors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../FTC-Linter-Plugin.html">FTC-Linter Plugin</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../vision/index.html">Vision</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Vision</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../vision/opencv.html">OpenCV</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../vision/Velocity-Vision.html">Velocity Vision</a></li>
@@ -208,8 +207,6 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../autonomous/odometry/index.html">Odometry</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Odometry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/encoders.html">Encoders</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/spark-fun-otos-sensor.html">Spark Fun OTOS Sensor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/pedro-pathing.html">Pedro Pathing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../autonomous/odometry/roadrunner.html">RoadRunner</a></li>
 </ul>
 </li>
 </ul>
@@ -234,7 +231,6 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../.etc/index.html">.etc</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of .etc</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../.etc/linksandacknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../.etc/code-review.html">Code Review</a></li>
 </ul>
 </li>
@@ -296,111 +292,36 @@
 <p>Use this code in order to get an idea of what you would like to do with your external hardware class.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.opModes</span><span class="p">;</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">android.os.Environment</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.acmerobotics.dashboard.FtcDashboard</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.acmerobotics.dashboard.telemetry.MultipleTelemetry</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.acmerobotics.dashboard.telemetry.TelemetryPacket</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.acmerobotics.roadrunner.Vector2d</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.hardware.lynx.LynxModule</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.hardware.rev.RevBlinkinLedDriver</span><span class="p">;</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.eventloop.opmode.LinearOpMode</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.eventloop.opmode.OpMode</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.hardware.AnalogInput</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.hardware.DigitalChannel</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.hardware.HardwareMap</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.hardware.VoltageSensor</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.robotcore.util.ElapsedTime</span><span class="p">;</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.robotcore.external.Telemetry</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.UtilClass.FileWriterFTC</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.UtilClass.varConfigurations.LoopTime</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.UtilClass.varConfigurations.varConfig</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.extensions.BlinkExtensions</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.extensions.PoseExtensions</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.extensions.SensorExtensions</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.humanInput.Drivers</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.humanInput.Operator</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.rr.MecanumDrive</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">org.firstinspires.ftc.teamcode.subsystems.*</span><span class="p">;</span>
-
-<span class="kn">import</span><span class="w"> </span><span class="nn">java.io.FileWriter</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayList</span><span class="p">;</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.List</span><span class="p">;</span>
 
 <span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HardwareConfig</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">LinearOpMode</span><span class="w"> </span><span class="n">myOpMode</span><span class="p">;</span>
 <span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Telemetry</span><span class="w"> </span><span class="n">telemetry</span><span class="p">;</span>
 
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">DriveSubsystem</span><span class="w"> </span><span class="n">driveSubsystem</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">ClawSubsystem</span><span class="w"> </span><span class="n">clawSubsystem</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">EndgameSubsystem</span><span class="w"> </span><span class="n">endgameSubsystem</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">ExtendoSubsystem</span><span class="w"> </span><span class="n">extendoSubsystem</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">LocalizationSubsystem</span><span class="w"> </span><span class="n">localizationSubsystem</span><span class="p">;</span>
-
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">RevBlinkinLedDriver</span><span class="w"> </span><span class="n">lights</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">AnalogInput</span><span class="w"> </span><span class="n">potentiometer</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">VoltageSensor</span><span class="w"> </span><span class="n">vSensor</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">MecanumDrive</span><span class="w"> </span><span class="n">drive</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">FileWriter</span><span class="w"> </span><span class="n">fileWriter</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">once</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">LynxModule</span><span class="o">&gt;</span><span class="w"> </span><span class="n">allHubs</span><span class="p">;</span>
+<span class="w">	</span><span class="c1">// all motors</span>
 
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">HardwareConfig</span><span class="p">(</span><span class="n">LinearOpMode</span><span class="w"> </span><span class="n">opMode</span><span class="p">,</span><span class="w"> </span><span class="n">HardwareMap</span><span class="w"> </span><span class="n">ahwMap</span><span class="p">,</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">auto</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">myOpMode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">opMode</span><span class="p">;</span>
+<span class="w">		</span><span class="n">telemetry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myOpMode</span><span class="p">.</span><span class="na">telemetry</span><span class="p">;</span>
 <span class="w">        </span><span class="n">initRobot</span><span class="p">(</span><span class="n">ahwMap</span><span class="p">,</span><span class="w"> </span><span class="n">auto</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">initRobot</span><span class="p">(</span><span class="n">HardwareMap</span><span class="w"> </span><span class="n">ahwMap</span><span class="p">,</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">auto</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">vSensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SensorExtensions</span><span class="p">.</span><span class="na">initVSensor</span><span class="p">(</span><span class="n">ahwMap</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Expansion Hub 2&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="n">lights</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SensorExtensions</span><span class="p">.</span><span class="na">initLights</span><span class="p">(</span><span class="n">ahwMap</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;blinkin&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="n">potentiometer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SensorExtensions</span><span class="p">.</span><span class="na">initPotent</span><span class="p">(</span><span class="n">ahwMap</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;potent&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="n">driveSubsystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">DriveSubsystem</span><span class="p">(</span><span class="n">ahwMap</span><span class="p">);</span>
-<span class="w">        </span><span class="n">clawSubsystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ClawSubsystem</span><span class="p">(</span><span class="n">ahwMap</span><span class="p">);</span>
-<span class="w">        </span><span class="n">endgameSubsystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">EndgameSubsystem</span><span class="p">(</span><span class="n">ahwMap</span><span class="p">);</span>
-<span class="w">        </span><span class="n">extendoSubsystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ExtendoSubsystem</span><span class="p">(</span><span class="n">ahwMap</span><span class="p">);</span>
-<span class="w">        </span><span class="n">localizationSubsystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LocalizationSubsystem</span><span class="p">(</span><span class="n">ahwMap</span><span class="p">);</span>
-
-<span class="w">        </span><span class="n">drive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">driveSubsystem</span><span class="p">.</span><span class="na">getDrive</span><span class="p">();</span>
-
-<span class="w">        </span><span class="n">once</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-<span class="w">        </span>
-<span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Color&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">lights</span><span class="p">.</span><span class="na">currentColor</span><span class="p">());</span>
-<span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Version&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">CURRENT_VERSION</span><span class="p">);</span>
-<span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Voltage&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.2f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">vSensor</span><span class="p">.</span><span class="na">currentVoltage</span><span class="p">());</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">vSensor</span><span class="p">.</span><span class="na">lowVoltage</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;lowBattery&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;true&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">auto</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="c1">// all robot initializations</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">auto</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// different things may be initialized during auto</span>
 <span class="w">            </span><span class="n">telemetry</span><span class="p">.</span><span class="na">update</span><span class="p">();</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">doBulk</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">driveSubsystem</span><span class="p">.</span><span class="na">driveByGamepads</span><span class="p">(</span><span class="n">Drivers</span><span class="p">.</span><span class="na">fieldCentric</span><span class="p">,</span><span class="w"> </span><span class="n">myOpMode</span><span class="p">);</span>
-<span class="w">        </span><span class="n">driveSubsystem</span><span class="p">.</span><span class="na">update</span><span class="p">(</span><span class="n">avoidanceSubsystem</span><span class="p">);</span>
-<span class="w">        </span><span class="n">endgameSubsystem</span><span class="p">.</span><span class="na">update</span><span class="p">();</span>
-<span class="w">        </span><span class="n">clawSubsystem</span><span class="p">.</span><span class="na">update</span><span class="p">();</span>
-<span class="w">        </span><span class="n">extendoSubsystem</span><span class="p">.</span><span class="na">update</span><span class="p">();</span>
-<span class="w">        </span><span class="n">localizationSubsystem</span><span class="p">.</span><span class="na">relocalize</span><span class="p">(</span><span class="n">drive</span><span class="p">);</span>
+<span class="w">		</span><span class="c1">// drive and the other &quot;mainLoop()&quot; operations</span>
 <span class="w">        </span><span class="n">buildTelemetry</span><span class="p">();</span>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">buildTelemetry</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Voltage&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.1f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">vSensor</span><span class="p">.</span><span class="na">currentVoltage</span><span class="p">());</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">vSensor</span><span class="p">.</span><span class="na">lowVoltage</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;We have a low battery&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Pose: &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">PoseExtensions</span><span class="p">.</span><span class="na">toPoint</span><span class="p">(</span><span class="n">drive</span><span class="p">.</span><span class="na">getPose</span><span class="p">()).</span><span class="na">toString</span><span class="p">());</span>
-<span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;potentiometer&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%.1f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">potentiometer</span><span class="p">.</span><span class="na">potentAngle</span><span class="p">());</span>
-<span class="w">        </span><span class="n">driveSubsystem</span><span class="p">.</span><span class="na">telemetry</span><span class="p">(</span><span class="n">telemetry</span><span class="p">);</span>
-<span class="w">        </span><span class="n">extendoSubsystem</span><span class="p">.</span><span class="na">telemetry</span><span class="p">(</span><span class="n">telemetry</span><span class="p">);</span>
-<span class="w">        </span><span class="n">teleSpace</span><span class="p">();</span>
-<span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Color&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">lights</span><span class="p">.</span><span class="na">currentColor</span><span class="p">());</span>
-<span class="w">        </span><span class="n">teleSpace</span><span class="p">();</span>
-<span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">addData</span><span class="p">(</span><span class="s">&quot;Version&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">CURRENT_VERSION</span><span class="p">);</span>
-<span class="w">        </span><span class="n">localizationSubsystem</span><span class="p">.</span><span class="na">telemetry</span><span class="p">(</span><span class="n">telemetry</span><span class="p">);</span>
+<span class="w">		</span><span class="c1">// all of the telemetry!</span>
 <span class="w">        </span><span class="n">telemetry</span><span class="p">.</span><span class="na">update</span><span class="p">();</span>
-<span class="w">        </span><span class="n">drawPackets</span><span class="p">();</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -467,7 +388,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2025, Graden Gentry
+                Copyright &#169; 2026, Graden Gentry
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             

@@ -198,7 +198,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../gentrified-apps-util.html">Gentrified Apps Util</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../common-errors.html">Common Errors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../FTC-Linter-Plugin.html">FTC-Linter Plugin</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../vision/index.html">Vision</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Vision</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../vision/opencv.html">OpenCV</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vision/Velocity-Vision.html">Velocity Vision</a></li>
@@ -208,8 +207,6 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../autonomous/odometry/index.html">Odometry</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Odometry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../autonomous/odometry/encoders.html">Encoders</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../autonomous/odometry/spark-fun-otos-sensor.html">Spark Fun OTOS Sensor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autonomous/odometry/pedro-pathing.html">Pedro Pathing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autonomous/odometry/roadrunner.html">RoadRunner</a></li>
 </ul>
 </li>
 </ul>
@@ -234,7 +231,6 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../.etc/index.html">.etc</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of .etc</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../.etc/linksandacknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../.etc/code-review.html">Code Review</a></li>
 </ul>
 </li>
@@ -278,7 +274,7 @@
 <h2>Touch Sensors - Same as motors, just different syntax.<a class="headerlink" href="#touch-sensors-same-as-motors-just-different-syntax" title="Permalink to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">com.qualcomm.robotcore.hardware.TouchSensor;</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">TouchSensor</span> <span class="pre">touchSensor;</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">touchSensor</span> <span class="pre">=</span> <span class="pre">hardwareMap.get(TouchSensor.class,</span> <span class="pre">(&quot;touchSensor&quot;));</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">touchSensor</span> <span class="pre">=</span> <span class="pre">hardwareMap.get(TouchSensor.class,</span> <span class="pre">&quot;touchSensor&quot;);</span></code></p>
 </section>
 <section id="distance-sensors">
 <h2>Distance Sensors<a class="headerlink" href="#distance-sensors" title="Permalink to this heading">#</a></h2>
@@ -319,7 +315,6 @@
 <span class="n">imu</span><span class="p">.</span><span class="na">initialize</span><span class="p">(</span><span class="n">parameters</span><span class="p">);</span>
 <span class="n">angles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imu</span><span class="p">.</span><span class="na">getAngularOrientation</span><span class="p">(</span><span class="n">AxesReference</span><span class="p">.</span><span class="na">INTRINSIC</span><span class="p">,</span><span class="w"> </span><span class="n">AxesOrder</span><span class="p">.</span><span class="na">ZYX</span><span class="p">,</span><span class="w"> </span><span class="n">AngleUnit</span><span class="p">.</span><span class="na">DEGREES</span><span class="p">);</span>
 <span class="n">gravity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imu</span><span class="p">.</span><span class="na">getGravity</span><span class="p">();</span>
-<span class="n">imu</span><span class="p">.</span><span class="na">startAccelerationIntegration</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Position</span><span class="p">(),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Velocity</span><span class="p">(),</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>To get the heading, use angles.firstAngle for most control hub configurations. You might have to change this based on how your control hub is mounted.</p>
@@ -388,7 +383,7 @@
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2025, Graden Gentry
+                Copyright &#169; 2026, Graden Gentry
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             

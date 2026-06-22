@@ -12,5 +12,3 @@ Odometry
 
    encoders
    spark-fun-otos-sensor
-   pedro-pathing
-   roadrunner

@@ -10,5 +10,4 @@
    :maxdepth: 2
    :caption: Contents:
 
-   linksandacknowledgements
    code-review

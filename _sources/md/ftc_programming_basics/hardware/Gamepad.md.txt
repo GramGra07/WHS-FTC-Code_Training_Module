@@ -1,6 +1,8 @@
 # Gamepad
 
-Game-pad inputs are the base of teleOp. You can use `if(gamepad1.left_bumper){` to check if it has been pressed. Other game-pad buttons give different inputs. Some will give floats back while some are boolean. You can also use game-pad2 to use a second one. Below is a list of every input and what type it will give back to the robot.
+Game-pad inputs are the base of teleOp. You can use `if(gamepad1.left_bumper){` to check if it has been pressed. Other game-pad buttons give different inputs. Some will give floats back while some are boolean. You can also use gamepad2 to use a second one. Below is a list of every input and what type it will give back to the robot.
+
+FTC recently also just added `wasPressed()` for all boolean controls, as well as `wasReleased()` to give a better level of control to the gamepads.
 
 ```java
 .a boolean

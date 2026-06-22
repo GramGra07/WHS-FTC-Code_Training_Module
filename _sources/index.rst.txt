@@ -18,7 +18,7 @@ Feedback `here <https://gramgra07.github.io/gg-web/content/feedback/feedback.htm
 
 GitHub Repo located here: `repo <https://github.com/GramGra07/WHS-FTC-Code_Training_Module>`_
 
-Tutorial Videos located `here <https://www.youtube.com/playlist?list=PL1fIjF60Zomk1agzg7Mp8WgeA0oDZPckW>`_
+Tutorial Videos located `on YouTube <https://www.youtube.com/playlist?list=PL1fIjF60Zomk1agzg7Mp8WgeA0oDZPckW>`_
 
 Updating your devices
 =====================
@@ -52,7 +52,6 @@ My apologies if this doesn't work, some code software allows this exact code, so
    md/programming_your_robot/index
    md/gentrified-apps-util
    md/common-errors
-   md/FTC-Linter-Plugin
    md/vision/index
    md/autonomous/index
    md/advanced/index

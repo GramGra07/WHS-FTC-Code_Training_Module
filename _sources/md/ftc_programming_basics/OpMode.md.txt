@@ -66,7 +66,7 @@ In the {ref}`eab` you will find 18 lines.
 //imports
 @Autonomous(name="exampleAutoBlank", group="Autonomous")
 //@Disabled
-public class exampleAutoBlank extends exampleTeleOpBlank {  //your doc name *extends* your main code branch
+public class exampleAutoBlank extends LinearOpMode {  //your doc name *extends* your main code branch
     private ElapsedTime   runtime = new ElapsedTime();
     @Override
     public void runOpMode(){
