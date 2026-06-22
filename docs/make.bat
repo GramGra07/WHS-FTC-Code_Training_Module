@@ -10,6 +10,13 @@ if "%SPHINXBUILD%" == "" (
 set SOURCEDIR=source
 set BUILDDIR=build
 
+python -c "import furo" >NUL 2>NUL
+if errorlevel 1 (
+	echo Installing docs dependencies...
+	python -m pip install -r requirements.txt
+	if errorlevel 1 exit /b 1
+)
+
 %SPHINXBUILD% >NUL 2>NUL
 if errorlevel 9009 (
 	echo.

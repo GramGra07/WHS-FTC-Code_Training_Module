@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'WHS-FTC-Code_Training_Module'
-copyright = '2025, Graden Gentry'
+copyright = '2026, Graden Gentry'
 author = 'Graden Gentry'
 release = '1.0'
 
