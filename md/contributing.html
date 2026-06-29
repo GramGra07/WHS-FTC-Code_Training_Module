@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Common Errors" href="common-errors.html" /><link rel="prev" title="Hub Connect Over Wi-Fi" href="programming_your_robot/hub-connect-over-wifi.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title=".etc" href=".etc/index.html" /><link rel="prev" title="exampleTeleOpFull" href="examples/exampleTeleOpFull.html" />
 
     <!-- Generated with Sphinx 7.1.2 and Furo 2024.01.29 -->
-        <title>Gentrified Apps Util - WHS-FTC-Code_Training_Module documentation</title>
+        <title>Contributing - WHS-FTC-Code_Training_Module documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -196,7 +196,7 @@
 <li class="toctree-l2"><a class="reference internal" href="programming_your_robot/hub-connect-over-wifi.html">Hub Connect Over Wi-Fi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Gentrified Apps Util</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gentrified-apps-util.html">Gentrified Apps Util</a></li>
 <li class="toctree-l1"><a class="reference internal" href="common-errors.html">Common Errors</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="vision/index.html">Vision</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Vision</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="vision/opencv.html">OpenCV</a></li>
@@ -230,7 +230,7 @@
 <li class="toctree-l2"><a class="reference internal" href="examples/exampleTeleOpFull.html">exampleTeleOpFull</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Contributing</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href=".etc/index.html">.etc</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of .etc</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href=".etc/code-review.html">Code Review</a></li>
 </ul>
@@ -263,15 +263,72 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="gentrified-apps-util">
-<span id="gau"></span><h1>Gentrified Apps Util<a class="headerlink" href="#gentrified-apps-util" title="Permalink to this heading">#</a></h1>
-<p>The module and documentation we created can be found <a class="reference external" href="https://gramgra07.github.io/GentrifiedAppsUtil/summary.html">here</a></p>
+          <section id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this heading">#</a></h1>
+<p>This project serves as a starting point for many rookies to FTC to get started in the program.</p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong><a class="reference external" href="https://git-scm.com/downloads">Git</a>:</strong> To clone the repository.</p></li>
+<li><p><strong><a class="reference external" href="https://www.python.org/downloads/">Python 3.x</a>:</strong> Required to run Sphinx (the documentation generator). <em>Make sure to check the box that says “Add Python to PATH” during installation.</em></p></li>
+<li><p><strong><a class="reference external" href="https://nodejs.org/">Node.js and npm</a>:</strong> Required to run local development scripts.</p></li>
+</ul>
+</section>
+<section id="installation-and-setup">
+<h2>Installation and Setup<a class="headerlink" href="#installation-and-setup" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Clone the Repository</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span><span class="o">[</span>https://github.com/YOUR-ORG/WHS-FTC-Code_Training_Module.git<span class="o">](</span>https://github.com/YOUR-ORG/WHS-FTC-Code_Training_Module.git<span class="o">)</span>
+<span class="nb">cd</span><span class="w"> </span>WHS-FTC-Code_Training_Module
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Navigate to docs folder</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>docs
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Install python Dependencies</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx<span class="w"> </span>sphinx-autobuild
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Install NPM Dependencies</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>install
+</pre></div>
+</div>
+</section>
+<section id="structure">
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this heading">#</a></h2>
+<p>Each folder contains an <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> file which contains the structure for that folder. The root <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> contains the paths to every other <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> to include.</p>
+<p>Pages are all build in <code class="docutils literal notranslate"><span class="pre">md</span></code> (Markdown), and are converted to <code class="docutils literal notranslate"><span class="pre">html</span></code> with sphinx. If you are adding a folder, you will need to add a folder, <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> and direct the <code class="docutils literal notranslate"><span class="pre">/root/index.rst</span></code> to your new folder. Please see existing folders for examples.</p>
+</section>
+<section id="running-the-local-dev-server">
+<h2>Running the Local Dev Server<a class="headerlink" href="#running-the-local-dev-server" title="Permalink to this heading">#</a></h2>
+<p>To see your changes in real time,</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>run<span class="w"> </span>start
+</pre></div>
+</div>
+<p>Which will run all of the commands necessary, deploy a live server, and open that server in your computer’s browser. This will automatically rebuild on changes so it will be processing very frequently.</p>
+</section>
+<section id="ensuring-links-are-valid">
+<h2>Ensuring Links are Valid<a class="headerlink" href="#ensuring-links-are-valid" title="Permalink to this heading">#</a></h2>
+<p>When adding links, run the command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>run<span class="w"> </span>linkcheck
+</pre></div>
+</div>
+<p>Which will then check all links in the document</p>
+</section>
 </section>
 
         </article>
@@ -279,23 +336,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="common-errors.html">
+          <a class="next-page" href=".etc/index.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Common Errors</div>
+                <div class="title">.etc</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="programming_your_robot/hub-connect-over-wifi.html">
+          <a class="prev-page" href="examples/exampleTeleOpFull.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Hub Connect Over Wi-Fi</div>
+                <div class="title">exampleTeleOpFull</div>
                 
               </div>
             </a>
@@ -317,8 +374,31 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Contributing</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#installation-and-setup">Installation and Setup</a></li>
+<li><a class="reference internal" href="#structure">Structure</a></li>
+<li><a class="reference internal" href="#running-the-local-dev-server">Running the Local Dev Server</a></li>
+<li><a class="reference internal" href="#ensuring-links-are-valid">Ensuring Links are Valid</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

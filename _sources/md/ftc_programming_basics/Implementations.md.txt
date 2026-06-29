@@ -14,8 +14,6 @@ Usually, you will have to perform a **gradle sync**. This is a process that down
 ## Common Implementations
 
 * [FTC Dashboard](https://acmerobotics.github.io/ftc-dashboard/)
-* {ref}`rr` 
-* {ref}`pp`
 * {ref}`ocv`
 * [FTC Lib](https://docs.ftclib.org/ftclib/installation)
 * (my library) {ref}`gau`
