@@ -5,11 +5,11 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
-project = 'WHS-FTC-Code_Training_Module'
-copyright = '2026, Graden Gentry'
+import datetime
 author = 'Graden Gentry'
-release = '1.0'
+project = 'WHS-FTC-Code_Training_Module'
+copyright = f'{datetime.date.today().year}, {author}'
+release = ''
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

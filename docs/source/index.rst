@@ -56,4 +56,5 @@ My apologies if this doesn't work, some code software allows this exact code, so
    md/autonomous/index
    md/advanced/index
    md/examples/index
+   md/contributing
    md/.etc/index

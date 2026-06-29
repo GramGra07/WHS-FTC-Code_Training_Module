@@ -1,0 +1,11 @@
+{
+  "name": "code-training-mod-dev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+	"build": "cd docs 2>nul & .\\make.bat html",
+	"linkcheck":"cd docs 2>nul & .\\make.bat linkcheck",
+	"start": "cd docs 2>nul & python -m sphinx_autobuild source build/html --port 5173 --open-browser",
+    "clean": "node -e \"try{require('fs').rmSync('node_modules',{recursive:true,force:true});console.log('Removed node_modules');}catch(e){console.error(e);process.exit(1)}\""
+  }}
+
